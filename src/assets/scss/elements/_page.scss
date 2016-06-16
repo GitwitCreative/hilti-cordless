@@ -1,0 +1,44 @@
+#main {
+  margin-top: 0;
+
+  @include breakpoint( 'small' ) {
+    // margin-top: map-get($headerHeight, 'small');
+  }
+
+  @include breakpoint( 'small', 'min' ) {
+    // margin-top: map-get($headerHeight, 'medium');
+  }
+
+  @include breakpoint( 'large', 'min' ) {
+    // margin-top: map-get($headerHeight, 'large');
+  }
+
+  article {
+    overflow: hidden;
+  }
+  
+  .article {
+    height: auto;
+    padding: 30px 30px;
+
+    border-bottom: 1px dashed color( 'gray' );
+
+    &.video, &.products, &.pillars {
+      border-bottom: none;
+    }
+
+    @include breakpoint( 'large', 'min' ) {
+      border-bottom: none;
+    }
+
+    .hasAnimation & {
+      @include breakpoint( 'large', 'min' ) {
+        // height: 100vh;
+      }
+    }
+
+    .solutions & {
+      padding: 0;
+    }
+  }
+}

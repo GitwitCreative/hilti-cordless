@@ -1,0 +1,110 @@
+.footer {
+  @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+
+    body[data-header="hidden"] & {
+      padding-top: 0px !important;
+    }
+  }
+
+  .block {
+    display: inline-block;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    vertical-align: middle;
+
+    font-family: font('hilti');
+    color: color('white');
+    text-transform: uppercase;
+
+    @include breakpoint('medium', 'min') {
+      width: 50%;
+    }
+
+    #main & {
+      // padding: 0 0 76.53%;
+      padding: 0 0 60%;
+
+      @include breakpoint('medium', 'min') {
+        // padding: 0 0 38.03%;
+        padding: 0 0 30%;
+      }
+    }
+
+    .inner {
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+
+      @include breakpoint('small', 'min') {
+        top: 25%;
+      }
+
+      > a {
+
+        display: inline-block;
+        width: 100%;
+        padding: 10px 10% 10px 20px;
+
+        background-color: rgba(0,0,0,.2);
+
+        font-family: 'icomoon', font('hilti');
+        font-size: fontSize('base');
+        line-height: 1.6;
+        text-transform: uppercase;
+
+        @include breakpoint('large', 'min') {
+          margin-top: -39px;
+          font-size: 21px;
+          line-height: 1.4;
+        }
+
+        &, &:active, &:hover, &:focus, &:visited {
+          color: color('white');
+        }
+
+        &:after {
+          display: inline-block;
+          height: 15px;
+          padding-left: 5px;
+
+          font-size: fontSize('large');
+          line-height: 0;
+          vertical-align: sub;
+        }
+      }
+
+      .phone {
+        margin: 20px 20px;
+
+        font-size: fontSize('xsmall');
+        letter-spacing: 1px;
+
+        @include breakpoint('small', 'min') {
+          margin: 35px 20px;
+        }
+
+        a {
+          display: block;
+          font-size: fontSize('base');
+          font-weight: bold;
+
+          @include breakpoint('small', 'min') {
+            display: inline-block;
+          }
+
+          &, &:active, &:hover, &:focus, &:visited {
+            color: color('white');
+          }
+        }
+      }
+
+    }
+
+  }
+}

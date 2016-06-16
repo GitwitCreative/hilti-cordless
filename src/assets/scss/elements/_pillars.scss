@@ -1,0 +1,137 @@
+.pillars {
+  padding-top: 40px;
+  font-family: font('hilti');
+  font-size: fontSize('base');
+
+  @include breakpoint('default', 'min') {
+    padding: 40px 0;
+  }
+
+  @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+    max-width: 85%;
+    margin: 0 auto;
+
+  }
+
+  &.article {
+    body.solutions #main  & {
+      height: auto;
+      padding: 42px 0 40px;
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        padding: 84px 0 71px;
+      }
+    }
+  }
+
+
+  h3 {
+    padding: 0 40px 34px;
+    font-weight: bold;
+    color: color('gray');
+    text-align: center;
+
+    @include breakpoint('default', 'min') {
+      font-size: fontSize('medium');
+      padding: 0 0 5%;
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      font-size: fontSize('large');
+      line-height: 1.35;
+      padding: 0 0 64px;
+    }
+  }
+
+  h4, p {
+    //padding-left: 15px;
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      //padding-left: 30px;
+    }
+  }
+
+  h4 {
+    font-size: fontSize('medium');
+    font-weight: bold;
+    color: color('darkgray');
+    min-height: 2em;
+    padding-bottom: fontSize('medium');
+    margin-top: -4px;
+  }
+
+  p {
+    font-size: 15px;
+    color: color('gray');
+    padding-bottom: fontSize('medium');
+
+    @include breakpoint('default', 'min') {
+      
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      line-height: 1.3;
+    }
+  }
+
+
+  &--container {
+    display: table;
+    border-spacing: 20px 0px;
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality){
+      border-spacing: 0px;
+    }
+  }
+
+
+  &--content {
+    //position: relative;
+    display: table-cell;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    border-left: border('solid--red4');
+
+    @include breakpoint('default', 'min'){
+      float: none;
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality){
+      padding: 0 30px;
+    }
+
+    /*&:after {
+      content: " ";
+      position: absolute;
+      top: 4px;
+      bottom: 0;
+      left: 16px;
+      border-left: border('solid--red4');
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality){
+        left: 26px;
+      }
+    }*/
+
+    @include breakpoint('small', 'min') {
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+
+    @include breakpoint('default', 'min'){
+      width: 25%;
+
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,764 @@
+
+#main {
+  .article {
+    &.animation {
+      .hasAnimation & {
+        padding: 0;
+      }
+    }
+  }
+}
+
+$animationWidth: 800px;
+$animationHeight: 450px;
+
+.animation {
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint( 'large', 'min' ) {
+    margin: auto;
+    width: $animationWidth;
+    height: $animationHeight !important;
+  }
+
+  & .scrollmagic-pin-spacer {
+    margin-top: auto !important;
+    margin: auto;
+    width: $animationWidth;
+    height: 100% !important;
+
+  }
+
+  &--spacer {
+    .hasAnimation & {
+      min-height: 800px;
+    }
+  }
+
+  &--container {
+    width: auto;
+    text-align: left;
+    margin: 20px auto;
+    position: relative;
+    height: 100%;
+
+    @include breakpoint( 'large', 'min' ) {
+      max-width: 1024px;
+      margin: auto !important;
+
+      .scrollmagic-pin-spacer & {
+        display: block;
+      }
+    }
+  }
+
+  svg {
+    margin-bottom: 20px;
+  }
+
+  &--image {
+    max-width: 100%;
+    margin-bottom: 20px;
+
+    &.show-for-medium-up {
+      .js.video .technologyVideo & {
+        @include breakpoint( 'large', 'min' ) {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  &--information {
+    margin-bottom: 20px;
+
+    @include breakpoint( 'large', 'min' ) {
+      position: absolute;
+    }
+
+    h3 {
+      color: color( 'white' );
+      text-transform: uppercase;
+      font-family: font( 'hilti' );
+      font-size: fontSize( 'medium' );
+      margin-bottom: 20px;
+
+      @include breakpoint( 'small', 'min' ) {
+        font-size: fontSize( 'xlarge' );
+        margin-bottom: 15px;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        font-size: fontSize( 'large' );
+        margin-bottom: 15px;
+      }
+    }
+
+    h4 {
+      color: color( 'red' );
+      text-transform: uppercase;
+      font-family: font( 'hilti' );
+      font-size: fontSize( 'small' );
+      margin-bottom: 10px;
+
+      @include breakpoint( 'small', 'min' ) {
+        font-size: fontSize( 'medium' );
+        margin-bottom: 10px;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        font-size: fontSize( 'base' );
+      }
+    }
+
+    p {
+      color: color( 'white' );
+      font-family: font( 'hilti--text' );
+      font-size: fontSize( 'small' );
+      line-height: 1.4;
+
+      @include breakpoint( 'small', 'min' ) {
+        font-size: fontSize( 'medium' );
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        font-size: fontSize( 'small' );
+      }
+
+      & + * {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  $offset: 10;
+  &--calloutline {
+
+    &:after {
+      @include breakpoint( 'large', 'min' ) {
+        background: transparent url() 0 0 no-repeat;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__sa_l_tb {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 120px;
+          height: 177px;
+          position: absolute;
+          top: 10px;
+          right: -(120px + $offset);
+
+          background-position: right bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_l_tb.png);
+        }
+      }
+    }
+
+    &__sa_l_tb_long {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 120px;
+          height: 231px;
+          position: absolute;
+          top: 10px;
+          right: -(120px + $offset);
+
+          background-position: right bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_l_tb_long.png);
+        }
+      }
+    }
+
+    &__sa_l_tb_reverse {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 360px;
+          height: 65px;
+          position: absolute;
+          right: -305px;
+          bottom: -(65px + $offset);
+
+          background-position: right bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_l_tb_reverse.png);
+        }
+      }
+
+    }
+
+    &__sa_l_bt {
+
+      @extend .animation--calloutline;
+
+      // Not used yet
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 100px;
+          height: 177px;
+          position: absolute;
+          top: -160px;
+          right: -(100px + $offset);
+
+          background-position: right bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_l_bt.png);
+        }
+      }
+    }
+
+    &__sa_l_bt_reverse {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 180px;
+          height: 177px;
+          position: absolute;
+          top: -(180px + $offset);
+          right: -130px;
+
+          background-position: top right;
+          background-image: url(../../files/us/calloutlines/squareangle_l_bt_reverse.png);
+        }
+      }
+    }
+
+    &__sa_l_bt_reverse_short {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 117px;
+          height: 177px;
+          position: absolute;
+          top: -(180px + $offset);
+          right: -130px;
+
+          background-position: top right;
+          background-image: url(../../files/us/calloutlines/squareangle_l_bt_reverse_short.png);
+        }
+      }
+    }
+
+    &__sa_l_bt_short {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 145px;
+          height: 100px;
+          position: absolute;
+          top: -(100px + $offset);
+          right: -100px;
+
+          background-image: url(../../files/us/calloutlines/squareangle_l_bt_short.png);
+        }
+      }
+    }
+
+    &__sa_r_bt {
+
+      @extend .animation--calloutline;
+
+      // Not used yet
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 330px;
+          height: 115px;
+          position: absolute;
+          left: -(330px + $offset);
+          top: -100px;
+
+          background-image: url(../../files/us/calloutlines/squareangle_r_bt.png);
+        }
+      }
+    }
+
+    &__sa_r_tb {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 300px;
+          height: 180px;
+          position: absolute;
+          left: -(300px + $offset);
+          top: 10px;
+
+          background-image: url(../../files/us/calloutlines/squareangle_r_tb.png);
+        }
+      }
+    }
+
+    &__sa_r_tb_short {
+
+      @extend .animation--calloutline;
+
+      // Not used yet
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 60px;
+          height: 100px;
+          position: absolute;
+          left: -(60px + $offset);
+          top: 10px;
+
+          background-image: url(../../files/us/calloutlines/squareangle_r_tb_short.png);
+        }
+      }
+    }
+
+    &__sa_r_tb_reverse {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 180px;
+          height: 170px;
+          position: absolute;
+          left: 110px;
+          bottom: -(170px + $offset);
+
+          background-position: left bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_r_tb_reverse.png);
+        }
+      }
+    }
+
+    &__sa_r_tb_reverse_wide {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 183px;
+          height: 170px;
+          position: absolute;
+          left: 110px;
+          bottom: -(170px + $offset);
+
+          background-position: left bottom;
+          background-image: url(../../files/us/calloutlines/squareangle_r_tb_reverse_wide.png);
+        }
+      }
+    }
+
+    &__st_tb {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 45px;
+          height: 185px;
+          position: absolute;
+          bottom: -(185px + $offset);
+          left: 24px;
+
+          background-position: left bottom;
+          background-image: url(../../files/us/calloutlines/straight_tb.png);
+        }
+      }
+    }
+
+    &__st_bt {
+
+      @extend .animation--calloutline;
+
+      // Not used yet
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 185px;
+          height: 45px;
+          position: absolute;
+          right: -(185px + $offset);
+          top: 10px;
+
+          background-image: url(../../files/us/calloutlines/straight_bt.png);
+        }
+      }
+    }
+
+    &__st_l {
+
+      @extend .animation--calloutline;
+
+      // Not used yet
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 185px;
+          height: 45px;
+          position: absolute;
+          right: -(185px + $offset);
+          top: 10px;
+
+          background-image: url(../../files/us/calloutlines/straight_l.png);
+        }
+      }
+    }
+
+    &__st_r {
+
+      @extend .animation--calloutline;
+
+      &:after {
+        @include breakpoint( 'large', 'min' ) {
+          content: ' ';
+          width: 75px;
+          height: 75px;
+          position: absolute;
+          left: -(75px + $offset);
+          top: 10px;
+          background-image: url(../../files/us/calloutlines/straight_r.png);
+        }
+      }
+    }
+  }
+
+  &__battery--scene-0,
+  &__battery--scene-1,
+  &__battery--scene-2,
+  &__battery--scene-3,
+  &__battery--scene-4 {
+
+    .animation--image {
+      &.show-for-medium-up {
+        margin: auto;
+        width: 800px;
+        // height: 450px;
+        background-size: 100%;
+      }
+    }
+
+
+    .animation--information {}
+
+  }
+
+  &__battery--scene-0 {
+
+    .animation--information {
+
+      &__top {
+
+      }
+      &__bottom {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__sa_r_tb_reverse_wide;
+            width: 480px;
+
+            left: 310px;
+            bottom: 315px;
+
+            &:after {
+              height: 182px;
+              bottom: -(182px + $offset);
+
+              left: auto;
+              right: 77px;
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  &__battery--scene-1 {
+
+    .animation--information {
+
+      &__top {
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__st_r;
+            width: 380px;
+
+            top: 80px;
+            right: -150px;
+
+            &:after {
+              width: 111px;
+              left: -36px;
+
+              top: auto;
+              bottom: -24px;
+            }
+          }
+        }
+      }
+      &__bottom {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_tb_long;
+            width: 426px;
+
+            bottom: 226px;
+            left: -180px;
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+  &__battery--scene-2 {
+
+    .animation--information {
+
+      &__top {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__sa_r_tb;
+            width: 450px;
+            right: -185px;
+            top: -5px;
+
+            &:after {
+              width: 140px;
+              left: -(140px + $offset);
+            }
+          }
+        }
+
+      }
+      &__bottom {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_bt_reverse_short;
+            width: 450px;
+
+            top: 275px;
+            right: 540px;
+
+            &:after {
+              height: 124px;
+
+              top: -134px;
+              right: -70px;
+            }
+          }
+        }
+
+      }
+
+
+
+    }
+
+  }
+
+  &__battery--scene-3 {
+
+    .animation--information {
+
+      &__top {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_tb;
+            width: 450px;
+            right: 500px;
+            top: 0px;
+          }
+        }
+
+      }
+      &__bottom {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__st_r;
+            width: 400px;
+            top: 260px;
+            left: 530px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  &__battery--scene-4 {
+
+    .animation--information {
+
+      &__top {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_tb;
+            width: 450px;
+            left: -165px;
+            top: -15px;
+          }
+        }
+
+      }
+      &__bottom {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_bt_short;
+            width: 500px;
+            left: -130px;
+            top: 345px;
+          }
+        }
+        &-1 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__sa_r_tb_short;
+              width: 400px;
+              left: 490px;
+              top: 89px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  &__battery--scene-5 {
+
+    .animation--information {
+
+      &__top {
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__st_tb;
+            width: 480px;
+
+            left: 335px;
+            bottom: 385px;
+
+            &:after {
+              height: 140px;
+              bottom: -(140px + $offset);
+            }
+          }
+        }
+
+      }
+      &__bottom {
+
+
+        &-0 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .icon--right;
+            @extend .animation--calloutline__sa_l_bt_reverse;
+            width: 450px;
+
+            top: 370px;
+            right: 560px;
+
+            &:after {
+              height: 105px;
+              top: -(105px + $offset);
+            }
+          }
+        }
+
+        &-1 {
+          @include breakpoint( 'large', 'min' ) {
+            @extend .animation--calloutline__st_r;
+            width: 400px;
+            top: 260px;
+            left: 530px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  // .hasAnimation & {
+
+  //   .animation--information {
+  //     position: absolute;
+  //   }
+
+  //   &__battery--scene-0 {
+
+  //     .animation--information {
+
+  //       &_0 {
+  //         width: 350px;
+  //         right: -185px;
+  //         top: 40px;
+
+  //       }
+  //     }
+
+  //   }
+
+  // }
+}
+
+// @include breakpoint( 'small' ) {
+//   margin-top: map-get($headerHeight, 'small');
+// }
+
+// @include breakpoint( 'small', 'min' ) {
+//   margin-top: map-get($headerHeight, 'medium');
+// }
+
+// @include breakpoint( 'large', 'min' ) {
+//   margin-top: map-get($headerHeight, 'large');
+// }

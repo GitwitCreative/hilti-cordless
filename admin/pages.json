@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Home",
+    "action": "index",
+    "content": "templates/index.php",
+    "header": true
+  },
+  {
+    "title": "Login",
+    "action": "login",
+    "content": "templates/login.php"
+  },
+  {
+    "title": "Error",
+    "action": "error",
+    "content": "templates/error.php"
+  },
+  {
+    "title": "Edit Site",
+    "action": "site",
+    "content": "templates/site.php",
+    "header": true
+  },
+  {
+    "title": "Edit Site Settings",
+    "action": "settings",
+    "content": "templates/settings.php",
+    "header": true
+  },
+  {
+    "title": "Add microsite",
+    "action": "add",
+    "content": "templates/add.php",
+    "header": true
+  },
+  {
+    "title": "Edit A Page",
+    "action": "page",
+    "content": "templates/page.php",
+    "header": true
+  },
+  {
+    "title": "Upload files",
+    "action": "upload",
+    "content": "templates/upload.php",
+    "header": true
+  }
+]

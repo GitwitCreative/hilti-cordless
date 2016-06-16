@@ -1,0 +1,175 @@
+.service-detail {
+  display: none;
+
+  @include breakpoint( $fullVersionWidth, $fullVersionCardinality){
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    padding-bottom: 80px;
+    background-color: color('white');
+    z-index: z('modal');
+
+    @include breakpoint( 'limit', 'min' ) {
+    
+      width: map-get($breakpoints, 'limit') / 2;
+
+      right: inherit !important;
+      left: 50%;
+      margin-right: -(map-get($breakpoints, 'limit') / 2); /*half the width*/
+    }
+  }
+
+  .content_wrapper_outer {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 32px 64px;
+
+
+    .content_wrapper_inner {
+      display: table;
+      height: 100%;
+
+      .content {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        @include breakpoint( $fullVersionWidth, $fullVersionCardinality){
+          height: 100%;
+          padding-bottom: 32px;
+        }
+
+        h3 {
+          font-size: fontSize('medium');
+          font-weight: bold;
+          color: color('red');
+
+          @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+            font-size: fontSize('large');
+          }
+        }
+
+        h4, h5 {
+          font-size: fontSize('small');
+          font-weight: bold;
+
+          @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+            font-size: fontSize('base');
+          }
+        }
+
+        h5 {
+          padding-top: 2em;
+        }
+
+        p {
+          font-size: fontSize('small');
+          line-height: 1.5;
+          padding-top: 1.8em;
+
+          @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+            font-size: fontSize('base');
+          }
+        }
+
+        ul {
+
+          li {
+            position: relative;
+            padding-left: 20px;
+            font-size: fontSize('small');
+            line-height: 1.5;
+
+            @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+              font-size: fontSize('base');
+            }
+
+            &:before {
+              content: " ";
+              background-color: color('red');
+              position: absolute;
+              top: 0.6em;
+              left: 6px;
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              -webkit-border-radius: 2px;
+              -moz-border-radius: 2px;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 60px;
+  }
+
+  .link {
+    display: table-cell;
+    width: 50%;
+    font-size: fontSize('small');
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+      height: 80px;
+      padding: 32px;
+    }
+
+    &, &:hover, &:focus, &:active, &:visited {
+      color: color('white');
+    }
+
+    &__contact {
+      background-color: color('red');
+      right: 50%;
+
+      &:hover {
+        background-color: color('darkred');
+      }
+    }
+
+    &__related {
+      background-color: color('darkgray');
+      right: 0;
+
+      &:hover {
+        background-color: color('xdarkgray');
+      }
+    }
+  }
+
+  .icon-close {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    padding-left: fontSize('icon--medium');
+
+    &, &:before {
+      font-size: fontSize('icon--medium');
+    }
+
+    &:hover, &:focus {
+
+      &:before {
+        color: color('darkred');
+      }
+    }
+  }
+}

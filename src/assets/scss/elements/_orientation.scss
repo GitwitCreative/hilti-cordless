@@ -1,0 +1,56 @@
+.orientationCheck {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  &--wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top:0;
+    left: 0;
+  }
+
+  span {
+    color: color( 'white' );
+    display: inline-block;
+    padding: 50px 0 0 0 !important;
+
+    @extend .icon;
+    @extend .icon-reload;
+
+    &:before {
+      display: inline-block;
+      left: 50% !important;
+      margin-left: -35px;
+      // top: 40px;
+      top: 0;
+
+      z-index: -1;
+    }
+
+    body.solutions & {
+      color: color('black');
+    }
+  }
+}
+
+@media only screen and ( max-width:567px ) and ( orientation:landscape ), only screen and ( max-height:567px ) and ( orientation:landscape ){
+
+  html {
+
+    &.touch {
+      #outer-wrap, #fp-nav {
+        display: none !important;
+      }
+
+      .orientationCheck--wrapper {
+        display: table;
+      }
+    }
+
+  }
+
+}

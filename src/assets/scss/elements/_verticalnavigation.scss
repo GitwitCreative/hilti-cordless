@@ -1,0 +1,116 @@
+#main {
+  .fp-tableCell {
+    // vertical-align: top;
+  }
+}
+
+#fp-nav {
+
+  display: block;
+  
+  &.right {
+    //right: 35px !important;
+    right: 0px !important;
+  }
+
+
+
+  @include breakpoint( 'limit', 'min' ) {
+    
+    width: map-get($breakpoints, 'limit');
+
+    &.right {
+      right: inherit !important;
+      left: 50%;
+      margin-left: -(map-get($breakpoints, 'limit') / 2); /*half the width*/
+    }
+  }
+
+  &.verticalNavigation {
+    display: block;
+    @include fadeIn( 1s );
+
+    body.hideNavigation & {
+      display: none;
+      @include fadeOut( 1s );
+    }
+
+    a {
+      color: color( 'white' );
+      text-align: right;
+      font-size: 14px;
+      padding: 5px 45px 5px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: none;
+      @include transparent;
+      @include fadeOut( 0.5s );
+
+      &:hover {
+        color: color( 'red' );
+      }
+    }
+
+    &:hover, &.hover {
+      a {
+        display: block;
+        @include opaque;
+        @include fadeIn( 0.5s );
+      }
+
+      z-index: z( 'modal' );
+    }
+
+    ul {
+      li {
+        margin: 0 5px;
+        position: relative;
+        width: auto;
+        height: auto;
+        min-height: 28px;
+        cursor: pointer;
+
+        @extend .icon;
+        @extend .icon-navi_inactive;
+        
+        padding-left: 0;
+
+        .isIE & {
+          max-width: 350px;
+        }
+
+        &:before {
+          color: color( 'red' );
+          left: inherit;
+          //right: -40px;
+          right: -5px;
+          font-size: 50px;
+
+          body.technology &,
+          body.technologyVideo & {
+            color: color( 'white' );
+          }
+        }
+
+        &:hover, &.hover {
+          color: color( 'red' );
+
+          a {
+            color: color( 'red' );
+          }
+
+          &:after {
+            background: color( 'red' );
+          }
+        }
+
+        &.current {
+          a {}
+
+          @extend .icon-navi;
+        }
+
+      }
+    }
+  }
+}

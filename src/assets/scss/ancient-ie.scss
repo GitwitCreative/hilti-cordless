@@ -1,0 +1,21 @@
+@import "vendor/settings";
+@import "vendor/functions";
+@import "vendor/mixins";
+
+.persona {
+
+  &--benefit {
+
+    .back {
+      display: none;
+    }
+  }
+
+  @include breakpoint('large', 'max'){
+
+    #main & {
+      height: auto !important;
+    }
+
+  }
+}

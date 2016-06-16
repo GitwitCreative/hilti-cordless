@@ -1,0 +1,288 @@
+/* ==============================
+   Colors
+   Desc: http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+   ============================== */
+
+
+// Colormap
+$colors: (
+
+  // Default Colors
+  'transparent':    transparent,
+  'white':          #fff,
+  'black':          #000,
+  'gray':           #808080,
+  'lightgray':      #ccc,
+  'lightgray--lighter':      #a4a4a4,
+  'xlightgray':     #e5e5e5,
+  'lightdarkgray':  lighten( #323232, 5% ),
+  'darkgray':       #323232,
+  'xdarkgray':      darken( #323232, 10% ),
+  'darkred':        darken( #df001b, 10% ),
+
+  // CI Colors
+  'red':            #df001b, 
+);
+
+//#df001b
+
+// Color Vars
+$_transparent:     map-get($colors, 'transparent');
+$_white:           map-get($colors, 'white');
+$_black:           map-get($colors, 'black');
+$_gray:            map-get($colors, 'gray');
+$_lightgray:       map-get($colors, 'lightgray');
+$_xlightgray:      map-get($colors, 'xlightgray');
+$_lightdarkgray:   map-get($colors, 'lightdarkgray');
+$_darkgray:        map-get($colors, 'darkgray');
+$_xdarkgray:       map-get($colors, 'xdarkgray');
+$_red:             map-get($colors, 'red');
+
+
+/* ==========================================================================
+
+   Box Shadows
+
+   ========================================================================== */
+
+$boxshadows: (
+
+  // Default Colors
+  'firstLevel':           (0 0 10px 0 rgba(0,0,0,.15)),
+  'firstLevelHover':      (0 0 10px 0 rgba(0,0,0,.3)),
+  'secondLevel':          (0 0 15px 0 rgba(0,0,0,.1)),
+  'secondLevelHover':     (0 0 15px 0 rgba(0,0,0,.2)),
+  'firstLevelInset':      (inset 0 0 10px 0 rgba(0,0,0,.15)),
+  'secondLevelInset':     (inset 0 0 15px 0 rgba(0,0,0,.1)),
+  'sortable':             (0 5px 30px 0 rgba(0,0,0,.5)),
+  'handle':               (-5px 0 5px 0 rgba(0,0,0,.05)),
+  'inputs':               (inset 0 1px 8px 0 rgba(0,0,0,0.2)),
+  'inputs--error':        (inset 0 1px 8px 0 rgba(0,0,0,0.2), inset 0 0 0 2px $_red),
+  'layer':                (0 0 30px 0 rgba(0,0,0,.8)),
+  'tabs':                 (0 -1px 8px 0 rgba(0,0,0,.1)),
+  'filterbar':            (0 0 10px 0 rgba(0,0,0,.1)),
+  'filterbar--inner':     (inset 0px 0px 1px 1px rgba(0,0,0,.1)),
+  'serviceoffers':        (0 0 5px 0 rgba(0,0,0,.1)),
+  'productItemError':     (inset 0 0 10px 0 rgba(0, 0, 0, .1))
+);
+
+
+/* ==========================================================================
+
+   Borders
+
+   ========================================================================== */
+
+$borders: (
+
+  // Dotted Border
+  'dotted--xdarkgray':    1px dotted $_xdarkgray,
+  'dotted--white':        1px dotted $_white,
+  'dotted--gray':         1px dotted $_gray,
+  'dotted--lightgray':    1px dotted $_lightgray,
+
+  // Solid Borders
+  'solid--xdarkgray':     1px solid $_xdarkgray,
+  'solid--xdarkgray3':    3px solid $_xdarkgray,
+  'solid--xdarkgray10':   10px solid $_xdarkgray,
+  'solid--lightgray':     1px solid $_lightgray,
+  'solid--lightgray2':    2px solid $_lightgray,
+  'solid--lightgray5':    5px solid $_lightgray,
+  'solid--lightgray10':   10px solid $_lightgray,
+  'solid--xlightgray':    1px solid $_xlightgray,
+  'solid--xlightgray5':   5px solid $_xlightgray,
+  'solid--lightdarkgray': 1px solid $_lightdarkgray,
+  'solid--white':         1px solid $_white,
+  'solid--white2':        2px solid $_white,
+  'solid--white5':        5px solid $_white,
+  'solid--white10':       10px solid $_white,
+  'solid--red':           1px solid $_red,
+  'solid--red2':          2px solid $_red,
+  'solid--red4':          4px solid $_red,
+  'solid--red10':         10px solid $_red,
+  'solid--gray':          1px solid $_gray,
+  'solid--black':         1px solid $_black,
+  'solid--black2':        2px solid $_black,
+
+  // Solid Trans
+  'solid--trans':         1px solid transparent,
+);
+
+/* ==========================================================================
+
+   Fonts
+
+   ========================================================================== */
+
+$base_font_size: 16px;
+$em-base: $base_font_size; // For Bourbon rem/em calc
+
+$base_line_height: 1.3;
+
+// Font size set
+$fontSizes: (
+  'xsmall':     10px,
+  'small':      13px,
+  'base':       $base_font_size,
+  'medium':     18px,
+  'large':      25px,
+  'xlarge':     30px,
+  'xxlarge':    45px,
+  'xxxlarge':   65px,
+  'icon':       16px,
+  'icon--medium': 60px,
+  'icon--large':  75px,
+  'icon--xlarge': 90px,
+);
+
+// Font family set
+$fonts: (
+  'hilti':              ( Arial, Verdana, sans-serif),
+  'hilti--bold':        ( 'Arial Black', Arial, Verdana, sans-serif),
+  'hilti--text':        ( Arial, Verdana, sans-serif),
+  'hilti--headline':    ( Arial, Verdana, sans-serif),
+);
+
+
+/* ==========================================================================
+
+   Breakpoint Settings / Direction
+
+   ========================================================================== */
+
+// Fix Breakpoints Sizes
+$breakpoints: (
+  'xsmall':     320px,
+  'small':      567px,
+  'medium':     767px,
+  'default':    1023px,
+  'large':      1259px,
+  'limit':      20000px,
+);
+
+$breakpoints-v: (
+  'small':      700px,
+  'normal':     800px,
+  'large':      900px,
+);
+
+// horizontal
+$media-direction: max;
+
+// vertical
+$media-direction-v: max;
+
+@import 'foundation/functions';
+
+// We use this to control whether or not CSS classes come through in the gem files.
+$include-html-classes: true;
+// $include-print-styles: true;
+$include-html-global-classes: $include-html-classes;
+
+// d. Media Query Ranges
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $small-breakpoint:  em-calc( map-get($breakpoints, 'small') );
+// $medium-breakpoint: em-calc( map-get($breakpoints, 'medium') );
+// $large-breakpoint:  em-calc( map-get($breakpoints, 'default') );
+// $xlarge-breakpoint: em-calc( map-get($breakpoints, 'large') );
+
+$small-breakpoint:  map-get($breakpoints, 'small');
+$medium-breakpoint: map-get($breakpoints, 'medium');
+$large-breakpoint:  map-get($breakpoints, 'default');
+$xlarge-breakpoint: map-get($breakpoints, 'large');
+
+$small-range:   (0, $small-breakpoint);
+$medium-range:  ($small-breakpoint  + 1, $medium-breakpoint);
+$large-range:   ($medium-breakpoint + 1, $large-breakpoint);
+$xlarge-range:  ($large-breakpoint  + 1, $xlarge-breakpoint);
+$xxlarge-range: ($xlarge-breakpoint + 1, 99999999px);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$small-up: $screen;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+$retina: (
+ "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
+ "#{$screen} and (min--moz-device-pixel-ratio: 2)",
+ "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
+ "#{$screen} and (min-device-pixel-ratio: 2)",
+ "#{$screen} and (min-resolution: 192dpi)",
+ "#{$screen} and (min-resolution: 2dppx)"
+);
+
+//simplified breakpoint names
+$phabletVersionWidth: 'small';
+$phabletVersionCardinality: 'min';
+$miniTabletVersionWidth: 'medium';
+$miniTabletVersionCardinality: 'min';
+$tabletVersionWidth: 'default';
+$tabletVersionCardinality: 'min';
+$fullVersionWidth: 'large';
+$fullVersionCardinality: 'min';
+
+
+/* ==========================================================================
+
+   Timings
+
+   ========================================================================== */
+
+$timings: (
+  'zero':     0,
+  'xfast':    100ms,
+  'fast':     250ms,
+  'medium':   500ms,
+  'slow':     1000ms,
+);
+
+
+/* ==========================================================================
+
+   Z-Index
+
+   ========================================================================== */
+
+$z-layers: (
+  'deep':     -9999,
+  'default':      1,
+  'low':         10,
+  'middle':     100,
+  'high':      1000,
+  'dropdown':  3000,
+  'overlay':   4000,
+  'modal':     4001,
+);
+
+
+/* ==========================================================================
+
+   GLOBAL VARIBALES
+
+   ========================================================================== */
+
+$headerHeight: (
+  'xsmall':     0,
+  'small':      0,
+  'medium':     116px,
+  'default':    68px,
+  'large':      68px,
+);
+
+// map-get($headerHeight, 'medium')

@@ -1,0 +1,760 @@
+$statementAndLinkPositionTop: 57.3%;
+
+$benefitPositionTopLarge: 5%;
+$benefitHeightLarge: 30%;
+
+.persona {
+
+  #main & {
+    height: 100%;
+  }
+
+  &--quote_statement,
+  &--benefit_content {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+      background-position: center bottom;
+    }
+  }
+
+  //
+  // Quote/Statement Slide
+  //
+  &--quote_statement {
+    position: relative;
+
+    min-height: 56%;
+    min-height: 56vh;
+    padding-bottom: 14%;
+
+    z-index: 5;
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality){
+      height: 100vh;
+      padding-bottom: 0;
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      height: 100%;
+      min-height: 0;
+    }
+  }
+
+  &--image {
+    position: absolute;
+    left: -23px;
+    bottom: 0;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    max-height: 41%;
+
+    @include breakpoint($phabletVersionWidth, $phabletVersionCardinality) {
+      max-width: 75%;
+      max-height: 75%;
+    }
+
+    @include breakpoint($miniTabletVersionWidth, $miniTabletVersionCardinality) {
+      max-width: 66%;
+      max-height: 66%;
+      left: -7.5%;
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      max-width: 75%;
+      max-height: none;
+      // top: -20%;
+      // bottom: auto;
+      left: -12.5%;
+
+      // top: auto;
+      bottom: 0;
+      height: 100vh;
+      max-width: none;
+
+      @include breakpointV( 'small', 'min' ) {}
+
+      @include breakpointV( 'normal', 'min' ) {
+        // top: auto;
+        // bottom: 0;
+        height: 100vh;
+        // max-width: none;
+      }
+
+      @include breakpointV( 'large', 'min' ) {}
+    }
+  }
+
+  &--quote {
+    position: relative;
+    min-height: 38vh;
+    padding: 45px 6.5% 105px 12%;
+
+    @include breakpointV( 'small', 'min' ) {
+      padding: 75px 6.5% 75px 12%;
+    }
+
+    @include breakpointV( 'normal', 'min' ) {}
+
+    @include breakpointV( 'large', 'min' ) {}
+
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+      position: absolute;
+      left: 46.5%;
+      top: 10%;
+
+      max-width: 460px;
+      min-height: 0;
+      padding: 0;
+
+      @include breakpointV( 'small', 'min' ) {
+        top: 15%;
+      }
+
+      @include breakpointV( 'normal', 'min' ) {}
+
+      @include breakpointV( 'large', 'min' ) {}
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      position: absolute;
+      top: 9%;
+
+      max-width: 520px;
+      min-height: 0;
+      padding: 0;
+
+      @include breakpointV( 'small', 'min' ) {
+        top: 15%;
+      }
+
+      @include breakpointV( 'normal', 'min' ) {
+        top: 22%;
+      }
+
+      @include breakpointV( 'large', 'min' ) {
+        top: 27.1%;
+      }
+    }
+
+    p {
+      font-family: font('hilti');
+      font-size: fontSize('medium');
+      font-weight: bold;
+      line-height: fontSize('large');
+
+      @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+        font-size: fontSize('large');
+        line-height: 1.6;
+      }
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        font-size: fontSize('large');
+        line-height: 1.6;
+      }
+
+      &:before,
+      &:after {
+        display: inline-block;
+        font-size: 32px;
+        line-height: fontSize('xsmall');
+
+        @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+          font-size: fontSize('icon--medium');
+        }
+      }
+
+      &:before {
+        content: '“';
+        vertical-align: text-bottom;
+        margin-left: -21px;
+        padding-right: 5px;
+
+        @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+          vertical-align: bottom;
+          margin-left: -40px;
+          padding-right: 10px;
+          line-height: 0.2;
+        }
+      }
+
+      &:after {
+        content: '”';
+        vertical-align: bottom;
+        padding-left: 5px;
+
+        @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+          padding-left: 10px;
+          line-height: 0.1;
+        }
+      }
+
+    }
+  }
+
+  &--statement {
+    position: relative;
+    background: color('white');
+
+    font-family: font('hilti');
+    font-size: fontSize('small');
+    text-transform: uppercase;
+
+    max-width: 53%;
+    margin-left: 40%;
+    padding: 13px;
+
+    .persona--benefit_content & {
+      display: none;
+    }
+
+    @include breakpoint($miniTabletVersionWidth, $miniTabletVersionCardinality) {
+      font-size: fontSize('base');
+      line-height: 1.5;
+
+      max-width: 45%;
+      margin-left: 48%;
+    }
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+      position: absolute;
+      top: $statementAndLinkPositionTop;
+      left: 46.5%;
+      z-index: 50;
+
+      width: 364px;
+      margin-left: 0;
+      padding: 25px;
+
+      .persona__benefitView & {
+        left: 17%;
+      }
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      background-image: url('../content/img/personas/statement_background_large.png');
+      background-size: cover;
+      background-color: transparent;
+
+      position: absolute;
+      top: $statementAndLinkPositionTop;
+      left: 46.5%;
+      z-index: 50;
+
+      width: 410px;
+      margin-left: 0;
+      padding: 25px;
+
+      font-size: fontSize('medium');
+      line-height: 1.5;
+
+      .persona__benefitView & {
+        left: 17%;
+      }
+
+      .persona--benefit_content & {
+        display: block;
+      }
+    }
+
+    p {
+
+      &.title {
+        padding-bottom: 5px;
+        color: color('red');
+
+        @include breakpoint($miniTabletVersionWidth, $miniTabletVersionCardinality) {
+          font-size: fontSize('small');
+        }
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          font-size: fontSize('base');
+        }
+      }
+    }
+  }
+
+  //
+  // Benefits Slide
+  //
+  &--benefit_content {
+    height: auto;
+    padding: 20px;
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+      min-height: 100vh;
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      min-height: 0;
+      height: 100%;
+
+      opacity: 0;
+    }
+  }
+
+
+  //
+  // Benefit Box
+  //
+  &--benefit {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+
+    font-family: font('hilti');
+
+    &, &:active, &:hover, &:focus, &:visited {
+      color: color('black');
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @include breakpoint($fullVersionWidth, 'max') {
+      opacity: 1 !important;
+      right: auto !important;
+    }
+
+    @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+      margin-top: 25px;
+
+      &:first-of-type {
+        margin-top: 5px;
+      }
+    }
+
+    @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+      width: 45%;
+      height: $benefitHeightLarge;
+
+      float: right;
+      clear: both;
+      margin-top: 0;
+
+      position: absolute;
+      top: $benefitPositionTopLarge;
+      right: 4%;
+
+      @include breakpointV( 'small', 'min' ) {
+        width: 39%;
+        right: 8%;
+      }
+
+      @include breakpointV( 'normal', 'min' ) {}
+
+      @include breakpointV( 'large', 'min' ) {}
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:nth-of-type(2) {
+        top: $benefitPositionTopLarge + $benefitHeightLarge + 0.5%;
+      }
+
+      &:nth-of-type(3) {
+        top: $benefitPositionTopLarge + ($benefitHeightLarge + 0.5%) * 2;
+      }
+    }
+
+    .front,
+    .back {
+      padding: 30px 60px 30px 20px;
+
+      @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+        padding-bottom: 50px;
+      }
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        width: 100%;
+        height: 100%;
+        padding: 20px 25px;
+
+        @include breakpointV( 'small', 'min' ) {
+          padding: 30px 40px;
+        }
+
+        @include breakpointV( 'normal', 'min' ) {}
+
+        @include breakpointV( 'large', 'min' ) {}
+      }
+
+      .link {
+        position: absolute;
+        bottom: 15px;
+        left: 30px;
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          left: 25px;
+
+          @include breakpointV( 'small', 'min' ) {
+            left: 40px;
+          }
+        }
+
+        font-size: fontSize('small');
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &.icon {
+          padding-left: 0;
+          font-family: font('hilti');
+
+          &:after {
+            content: "\e601";
+            display: inline-block;
+            padding-left: 5px;
+            font-family: 'icomoon', font('hilti');
+            font-size: fontSize('medium');
+            font-weight: bold;
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+
+    .front {
+      display: block;
+      background-color: color('white');
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        background-image: url('../content/img/personas/benefits_front_large.png');
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+      }
+
+      .h4 {
+        display: block;
+        padding-bottom: 10px;
+
+        font-size: fontSize('base');
+        font-weight: bold;
+        color: color('red');
+      }
+
+      .copy {
+        display: block;
+        font-size: 13px;
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          font-size: 14px;
+        }
+      }
+
+      .link {
+        display: none;
+
+        &, &:active, &:focus, &:hover, &:visited {
+          color: color('red');
+        }
+
+        @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+          display: block;
+          left: 20px;
+        }
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          display: block;
+          left: 25px;
+
+          @include breakpointV( 'small', 'min'){
+            left: 40px;
+          }
+
+          @include breakpointV( 'normal', 'min'){}
+
+          @include breakpointV( 'large', 'min' ){}
+        }
+      }
+
+      &:after {
+        content: "\e601";
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        display: inline-block;
+        margin-top: -30px;
+
+        font-family: 'icomoon', font('hilti');
+        font-size: fontSize('icon--medium');
+        color: color('red');
+        line-height: 1;
+
+        @include breakpoint($tabletVersionWidth, $tabletVersionCardinality) {
+          display: none;
+        }
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          display: none;
+        }
+      }
+
+    }
+
+    .back {
+      display: none;
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        display: block;
+        background-image: url('../content/img/personas/benefits_back_large.png');
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+      }
+
+      .h3 {
+        display: block;
+
+        font-size: fontSize('medium');
+        font-weight: bold;
+        color: color('white');
+        line-height: 1.4;
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          font-size: fontSize('large');
+
+          @include breakpointV( 'small', 'min' ) {
+            padding-top: 2%;
+          }
+
+          @include breakpointV( 'normal', 'min' ) {
+            padding-top: 5%;
+          }
+
+          @include breakpointV( 'large', 'min' ) {
+            padding-top: 9%;
+          }
+        }
+      }
+
+      .link {
+
+        &, &:active, &:focus, &:hover, &:visited {
+          color: color('white');
+        }
+      }
+    }
+
+  }
+
+
+  //
+  // Details/Profile Arrows
+  //
+  &--arrow {
+
+    &, &--container {
+      display: none;
+    }
+
+    .hasAnimation & {
+
+      @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+        background-color: color('red');
+
+        display: table-cell;
+        position: relative;
+
+        font-family: font('hilti');
+        font-size: fontSize('small');
+        line-height: 1.5;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        vertical-align: middle;
+
+        &, &:active, &:focus, &:hover, &:visited {
+          color: color('white');
+        }
+
+        &:hover, &:focus {
+          background-color: color('darkred');
+        }
+
+
+        &--container{
+          display: table;
+
+          position: absolute;
+          top: $statementAndLinkPositionTop;
+
+          width: 202px;
+          height: 133px;
+        }
+      }
+
+
+      &.icon-arrow-right:before {
+        position: absolute;
+        left: auto;
+        right: -5px;
+        margin-top: 48px;
+        font-size: fontSize('icon--medium');
+        color: color('white');
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          right: 0;
+          font-size: fontSize('icon--large');
+        }
+      }
+
+      &.icon-arrow-left:before {
+        position: absolute;
+        left: -5px;
+        margin-top: 48px;
+        font-size: fontSize('icon--medium');
+        color: color('white');
+
+        @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+          left: 0;
+          font-size: fontSize('icon--large');
+        }
+      }
+
+      &__details {
+        right: 0;
+
+        a {
+          padding: 20px 50px 20px 20px;
+
+          @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+            padding: 30px 75px 30px 30px;
+          }
+        }
+      }
+
+      &__profile {
+        left: 0;
+
+        a{
+          padding: 20px 20px 20px 50px;
+
+          @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+            padding: 30px 30px 30px 75px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  //
+  // flip animation
+  //
+  @include breakpoint($fullVersionWidth, $fullVersionCardinality) {
+
+    &--benefit {
+      -webkit-perspective: 1000;
+      -moz-perspective: 1000;
+      -ms-perspective: 1000;
+      perspective: 1000;
+      -ms-transform: perspective(1000px);
+      -moz-transform: perspective(1000px);
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+
+      .tile {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -ms-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -moz-transform: perspective(1000px);
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 100% 50%;
+        -moz-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        .front,
+        .back {
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transition: 0.6s;
+          -webkit-transform-style: preserve-3d;
+          -webkit-transform: rotateY(0deg);
+          -moz-transition: 0.6s;
+          -moz-transform-style: preserve-3d;
+          -moz-transform: rotateY(0deg);
+          -o-transition: 0.6s;
+          -o-transform-style: preserve-3d;
+          -o-transform: rotateY(0deg);
+          -ms-transition: 0.6s;
+          -ms-transform-style: preserve-3d;
+          -ms-transform: rotateY(0deg);
+          transition: 0.6s;
+          transform-style: preserve-3d;
+          transform: rotateY(0deg);
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          right: 0;
+          bottom: 0;
+        }
+
+        .front {
+          -webkit-transform: rotateY(0deg);
+          -ms-transform: rotateY(0deg);
+          z-index: 2;
+        }
+
+        .back {
+          -webkit-transform: rotateX(-180deg);
+          -moz-transform: rotateX(-180deg);
+          -o-transform: rotateY(-180deg);
+          -ms-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+        }
+      }
+
+      /* START: Accommodating for IE */
+      &:hover .tile .back,
+      &.hover .tile .back {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+
+      &:hover .tile .front,
+      &.hover .tile .front {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+      /* END: Accommodating for IE */
+    }
+  }
+
+}

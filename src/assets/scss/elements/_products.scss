@@ -1,0 +1,503 @@
+.products {
+  text-align: center;
+
+  &.article {
+    text-align: left;
+
+    @include breakpoint( 'small', 'min' ) {
+      text-align: center;
+    }
+
+    #main & {
+      padding: 0;
+      height: auto;
+
+      .content {
+        padding: 30px;
+      }
+    }
+
+    body.technology &,
+    body.technologyVideo & {
+      background: color( 'white' ) url('../content/img/solutions/slide-background_small.jpg') 0 0 no-repeat;
+      color: color( 'darkgray' );
+
+      @include breakpoint( $miniTabletVersionWidth, $miniTabletVersionCardinality) {
+        background-image: url('../content/img/solutions/slide-background_medium.jpg');
+      }
+
+      @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+        background-image: url('../content/img/solutions/slide-background_large.jpg');
+      }
+    }
+
+  }
+
+  h1,
+  .h1 {
+    color: color( 'darkgray' );
+    font-family: font( 'hilti' );
+    font-size: fontSize( 'large' );
+    font-weight: bold;
+    // margin: 0 auto 30px;
+    margin: 0 auto 0;
+    // max-width: 800px;
+
+    @include breakpoint( 'small', 'min' ) {
+      margin: 0 auto 0;
+    }
+
+    @include breakpoint( 'large', 'min' ) {
+      font-size: fontSize( 'xlarge' );
+      margin-bottom: 15px;
+    }
+  }
+
+  h2 {
+    color: color( 'red' );
+    text-transform: uppercase;
+    font-family: font( 'hilti' );
+    font-size: fontSize( 'small' );
+
+    @include breakpoint( 'large', 'min' ) {
+      font-size: fontSize( 'medium' );
+    }
+  }
+
+  h3 {
+    color: color( 'darkgray' );
+    font-family: font( 'hilti' );
+    font-size: fontSize( 'medium' );
+
+    @include breakpoint( 'large', 'min' ) {
+      font-size: fontSize( 'large' );
+    }
+  }
+
+  h4 {
+    color: color( 'gray' );
+    font-family: font( 'hilti' );
+    font-size: fontSize( 'base' );
+    text-transform: uppercase;
+    margin-top: 15px;
+
+    @include breakpoint( 'small' ) {
+      font-size: fontSize( 'small' );
+    }
+
+    @include breakpoint( 'small', 'min' ) {
+      font-size: fontSize( 'small' );
+    }
+
+    @include breakpoint( 'large', 'min' ) {
+      font-size: fontSize( 'base' );
+    }
+  }
+
+  &--teaser {
+
+    display: none;
+
+    @include breakpoint( 'small', 'min' ) {
+      display: block;
+      z-index: 20;
+    }
+
+    background-color: rgb(238, 28, 37);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.34);
+    width: 185px;
+    height: auto;
+    min-height: 150px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &--content {
+      margin: 15px;
+      padding-top: 100px;
+
+      background: transparent url() 0 0 no-repeat;
+      background-size: 100% auto;
+
+      color: color( 'white' );
+      font-size: fontSize( 'small' );
+      font-family: font( 'hilti--text' );
+
+      .products--teaser__makeitfit & {
+        background-image: url('../content/img/products/makeitfit.png');
+        display: block;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &__makeitfit {
+
+    }
+  }
+
+  &--container {
+    // height: 100%;
+
+    @include breakpoint( 'large', 'min' ) {
+      // height: 93vh;
+      position: relative;
+    }
+  }
+
+  &--slider {
+
+    .slick-slide {
+      position: relative;
+    }
+
+    &__monitor {
+      overflow: hidden;
+      z-index: 10;
+      padding-bottom: 50px;
+
+      @include breakpoint( 'small', 'min' ) {
+        // height: 35vh;
+        // max-height: 600px;
+        height: 600px;
+        // margin-bottom: (150px + 30px);
+        padding-bottom: (150px + 50px);
+
+        @include breakpointV( 'small', 'min' ) {
+          // height: 40vh;
+        }
+
+        @include breakpointV( 'normal', 'min' ) {
+          // height: 45vh;
+        }
+
+        @include breakpointV( 'large', 'min' ) {
+          // height: 50vh;
+        }
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        // margin-bottom: 0;
+      }
+
+      .slick-list {
+        height: 100%;
+      }
+
+      .slick-track {
+        height: 100%;
+
+        @include breakpoint( 'small', 'min' ) {
+          // height: 35vh;
+          // max-height: 600px;
+          height: 100%;
+
+          @include breakpointV( 'small', 'min' ) {
+            // height: 40vh;
+          }
+
+          @include breakpointV( 'normal', 'min' ) {
+            // height: 45vh;
+          }
+
+          @include breakpointV( 'large', 'min' ) {
+            // height: 50vh;
+          }
+        }
+
+      }
+
+      .slick-slide {
+        text-align: center;
+      }
+
+      button {
+        text-indent: -9999em;
+        background: transparent url('../content/img/products/navigation.png') top left no-repeat;
+        background-size: auto 100%;
+
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        margin: -50px 0 0 0;
+
+        position: absolute;
+        top: 50%;
+
+        &.slick-prev {
+          left: 20px;
+
+          @include breakpoint( 'large', 'min' ) {
+            left: 80px;
+          }
+        }
+        &.slick-next {
+          background-position: top right;
+          right: 20px;
+
+          @include breakpoint( 'large', 'min' ) {
+            right: 80px;
+          }
+        }
+      }
+
+    }
+
+    &__navigation {
+
+      display: none;
+
+      height: 150px;
+      width: 100%;//100vw;
+      overflow: hidden;
+
+      padding-right: 185px;
+
+      @include breakpoint( 'small', 'min' ) {
+        display: block;
+
+        position: absolute;
+        bottom: 0;
+        z-index: 15;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+      }
+
+      .slick-slide {
+        text-align: center;
+        background-color: rgb(249, 249, 249);
+        cursor: pointer;
+
+        width: 150px;
+        height: 150px;
+        display: table;
+
+        > span {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          padding: 20px;
+        }
+
+        img {
+          margin: auto;
+          max-width: 100%;
+          max-height: 110px;
+          width: auto;
+          height: auto;
+          text-align: center;
+
+          .isIE &, .isIE11 & {
+
+            max-width: 100px;
+            max-height: 100px;
+
+            @include breakpoint( 768, 'min' ) {
+              max-width: 55px;
+              max-height: 55px;
+            }
+
+            @include breakpoint( 840, 'min' ) {
+              max-width: 65px;
+              max-height: 65px;
+            }
+
+            @include breakpoint( 992, 'min' ) {
+              max-width: 92px;
+              max-height: 92px;
+            }
+
+            @include breakpoint( 1024, 'min' ) {
+              max-width: 50px;
+              max-height: 50px;
+            }
+
+            @include breakpoint( 1200, 'min' ) {
+              max-width: 70px;
+              max-height: 70px;
+            }
+          }
+        }
+
+        &.slick-active {
+
+        }
+
+        &.slick-center {
+          background-color: rgb(254, 254, 254);
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+
+    &__sideElement {
+      display: none;
+
+      @include breakpoint( $miniTabletVersionWidth, $miniTabletVersionCardinality){
+        position: absolute;
+        right: 10%;
+        bottom: 41%;
+        width: 15%;
+        z-index: 5;
+        display: block;
+      }
+
+      @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+        bottom: 40%;
+
+        @include breakpointV('normal', 'min'){
+          bottom: 33.3%;
+        }
+      }
+
+      img {
+        margin: auto;
+        max-height: 100%;
+        width: auto;
+        display: block;
+      }
+    }
+
+  }
+
+  &--item {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    @include breakpoint( 'small', 'min' ) {
+      display: table;
+    }
+
+    &__main {
+      width: 70%;
+      position: static;
+
+      @include breakpoint( 'small', 'min' ) {
+        // padding: 0 75px;
+        height: 100%;
+      }
+
+      @include breakpoint( 'medium', 'min' ) {
+        padding: 0 75px 0 0;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        padding: 0 75px;
+      }
+
+      position: relative;
+
+      .hasSideItem & {
+
+        @include breakpoint( 'small', 'min' ) {
+          //padding: 0 150px 0 0;
+        }
+      }
+
+      h3 {
+
+      }
+
+      > div:not(.products--content) {
+        display: block;
+        vertical-align: middle;
+
+        @include breakpoint( 'small', 'min' ) {
+          display: table-cell;
+          vertical-align: middle;
+
+          height: 80%;
+        }
+
+        @include breakpoint( 'large', 'min' ) {
+          height: 100%;
+        }
+      }
+
+      img {
+        margin: auto;
+        max-width: 80%;
+        max-height: 80%;
+        height: auto;
+      }
+    }
+
+    &__side {
+      display: none;
+
+      @include breakpoint( 'small', 'min' ) {
+        display: block;
+      }
+
+      width: 15%;
+      text-align: center;
+
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+
+      @include breakpointV( 'small', 'min' ) {
+        bottom: 15%;
+      }
+
+      @include breakpointV( 'normal', 'min' ) {
+        bottom: 20%;
+      }
+
+      @include breakpointV( 'large', 'min' ) {
+        bottom: 25%;
+      }
+
+      img {
+        margin: auto;
+        max-height: 100%;
+        width: auto;
+      }
+
+    }
+  }
+
+  &--content {
+    padding: 15px;
+    text-align: left;
+
+    display: block;
+
+    @include breakpoint( 'small', 'min' ) {
+      // position: absolute;
+      // bottom: 0;
+      // left: 0;
+
+      display: table-row;
+
+      max-width: 320px;
+    }
+
+    h3, h4 {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: color( 'red' );
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: fontSize( 'small' );
+
+      @include breakpoint( 'small', 'min' ) {
+        font-size: fontSize( 'base' );
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

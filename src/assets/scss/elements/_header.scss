@@ -1,0 +1,847 @@
+.header {
+  width: 100%;
+  @include clearfix;
+
+  // @include breakpoint( 'large', 'min' ) {
+    position: fixed;
+    z-index: z( 'high' );
+    top: 0;
+  // }
+
+  @include breakpoint( 'limit', 'min' ) {
+
+    width: map-get($breakpoints, 'limit');
+
+    // left: 50%;
+    // margin-left: -(map-get($breakpoints, 'limit') / 2); /*half the width*/
+  }
+
+  #top {
+    z-index: 100;
+    position: relative;
+    color: color( 'white' );
+    background: color( 'red' );
+
+    .block {
+    }
+
+    .block-title {
+      margin: 0;
+      height: 20px;
+      text-indent: -9999em;
+      background: transparent url(../content/img/header/logo.gif) 0 0 no-repeat;
+      //background-size: 100px auto;
+      background-size: contain;
+
+      /*@include breakpoint( 'small', 'min' ) {
+        background-size: 120px auto;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        background-size: 160px auto;
+      }*/
+    }
+
+    div.block-title {
+      font-family: Arial,Verdana,sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      text-rendering: optimizeLegibility;
+    }
+
+    .nav-btn__wrapper {
+      background-color: color( 'black' );
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .nav-btn {
+      margin: 22px 20px 0 60px;
+    }
+
+    .js-ready & {
+      @include breakpoint( 'small' ) {
+        left: 0;
+      }
+    }
+
+    .js-nav & {
+      @include breakpoint( 'small' ) {
+        left: 70%;
+      }
+    }
+
+    .csstransforms3d.csstransitions.js-ready & {
+      @include breakpoint( 'small' ) {
+        left: 0 !important;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 500ms ease;
+        -moz-transition: -moz-transform 500ms ease;
+        -o-transition: -o-transform 500ms ease;
+        transition: transform 500ms ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+    }
+
+    .csstransforms3d.csstransitions.js-nav & {
+      @include breakpoint( 'small' ) {
+        -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -moz-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -ms-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -o-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  #nav {
+    z-index: 200;
+    position: relative;
+    // overflow: hidden;
+    width: 100%;
+    color: #fff;
+    background: color( 'black' );
+
+    @include breakpoint( 'small' ) {
+      position: absolute;
+      top: 0;
+      padding-top: map-get($headerHeight, 'large');
+    }
+
+    &:not(:target) {
+      @include breakpoint( 'small' ) {
+        z-index: 1;
+        height: 0;
+      }
+    }
+
+    @include breakpoint( 'large', 'min' ) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      //width: auto;
+      width: 40%;
+      box-sizing: border-box;
+    }
+
+    .block {
+      z-index: 2;
+      position: relative;
+      padding: 0.75em 1.25em;
+      max-width: none;
+
+      @include breakpoint( 'small' ) {
+        position: relative;
+        padding: 0;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        height: 100%;
+        display: table;
+        padding: 0.75em 0;
+        width: 100%;
+      }
+    }
+
+    .js-ready & {
+      @include breakpoint( 'small' ) {
+        // height: 100%;
+        height: 100vh;
+        width: 70%;
+        background: color( 'black' );
+        @include single-box-shadow( -1.5em, 0, 1.5em, -0.75em, color( 'darkgray' ), inset );
+        // left: -70%;
+        left: -100%;
+      }
+
+      .block {
+        @include breakpoint( 'small' ) {
+          background: transparent;
+        }
+      }
+      .close-btn {
+        @include breakpoint( 'small' ) {
+          display: block;
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+          opacity: 0.7;
+        }
+      }
+      .close-btn:focus, .close-btn:hover {
+        @include breakpoint( 'small' ) {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+          opacity: 1;
+          color: color( 'white' );
+        }
+      }
+    }
+
+    .js-nav & {
+      @include breakpoint( 'small' ) {
+        left: 0%;
+      }
+    }
+
+    .csstransforms3d.csstransitions.js-ready & {
+
+      @include breakpoint( 'small' ) {
+
+        left: -70%;
+
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+
+        -webkit-transition: -webkit-transform 500ms ease;
+        -moz-transition: -moz-transform 500ms ease;
+        -o-transition: -o-transform 500ms ease;
+        transition: transform 500ms ease;
+
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .block {
+        @include breakpoint( 'small' ) {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+          opacity: 0;
+
+          -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+          -webkit-transition-delay: ease, 0s;
+          -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
+          -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
+          transition: opacity 300ms 100ms ease, transform 500ms ease;
+
+          // -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+          // -moz-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+          // -ms-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+          // -o-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+          // transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+
+          // -webkit-transform-origin: 50% 0%;
+          // -moz-transform-origin: 50% 0%;
+          // -ms-transform-origin: 50% 0%;
+          // -o-transform-origin: 50% 0%;
+          // transform-origin: 50% 0%;
+        }
+      }
+
+    }
+
+    .csstransforms3d.csstransitions.js-nav & {
+
+      // left: 0;
+
+      @include breakpoint( 'small' ) {
+        left: -70%;
+        -webkit-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -moz-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -ms-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -o-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+      }
+
+      .block {
+         @include breakpoint( 'small' ) {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+          -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    .close-btn {
+      display: none;
+
+      // @include breakpoint( 'small', 'min' ) {
+      //   border: 0;
+      //   clip: rect(0 0 0 0);
+      //   height: 1px;
+      //   margin: -1px;
+      //   overflow: hidden;
+      //   padding: 0;
+      //   position: absolute;
+      //   width: 1px;
+      // }
+
+      @include breakpoint( 'small' ) {
+        position: absolute;
+        top: -1.75em;
+        left: 0.875em;
+      }
+
+    }
+
+    &:target {
+      .close-btn {
+        @include breakpoint( 'small' ) {
+          display: block;
+        }
+      }
+    }
+
+    .block-title {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+
+      @include breakpoint( 'small', 'min' ) {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+    }
+
+    ul.primary {
+      *zoom: 1;
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+
+      @include breakpoint( 'small' ) {
+        text-align: left;
+        white-space: inherit;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        display: table-row;
+      }
+
+      &:before, &:after {
+        content: "";
+        display: table;
+      }
+
+      &:after {
+        clear: both;
+      }
+
+      > li {
+        display: inline-block;
+
+        @include breakpoint( 'small' ) {
+          display: block;
+          position: relative;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @include breakpoint( 'large', 'min' ) {
+          display:table-cell;
+          vertical-align: middle;
+          height:100%;
+
+          &:first-child {
+            width: 18%;
+          }
+        }
+
+        &:last-child {
+
+          @include breakpoint( 'small' ) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        a {
+          display: block;
+          color: color( 'white' );
+          font-size: 12px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          outline: none;
+          // padding: 0.85714em 2.14286em;
+          padding: 15px 25px;
+
+          &:focus, &:hover {
+            color: color( 'red' );
+          }
+        }
+
+        > a {
+
+          @include breakpoint( 'small', 'min' ) {
+
+            position: relative;
+            top: -1px;
+
+            // padding: 0.42857em 0.85714em;
+
+            padding: 15px 15px;
+            margin: -15px 0;
+
+            &:hover {
+              color: color( 'white' );
+              background-color: color( 'gray' );
+            }
+          }
+
+          @include breakpoint( 'large', 'min' ) {
+
+            position: relative;
+            top: 0px;
+
+            // padding: 0 2.14286em;
+            padding: 27px 0;
+            margin: -27px 0;
+
+            &:hover {
+              color: color( 'white' );
+              background-color: color( 'lightdarkgray' );
+            }
+          }
+        }
+
+        .is-active {
+
+          a {
+            color: #fff;
+          }
+
+          &:after {
+            @include breakpoint( 'small' ) {
+              z-index: 50;
+              display: block;
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: -0.03125em;
+              margin-top: -0.625em;
+              border-top: 0.625em transparent solid;
+              border-bottom: 0.625em transparent solid;
+              border-right: 0.625em white solid;
+            }
+          }
+        }
+
+        position: relative;
+
+        ul.secondary {
+          display: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          @include breakpoint( 'small', 'min' ) {
+            position: absolute;
+            z-index: z( 'dropdown' );
+            top: 28px;
+            right: 0;
+          }
+
+          @include breakpoint( 'large', 'min' ) {
+            position: absolute;
+            z-index: z( 'dropdown' );
+            top: 56px;
+            right: 0;
+          }
+
+          background-color: color( 'lightdarkgray' );
+
+          li {
+            display: block;
+            list-style: none;
+            margin: 0;
+            border-top: 1px solid color( 'darkgray' );
+
+            @include breakpoint( 'small', 'min' ) {
+              padding: 10px 25px;
+              border-top: none;
+            }
+
+            a {
+              padding-left: 60px;
+              text-align: left;
+              font-family: font('hilti');
+
+              &:before {
+                font-family: 'icomoon';
+              }
+
+
+              @include breakpoint( 'small', 'min' ) {
+                padding-left: 50px;
+              }
+
+              &:before {
+                color: color( 'gray' );
+                font-size: fontSize( 'icon--medium' );
+                left: 10px;
+                top: 10px;
+
+                @include breakpoint( 'small', 'min' ) {
+                  font-size: fontSize( 'icon--large' );
+                  left: -20px;
+                  top: 0;
+                }
+              }
+
+              &:hover {
+                color: color( 'white' );
+
+                &:before {
+                  color: color( 'white' );
+                }
+              }
+            }
+          }
+        }
+
+        &:hover, &.hover {
+
+          > a {
+            color: color( 'white' );
+            background-color: color( 'lightdarkgray' );
+          }
+
+          > ul {
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.navdirection {
+  &--right {
+
+    #inner-wrap {
+
+      .js-ready & {
+        @include breakpoint( 'small' ) {
+          left: 0;
+        }
+      }
+
+      .js-nav & {
+        @include breakpoint( 'small' ) {
+          left: -70%;
+        }
+      }
+
+      .csstransforms3d.csstransitions.js-ready & {
+        @include breakpoint( 'small' ) {
+          left: 0 !important;
+          -webkit-transform: translate3d(0, 0, 0);
+          -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+          -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          -webkit-transition: -webkit-transform 500ms ease;
+          -moz-transition: -moz-transform 500ms ease;
+          -o-transition: -o-transform 500ms ease;
+          transition: transform 500ms ease;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+      }
+
+      .csstransforms3d.csstransitions.js-nav & {
+        @include breakpoint( 'small' ) {
+          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+      }
+    }
+
+    .header {
+
+      #top {
+
+        .js-ready & {
+          @include breakpoint( 'small' ) {
+            left: 0;
+          }
+        }
+
+        .js-nav & {
+          @include breakpoint( 'small' ) {
+            left: -70%;
+          }
+        }
+
+        .csstransforms3d.csstransitions.js-ready & {
+          @include breakpoint( 'small' ) {
+            left: 0 !important;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            -webkit-transition: -webkit-transform 500ms ease;
+            -moz-transition: -moz-transform 500ms ease;
+            -o-transition: -o-transform 500ms ease;
+            transition: transform 500ms ease;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+        }
+
+        .csstransforms3d.csstransitions.js-nav & {
+          @include breakpoint( 'small' ) {
+            -webkit-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+            -moz-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+            -ms-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+            -o-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+          }
+        }
+      }
+
+    }
+
+    #nav {
+
+      .close-btn {
+        left: auto;
+        right: .875em;
+      }
+
+      @include breakpoint( 'small' ) {
+
+        ul {
+          &.primary {
+            > li {
+              a {
+                padding-left: 40px;
+              }
+            }
+          }
+
+          &.secondary {
+            li {
+              padding-left: 20px;
+            }
+          }
+        }
+
+      }
+
+      .js-ready & {
+
+        @include breakpoint( 'small' ) {
+          @include single-box-shadow( 1.5em, 0, 1.5em, -0.75em, color( 'darkgray' ), inset );
+          left: 100%;
+        }
+      }
+
+      .js-nav & {
+
+        @include breakpoint( 'small' ) {
+          left: 30%;
+        }
+
+      }
+
+      .csstransforms3d.csstransitions.js-ready & {
+
+        @include breakpoint( 'small' ) {
+
+          left: 30% !important;
+
+          -webkit-transform: translate3d(100%, 0, 0);
+          -moz-transform: translate3d(100%, 0, 0);
+          -ms-transform: translate3d(100%, 0, 0);
+          -o-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+        }
+
+      }
+
+      .csstransforms3d.csstransitions.js-nav & {
+
+        @include breakpoint( 'small' ) {
+          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+      }
+
+    }
+
+  }
+}
+
+
+.csstransforms3d.csstransitions .content {
+  -webkit-transition: -webkit-transform 500ms ease;
+  -webkit-transition:         transform 500ms ease;
+     -moz-transition:    -moz-transform 500ms ease;
+          transition: -webkit-transform 500ms ease;
+          transition:         transform 500ms ease;
+}
+
+.csstransforms3d.csstransitions.js-nav .content {
+  @include breakpoint( 'small' ) {
+    -webkit-transform: translate3d(-70%, 0, 0);
+    -moz-transform: translate3d(-70%, 0, 0);
+    -ms-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
+  }
+}
+
+.language_selector {
+
+  @include breakpoint( 'small' ) {
+    @include single-box-shadow( 1.5em, 0, 1.5em, -0.75em, color( 'darkgray' ), inset );
+    left: 100%;
+    background-color: color( 'lightdarkgray' );
+
+    .header #nav & .block-title {
+      position: static;
+      display: block;
+      color: color( 'lightgray' );
+      font-size: 12px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      outline: none;
+      margin-left: 1px;
+      padding: 15px 25px 15px 39px;
+      height: auto;
+      width: 100%;
+      border-bottom: 1px solid #323232;
+    }
+
+    &__language-list {
+
+    }
+
+    &__language {
+      padding-left: 20px;
+      border-bottom: 1px solid #323232;
+
+      a {
+        display: block;
+        color: color( 'lightgray' );
+        font-size: 12px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        outline: none;
+        padding: 15px 25px 15px 60px;
+        font-face: Arial,Verdana,sans-serif;
+
+        &:focus, &:hover {
+          color: color( 'white' );
+        }
+
+        .abbreviation {
+          display: none;
+        }
+      }
+
+      &.is-active {
+        a {
+          color: color( 'white' );
+        }
+      }
+    }
+  }
+
+  @include breakpoint( 'small', 'min' ) {
+    position: absolute;
+    top: -68px;
+    right: 0;
+    
+    display: table;
+    height: 68px;
+    
+
+    @include breakpoint( 'large', 'min' ) {
+      position: relative;
+      float: right;
+      margin-top: -45px;
+      top: auto;
+      right: 100%;
+
+      display: block;
+      height: auto;
+    }
+
+    &__language-list {
+      display: table-cell;
+      height: 68px;
+      padding: 0 10px;
+      vertical-align: middle;
+
+      @include breakpoint( 'large', 'min' ) {
+        display: block;
+        float: left;
+        height: auto;
+      }
+    }
+
+    &__language {
+      float: left;
+      padding: 0 5px;
+
+      a {
+        display: inline-block;
+        min-width: 22px;
+        height: 16px;
+        padding: 2px 1px 1px 2px;
+        box-sizing: border-box;
+
+        background: #df001b;
+
+        font-size: 12px;
+        color: #fff;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 1px;
+
+        .name {
+          display: none;
+        }
+      }
+
+      &.is-active {
+        a {
+          background: #FFF;
+          color: #df001b;
+        }
+      }
+    }
+  }
+}

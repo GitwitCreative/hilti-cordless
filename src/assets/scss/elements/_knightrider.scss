@@ -1,0 +1,162 @@
+@-webkit-keyframes pulse0 {
+  0% {opacity:0.5;}
+  10% {opacity:1;}
+  20% {opacity:0.5;}
+  100% {opacity:0.5;}
+}
+@-webkit-keyframes pulse1 {
+  0% {opacity:0.5;}
+  10% {opacity:0.5;}
+  20% {opacity:1;}
+  30% {opacity:0.5;}
+  40% {opacity:0.5;}
+  90% {opacity:0.5;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes pulse2 {
+  0% {opacity:0.5;}
+  20% {opacity:0.5;}
+  30% {opacity:1;}
+  40% {opacity:0.5;}
+  80% {opacity:0.5;}
+  90% {opacity:1;}
+  100% {opacity:0.5;}
+}
+@-webkit-keyframes pulse3 {
+  0% {opacity:0.5;}
+  30% {opacity:0.5;}
+  40% {opacity:1;}
+  50% {opacity:0.5;}
+  70% {opacity:0.5;}
+  80% {opacity:1;}
+  90% {opacity:0.5;}
+  100% {opacity:0.5;}
+}
+@-webkit-keyframes pulse4 {
+  0% {opacity:0.5;}
+  40% {opacity:0.5;}
+  50% {opacity:1;}
+  60% {opacity:0.5;}
+  70% {opacity:1;}
+  80% {opacity:0.5;}
+  100% {opacity:0.5;}
+}
+@-webkit-keyframes pulse5 {
+  0% {opacity:0.5;}
+  50% {opacity:0.5;}
+  60% {opacity:1;}
+  70% {opacity:0.5;}
+  100% {opacity:0.5;}
+}
+
+.knightrider {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  &--wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: z( 'modal' );
+  }
+
+  &--animation {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &__line {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &--background {
+      }
+    }
+
+    &__percent {
+      color: white;
+      position: absolute;
+      margin-top: -15px;
+      font-size: 45px;
+      line-height: 0;
+      width: 250px;
+      text-align: center;
+      top: 50%;
+    }
+
+    &__circle {
+      position: relative;
+    }
+
+    &__block {
+      width: 20px;
+      height: 20px;
+      background: color( 'red' );
+      margin-right: 10px;
+      float: left;
+      @include radius( 3px );
+      -webkit-animation-iteration-count: infinite;
+
+      @include breakpoint( 'small', 'min' ) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        width: 40px;
+        height: 40px;
+      }
+
+      &.block_0 {
+        -webkit-animation: pulse0 2s linear;
+      }
+
+      &.block_1 {
+        -webkit-animation: pulse1 2s linear;
+      }
+
+      &.block_2 {
+        -webkit-animation: pulse2 2s linear;
+      }
+
+      &.block_3 {
+        -webkit-animation: pulse3 2s linear;
+      }
+
+      &.block_4 {
+        -webkit-animation: pulse4 2s linear;
+      }
+
+      &.block_5 {
+        -webkit-animation: pulse5 2s linear;
+      }
+    }
+  }
+
+  body.isLoading &--wrapper {
+    display: table;
+  }
+
+  span {
+    color: color( 'white' );
+    // font-family: font( 'hilti--bold' );
+    font-size: fontSize( 'medium' );
+    text-transform: uppercase;
+    // font-weight: 600;
+    display: block;
+
+    @include breakpoint( 'small', 'min' ) {
+      font-size: fontSize( 'large' );
+    }
+
+    @include breakpoint( 'large', 'min' ) {
+      font-size: fontSize( 'xlarge' );
+    }
+  }
+
+}

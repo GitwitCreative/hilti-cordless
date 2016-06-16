@@ -1,0 +1,20 @@
+.technologyVideo {
+
+  .slide {
+    z-index: 4;
+
+    &:not(.footer) {
+
+      .slimScrollDiv {
+        position: static !important;
+        height: auto !important;
+        overflow: visible !important;
+
+        .fp-scrollable {
+          height: auto !important;
+          overflow: visible !important;
+        }
+      }
+    }
+  }
+}

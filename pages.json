@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Error",
+    "action": "error",
+    "content": "pages/error.php"
+  },
+  {
+    "title": "Content page",
+    "action": "content",
+    "content": "pages/content.php"
+  },
+  {
+    "title": "Video page",
+    "action": "video",
+    "content": "pages/video.php"
+  }
+]

@@ -1,0 +1,45 @@
+.solutions {
+
+  &[data-layer="visible"] {
+    overflow-y: hidden !important;
+
+    &.isNavigation {
+      overflow-y: visible !important;
+    }
+  }
+
+  .slide {
+    background-image: url('../content/img/solutions/slide-background_small.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+
+    @include breakpoint( $miniTabletVersionWidth, $miniTabletVersionCardinality) {
+      background-image: url('../content/img/solutions/slide-background_medium.jpg');
+    }
+
+    @include breakpoint( $fullVersionWidth, $fullVersionCardinality) {
+      background-image: url('../content/img/solutions/slide-background_large.jpg');
+    }
+
+    &[data-anchor*="video"] {
+      background: none;
+    }
+  }
+
+  #fp-nav {
+    top: 38%;
+
+    @include breakpointV('small', 'min') {
+      top: 40%;
+    }
+
+    @include breakpointV('normal', 'min') {
+      top: 42%;
+    }
+
+    @include breakpointV('large', 'min') {
+      top: 44%;
+    }
+  }
+}

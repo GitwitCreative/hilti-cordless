@@ -1,0 +1,144 @@
+/* ==========================================================================
+
+   Layer
+
+   ========================================================================== */
+
+.dimBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all ms('medium') ms('xfast');
+
+  body[data-layer="visible"] &,
+  body[data-filterbar="visible"] &,
+  body[data-benefitdetails="visible"] & {
+    z-index: z('overlay');
+    background: rgba(color('black'), .7);
+    // overflow-y: scroll;
+    overflow-y: hidden;
+    visibility: visible;
+    transition: all ms('medium') ms('zero');
+  }
+
+  &__closerLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__contentWrapper {
+    position: relative;
+    transition: all ms('fast');
+
+    &.visible {
+
+      @include breakpoint('default') {
+        top: 0;
+        margin: 0;
+      }
+    }
+
+    &.zoomable {
+
+      transform: scale(0);
+
+      &.visible {
+        transform: scale(1);
+      }
+    }
+
+    body.isNavigation & {
+      display: none;
+    }
+
+  }
+}
+
+.layer {
+  background-color: color('white');
+  @include opacity(1);
+  
+  padding: 40px 10px 10px;
+  margin: 0;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  box-shadow: boxshadow('layer');
+
+  display: none;
+
+
+
+  body[data-layer="visible"] .dimBackground__contentWrapper.visible & {
+    display: block;
+  }
+
+  @include breakpoint( 'small', 'min' ) {
+    padding: 10px;
+    height: 85vh;
+    margin: 55px;
+  }
+
+  .closer {
+    font-size: 50px;
+    line-height: 0.5;
+    position: absolute !important;
+    right: 30px;
+    top: 30px;
+
+    cursor: pointer;
+
+    // text-indent: -9999em;
+
+    @extend .icon;
+    @extend .icon-close;
+
+    &:before {
+      color: color( 'darkgray' ) !important;
+      font-size: 40px !important;
+      left: inherit !important;
+      top: -20px;
+      right: -30px;
+
+      @include breakpoint('small', 'min') {
+        color: color( 'white' ) !important;
+        top: -64px;
+        right: -75px;
+      }
+    }
+
+    &:hover {
+      &:before {
+        color: color('red') !important;
+      }
+    }
+  }
+
+  &__head {
+    
+  }
+
+  &__content {
+
+    height: 100%;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
