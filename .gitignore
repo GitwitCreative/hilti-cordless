@@ -35,3 +35,4 @@ data/
 !/dist/admin/app.js
 !/admin/dist/admin/app.js
 /admin/fe/
+.tmp
