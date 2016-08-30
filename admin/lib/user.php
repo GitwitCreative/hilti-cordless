@@ -68,6 +68,7 @@
   function check_permission () {
     if (!user_has_permission_for_site($_REQUEST['site'])) {
       header('Location: ./');
+      exit();
     }
   }
 

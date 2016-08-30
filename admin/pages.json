@@ -40,6 +40,42 @@
     "header": true
   },
   {
+    "title": "Edit A Category",
+    "action": "edit_category",
+    "content": "templates/category.php",
+    "header": true
+  },
+  {
+    "title": "Add A Category",
+    "action": "add_category",
+    "content": "templates/category.php",
+    "header": true
+  },
+  {
+    "title": "List of Categories",
+    "action": "categories",
+    "content": "templates/categories.php",
+    "header": true
+  },
+  {
+    "title": "Edit A Product",
+    "action": "edit_product",
+    "content": "templates/product.php",
+    "header": true
+  },
+  {
+    "title": "Add A Product",
+    "action": "add_product",
+    "content": "templates/product.php",
+    "header": true
+  },
+  {
+    "title": "List of Products",
+    "action": "products",
+    "content": "templates/products.php",
+    "header": true
+  },
+  {
     "title": "Upload files",
     "action": "upload",
     "content": "templates/upload.php",

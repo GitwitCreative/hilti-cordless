@@ -1,0 +1,191 @@
+/*imageSequence*/
+.image-sequence {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+.animation_frames {
+    /*display: none;*/
+}
+.animation_frames img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100vh;
+    max-height: calc(100vw/1920*1080);
+}
+.slide_animation {
+    position: fixed;
+    top: calc(100vh - 540*100vw/1920);
+    bottom:0;
+    right: 0;
+    margin: auto;
+    z-index: 750;
+}
+.slide_animation>img {
+    height: 100vh;
+    max-height: calc(100vw/1920*1080);
+    visibility: hidden;
+}
+.slide {
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: left;
+    align-items: left;
+    padding-left: 5%;
+}
+
+.slide-content {
+    border-left: 0.5028vw solid #cf051d;/*#df001b;*/
+    padding-left: calc(100vw/1920*20);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    opacity: 0;
+    margin-left: calc(100vw/1920*-200);
+    width: 60%;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.slide-content h1 {
+    font-size: calc(100vw/1920*36);
+    line-height: calc(100vw/1920*37);
+    margin: 0;
+}
+
+.slide-content h2 {
+    font-size: calc(100vw/1920*24);
+    font-weight: normal;
+}
+
+.slide-content h2.text {
+    font-size: calc(100vw/1920*17);
+    font-weight: bold;
+    margin-top: calc(100vw/1920*24);
+}
+
+.active .slide-content {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    opacity: 1;
+    margin-left: calc(100vw/1920*0);
+}
+
+.slide-icons {
+    margin-top: calc(100vw/1920*95);
+}
+
+.slide-icons>div {
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: flex-begin;
+    justify-content: flex-begin;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: calc(100vw/1920*60);
+}
+
+.slide-icons>div {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    opacity: 0;
+    margin-left: calc(100vw/1920*-100);
+    -webkit-transform: rotate3d(0);
+    transform: rotate3d(0);
+}
+
+.slide-icons>div:nth-child(1) {
+    -webkit-transition: all 1.3s;
+    transition: all 1.3s;
+}
+.slide-icons>div:nth-child(2) {
+    -webkit-transition: all 1.6s;
+    transition: all 1.6s;
+}
+.slide-icons>div:nth-child(3) {
+    -webkit-transition: all 1.9s;
+    transition: all 1.9s;
+}
+.slide-icons>div:nth-child(4) {
+    -webkit-transition: all 2.2s;
+    transition: all 2.2s;
+}
+.slide-icons>div:nth-child(5) {
+    -webkit-transition: all 2.5s;
+    transition: all 2.5s;
+}
+.slide-icons div.icon>img{
+    height: calc(100vw/1920*72);
+}
+
+
+
+.active .slide-icons>div {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+    margin-left: calc(100vw/1920*0);
+}
+
+.active .slide-icons>div:nth-child(1) {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    
+}
+.active .slide-icons>div:nth-child(2) {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+.active .slide-icons>div:nth-child(3) {
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+.active .slide-icons>div:nth-child(4) {
+    -webkit-transition: all 4s;
+    transition: all 4s;
+}
+.active .slide-icons>div:nth-child(5) {
+    -webkit-transition: all 5s;
+    transition: all 5s;
+}
+
+.slide-icons .icon {
+}
+
+.slide-icons .icon-text {
+    padding-left: calc(100vw/1920*23);
+    font-size: calc(100vw/1920 * 16);
+}
+
+.noHide .slide-content, .noHide .slide-icons>div {
+    -webkit-transition: none !important;
+    transition: none !important;
+    opacity: 1;
+    margin-left: 0;
+}
+
+.content-cover {
+    padding-left: calc(100vw/1920*92);
+}
+
+.section {
+    box-shadow: calc(100vw/1920*0) 1.0417vw 5.2083vw calc(100vw/1920*0) rgba(0, 0, 0, 0.5) inset;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.tab-title h1 {
+    font-size: 1.7vh;
+    text-transform: uppercase;
+}

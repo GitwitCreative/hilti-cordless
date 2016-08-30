@@ -1,0 +1,78 @@
+@media screen and (min-height: 720px) {
+    .subheader-cover {
+        height: 135px;
+    }
+    .tile_main {
+        width: 2880px;
+        height: 720px;
+    }
+    /**
+* width classes
+*/
+    .w480 {
+        width: 360px;
+    }
+    .w720 {
+        width: 540px;
+    }
+    .w960 {
+        width: 720px;
+    }
+    /**
+* height classes
+*/
+    .h240 {
+        height: 180px;
+    }
+    .h480 {
+        height: 360px;
+    }
+    .h960 {
+        height: 720px;
+    }
+    /*
+* x coordinates
+*/
+    .x0 {
+        left: 0;
+    }
+    .x720 {
+        left: 540px;
+    }
+    .x960 {
+        left: 720px;
+    }
+    .x1200 {
+        left: 900px;
+    }
+    .x1680 {
+        left: 1260px;
+    }
+    .x1920 {
+        left: 1440px;
+    }
+    .x2160 {
+        left: 1620px;
+    }
+    .x2880 {
+        left: 2160px;
+    }
+    .x3360 {
+        left: 2520px;
+    }
+    /*
+* y coordinates
+*/
+    .y0 {
+        top: 0;
+    }
+    .y240 {
+        top: 180px;
+    }
+    .y480 {
+        top: 360px;
+    }
+    .y720 {
+        top: 540px;
+    }
+}

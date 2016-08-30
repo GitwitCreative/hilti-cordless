@@ -1,0 +1,28 @@
+.hiltiSmall {
+    font-family: Conv_HiltiSmallRoman;
+}
+
+.hiltiSmallBold {
+    font-family: Conv_HiltiSmallBold;
+}
+
+.hiltiSmallHeavyExtended {
+    font-family: Conv_HiltiSmallHeavyExtended;
+}
+
+.hiltiSmallExtended {
+    font-family: Conv_HiltiSmallExtended;
+}
+
+.normal {
+    font-weight: normal;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.small {
+    font-size: 0.7em;
+}

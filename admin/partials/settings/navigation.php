@@ -2,7 +2,7 @@
   <div class="mdl-card__title mdl-card--expand">
     <h2 class="mdl-card__title-text">Navigation</h2>
   </div>
-  <form action="?action=<?php echo $page_action; ?>&amp;site=<?php echo get_current_site(); ?>" method="POST">
+  <form action="?action=<?php echo $page_action; ?>&amp;site=<?php echo get_current_site(); ?>" method="POST" class="navigation">
     <div class="mdl-card__supporting-text __card__content--full-width js-copy-target">
 
       You can edit the navigation here.
@@ -49,8 +49,8 @@
       <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent __card__add"
           type="button"
           data-js-copy
-          data-js-target=".js-copy-target"
-          data-js-element=".js-copy-element"
+          data-js-target=".navigation .js-copy-target"
+          data-js-element=".navigation .js-copy-element"
           data-js-index="<?php echo ($i + 1); ?>">
         <i class="material-icons mdl-color-text--white" role="presentation">add</i>
         <span class="visuallyhidden">add</span>

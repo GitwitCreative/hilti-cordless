@@ -14,6 +14,9 @@
   ?>
       type="text"
       rows="4"
+      <?php if ($item['required'] === true) : ?>
+          required="required"
+      <?php endif;?>
       name="<?php echo $form__item__section . ($form__item__id ? '[' . $form__item__id . ']' : '') . '[' . $item['id'] ?>]"
       id="<?php echo $form__item__section . '__' . ($form__item__id ? $form__item__id . '__' : '') . $item['id'] ?>"><?php
     echo $item['value'] ?></textarea>

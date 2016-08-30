@@ -1,0 +1,147 @@
+<div class="wrapper-outer">
+        <div class="scroll_btn_left h960">
+            <div class="triangle_left">
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="wrapper-inner">
+            <div class="tile_main">
+                <div class="tile_first_row h480">
+                    <div class="tile_element w960 h480 x0 y0">
+                        <!-- ultimate_class -->
+                        <div class="ultimate_class" href="/trololo.html">
+                            <video class="w960 h480" poster="images/landing/ultimate_class.png" loop="loop" tabindex="0" preload="auto">
+                               <source src="assets/content/video/MP4/UltimateClass_HoverState_Video.mp4" type='video/mp4;' />
+                               <source src="assets/content/video/OGG/UltimateClass_HoverState_Video.ogv" type='video/ogg;' />
+                            </video>
+                        </div>
+                        <!-- / ultimate_class -->
+                    </div>
+                    <div class="tile_element w720 h240 x960 y0"></div>
+                    <div class="tile_element w720 h240 x960 y240">
+                        <!-- power_class marckup -->
+                        <div class="power_class w720 h240">
+                            <img class="mapped w720 h240" src="images/landing/power_class_bg_all.png" alt="" usemap="#map_power" />
+                            <map name="map_power" id="map_power" class="areas">
+                                <area rel="1" alt="" title="" href="#" shape="poly" coords="150,239,123,197,30,181,20,159,36,135,184,120,245,139,252,175,208,203,211,206,217,238" />
+                                <area rel="2" alt="" title="" href="#" shape="poly" coords="248,239,244,204,290,192,254,133,181,100,180,59,376,54,387,97,346,147,346,190,366,219,366,238" />
+                                <area rel="3" alt="" title="" href="#" shape="poly" coords="457,239,434,198,359,178,360,150,443,126,553,136,575,173,540,211,528,238" />
+                                <area rel="4" alt="" title="" href="#" shape="poly" coords="563,238,570,202,589,184,582,142,507,116,463,102,479,55,694,54,699,137,689,239" />
+                            </map>
+                            <div class="hover_data_div power_class_1 w720 h240">
+                                <div class="power_class_content_cover w720 h240">
+                                    <img class="power_class_content_img" src="images/landing/power_class_1.png" />
+                                    <div class="power_class_text">Трололололоо трололололо</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div power_class_2 w720 h240">
+                                <div class="power_class_content_cover w720 h240">
+                                    <img class="power_class_content_img" src="images/landing/power_class_2.png" />
+                                    <div class="power_class_text">2 2 2 2 2 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div power_class_3 w720 h240">
+                                <div class="power_class_content_cover w720 h240">
+                                    <img class="power_class_content_img" src="images/landing/power_class_3.png" />
+                                    <div class="power_class_text">3333333 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div power_class_4 w720 h240">
+                                <div class="power_class_content_cover w720 h240">
+                                    <img class="power_class_content_img" src="images/landing/power_class_4.png" />
+                                    <div class="power_class_text">44444444 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / power_class marckup -->
+
+                    </div>
+                    <div class="tile_element w480 h480 x1680 y0">
+                        <!-- compact_class marckup -->
+                        <div class="compact_class w480 h480">
+                            <img class="mapped w480 h480" src="images/landing/compact_class_bg_all.png" alt="" usemap="#map_compact" />
+                            <map name="map_compact" id="map_compact" class="areas">
+                                <area rel="1" shape="poly" coords="341, 378, 465, 379, 454, 304, 439, 298, 433, 241, 451, 217, 446, 163, 342, 158, 297, 181, 299, 203, 327, 225, 356, 246, 369, 285, 315, 325" />
+                                <area rel="2" shape="poly" coords="202, 300, 326, 293, 303, 216, 285, 206, 284, 153, 325, 129, 307, 76, 111, 88, 117, 128, 194, 155, 212, 218, 172, 244" />
+                                <area rel="3" shape="poly" coords="54, 373, 183, 373, 176, 296, 160, 285, 154, 238, 175, 219, 164, 159, 49, 157, 16, 186, 21, 219" />        </map>
+                            <div class="hover_data_div compact_class_1 w480 h480">
+                                <div class="compact_class_content_cover w480 h480">
+                                    <img class="compact_class_content_img" src="images/landing/compact_class_1.png" />
+                                    <div class="compact_class_text">Трололололоо трололололо</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div compact_class_2 w480 h480">
+                                <div class="compact_class_content_cover w480 h480">
+                                    <img class="compact_class_content_img" src="images/landing/compact_class_2.png" />
+                                    <div class="compact_class_text">2 2 2 2 2 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div compact_class_3 w480 h480">
+                                <div class="compact_class_content_cover w480 h480">
+                                    <img class="compact_class_content_img" src="images/landing/compact_class_3.png" />
+                                    <div class="compact_class_text">3333333 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / compact_class marckup -->
+
+                    </div>
+                    <div class="tile_element w720 h240 x2160 y240"></div>
+                    <div class="tile_element w960 h480 x2880 y0"></div>
+                </div>
+                <div class="tile_second_row h480">
+                    <div class="tile_element w720 h240 x0 y480"></div>
+                    <div class="tile_element w720 h240 x0 y720"></div>
+                    <div class="tile_element w480 h480 x720 y480"></div>
+                    <div class="tile_element w720 h240 x1200 y480"></div>
+                    <div class="tile_element w720 h240 x1200 y720"></div>
+                    <div class="tile_element w960 h480 x1920 y480">
+                        <!-- subcompact_class marckup -->
+                        <div class="subcompact_class w960 h480">
+                            <img class="mapped w960 h480" src="images/landing/subcompact_class_bg_all.png" alt="" usemap="#map_subcompact" />
+                            <map name="map_subcompact" id="map_subcompact" class="areas">
+                                <area rel="1" shape="poly" coords="148, 478, 101, 394, 45, 334, 20, 301, 30, 245, 163, 232, 269, 244, 296, 317, 249, 387, 250, 476, 250, 476" />
+                                <area rel="2" shape="poly" coords="147, 138, 156, 187, 290, 229, 329, 294, 343, 355, 293, 383, 285, 414, 307, 459, 483, 443, 461, 331, 421, 219, 495, 184, 464, 101, 297, 89" />
+                                <area rel="3" shape="poly" coords="459, 267, 471, 328, 552, 355, 578, 413, 605, 478, 716, 479, 711, 371, 760, 330, 750, 259, 724, 236, 567, 231" />
+                                <area rel="4" shape="poly" coords="575, 113, 575, 175, 738, 217, 762, 247, 800, 343, 731, 381, 764, 456, 935, 451, 917, 336, 883, 209, 948, 190, 929, 93, 733, 90" />
+                            </map>
+                            <div class="hover_data_div subcompact_class_1 w960 h480">
+                                <div class="subcompact_class_content_cover w960 h480">
+                                    <img class="subcompact_class_content_img" src="images/landing/subcompact_class_1.png" />
+                                    <div class="subcompact_class_text">Трололололоо трололололо</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div subcompact_class_2 w960 h480">
+                                <div class="subcompact_class_content_cover w960 h480">
+                                    <img class="subcompact_class_content_img" src="images/landing/subcompact_class_2.png" />
+                                    <div class="subcompact_class_text">2 2 2 2 2 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div subcompact_class_3 w960 h480">
+                                <div class="subcompact_class_content_cover w960 h480">
+                                    <img class="subcompact_class_content_img" src="images/landing/subcompact_class_3.png" />
+                                    <div class="subcompact_class_text">3333333 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                            <div class="hover_data_div subcompact_class_4 w960 h480">
+                                <div class="subcompact_class_content_cover w960 h480">
+                                    <img class="subcompact_class_content_img" src="images/landing/subcompact_class_4.png" />
+                                    <div class="subcompact_class_text">44444444 2adsfdsfasdf</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / subcompact_class marckup -->
+                    </div>
+                    <div class="tile_element w480 h480 x2880 y480"></div>
+                    <div class="tile_element w480 h240 x3360 y480"></div>
+                    <div class="tile_element w480 h240 x3360 y720"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll_btn_right h960">
+            <div class="triangle_right">
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>

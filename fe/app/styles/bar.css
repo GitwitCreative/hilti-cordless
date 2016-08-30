@@ -1,0 +1,282 @@
+.rumble {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wave {
+    position: absolute;
+    border: 0.15625vw solid #ccc;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.wave-left-outer {
+    width: 25%;
+    height: 25%;
+    border-radius: 0 100% 0 0;
+}
+
+.wave-left-inner-top {
+    position: absolute;
+    right: 1.5625vw;
+}
+
+.wave-left-outer-top {
+    position: absolute;
+    right: 2.60417vw;
+}
+
+.segment-gray,
+.segment-red {
+    width: 0.2083vw;
+    height: 0.52083vw;
+}
+
+.pointer {
+    width: 0.2083vw;
+    height: 1.5625vw;
+    background-color: #5B6268;
+    position: relative;
+    top:0.260417vw;
+}
+
+.segment-gray {
+    background-color: #BCC1C4;
+}
+
+.segment-red {
+    background-color: #df001b;
+}
+
+.progress-bar {
+    width: 25vw;
+    top: 15.10417vw;
+    left: 11.97917vw;
+    position: relative;
+    z-index: 300;
+}
+
+.progress-bar-scale {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    top: -1.04167vw;
+    left: -0.104167vw;
+}
+
+.segment-progression {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: -1.5625vw;
+    left: 0;
+}
+
+.captions {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 2.60417vw;
+    border-bottom: 0.2083vw solid #df001b;
+    background: #ddd;
+    background: -webkit-linear-gradient(top, #CBD1D3 0%, #DDE2E2 100%);
+    background: linear-gradient(to bottom, #CBD1D3 0%, #DDE2E2 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#CBD1D3', endColorstr='#DDE2E2', GradientType=0);
+}
+
+.red-alert {
+    background-color: #df001b;
+    color: white;
+    text-align: center;
+    height: 100%;
+    font-size: 1.82291vw;
+    width: 2.60417vw;
+}
+
+.scale-center {
+    position: relative;
+    left: 12.3958vw;
+    width: 0.2083vw;
+    height: 1.82291vw;
+}
+
+.wood {
+    font-size: 0.83333vw;
+    font-weight: bold;
+    padding-left: 3.64583vw;
+    padding-right: 3.64583vw;
+    color: #51575D;
+    letter-spacing: 0.10417vw;
+    font-family: Conv_HiltiSmallHeavyExtended;
+    font-weight: lighter;
+}
+
+@-webkit-keyframes pbanimation-one {
+    from {
+        left: -3.64583vw;
+    }
+    to {
+        left: 7.5521vw;
+    }
+}
+
+@keyframes pbanimation-one {
+    from {
+        left: -3.64583vw;
+    }
+    to {
+        left: 7.5521vw;
+    }
+}
+
+@-webkit-keyframes pbanimation-red-alert {
+    from {
+        left: 7.5521vw;
+    }
+    to {
+        left: 10.15625vw;
+    }
+}
+
+@keyframes pbanimation-red-alert {
+    from {
+        left: 7.5521vw;
+    }
+    to {
+        left: 10.15625vw;
+    }
+}
+
+@-webkit-keyframes pbanimation-two {
+    from {
+        left: 10.15625vw;
+    }
+    to {
+        left: 21.35416vw;
+    }
+}
+
+@keyframes pbanimation-two {
+    from {
+        left: 10.15625vw;
+    }
+    to {
+        left: 21.35416vw;
+    }
+}
+
+.segment-progression {
+    text-transform: uppercase;
+    font-size: 0.625vw;
+    color:#51575D;
+    font-family: Conv_HiltiSmallHeavyExtended;
+    letter-spacing: 0.10417vw;
+}
+
+.animate-one {
+    -webkit-animation: pbanimation-one 2.5s normal linear 1;
+    animation: pbanimation-one 2.5s normal linear 1;
+}
+
+.animate-red-alert {
+    -webkit-animation: pbanimation-red-alert 1s normal linear 1;
+    animation: pbanimation-red-alert 1s normal linear 1;
+}
+
+.animate-two {
+    -webkit-animation: pbanimation-two 2.5s normal linear 1;
+    animation: pbanimation-two 2.5s normal linear 1;
+}
+
+.siluet {
+    position: absolute;
+    bottom: 0;
+    right: 26.04167vw;
+}
+
+.siluet>img {
+    width: 17.96875vw;
+    height: 25.52083vw;
+}
+
+.shake-container{
+    position:absolute;
+    right:0;
+    bottom: 0;
+    z-index: 100;
+    /*display:none;*/
+}
+.shake-vawes {
+    background-image: url(../images/bar/vawes.png);
+    width: 12.0833vw;
+    height: 24.73958vw;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    bottom: 6.5vw;
+    right: 10.5vw;
+}
+
+.shake-vawes.red-alert-vawe {
+    background-position: 12.0833vw 0;
+    -webkit-animation: pbblink 0.2s infinite alternate;
+    animation: pbblink 0.2s infinite alternate;
+}
+.shake-drill-img {
+    position: absolute;
+    right: 2vw;
+    height: 56.25vw;
+    bottom: 0;
+}
+
+@-webkit-keyframes pbblink {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes pbblink {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.rumble {
+    width: 50%;
+}
+
+.obstruction {
+    color:#51575D;
+    font-family: Conv_HiltiSmallHeavyExtended;
+    font-size: 0.625vw;
+    letter-spacing: 0.10417vw;
+    position: relative;
+    top: 0.36458vw;
+    width: 25vw;
+    text-align: center;
+}

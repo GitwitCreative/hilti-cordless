@@ -2,7 +2,7 @@
   function validate_field ($field) {
     $field = trim($field);
 
-    $field = filter_var($field, FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW);
+    $field = filter_var($field, FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW);//FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     return $field;
   }

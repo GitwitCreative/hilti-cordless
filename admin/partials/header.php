@@ -10,7 +10,7 @@
     <div class="mdl-layout-spacer"></div>
 
     <form method="POST"
-        action="?action=<?php echo $page_action ?>&amp;site=<?php echo get_current_site(); ?>&amp;page=<?php echo get_current_page_name(); ?>">
+        action="?action=site&amp;site=<?php echo get_current_site(); ?>&amp;page=<?php echo get_current_page_name(); ?>">
       <nav class="mdl-navigation">
         <?php if (is_site()) : ?>
 

@@ -1,0 +1,212 @@
+.opaced {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.ultimate_class {
+    cursor: pointer;
+}
+
+.mapped {
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.content_cover {
+    top: 0;
+    position: absolute;
+    background-size: cover;
+}
+
+.content_cover>h1,
+.content_cover>div {
+    margin-left: calc(25*(100vh - 241*100vw/1920)/960);
+}
+
+.content_cover>h1 {
+    margin-top: calc(67*(100vh - 241*100vw/1920)/960);
+    font-size: calc(18*(100vh - 241*100vw/1920)/960);
+    margin-bottom: calc(12*(100vh - 241*100vw/1920)/960);
+    padding: 0;
+}
+
+.content_cover>div {
+    font-size: calc((100vh - 220px)/50);
+}
+
+.content_cover>div.text {
+    font-size: calc(15*(100vh - 241*100vw/1920)/960);
+    font-family: Conv_HiltiSmallRoman;
+    font-weight: bold;
+    color: #4E585E;
+    margin-bottom: calc(16*(100vh - 241*100vw/1920)/960);
+}
+
+.content_cover>button {
+    padding-left: calc(15*(100vh - 241*100vw/1920)/960);
+    padding-right: calc(15*(100vh - 241*100vw/1920)/960);
+    font-size: calc(14*(100vh - 241*100vw/1920)/960);
+    -webkit-transform: scale(0.9375, 1);
+    transform: scale(0.9375, 1);
+    margin-left: calc(18*(100vh - 241*100vw/1920)/960);
+}
+
+.content_cover>button:hover {
+    color: white;
+}
+
+.hover_data_div.active {
+    left: 0 !important;
+    -webkit-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.hover_data_div {
+    left: -100% !important;
+    -webkit-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.hover_data_div img {
+    display: none;
+}
+
+
+/*
+power_class
+*/
+
+.power_class,
+.power_class_1,
+.power_class_2,
+.power_class_3,
+.power_class_4 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.power_class {
+    background-image: url(../images/landing/power_class_bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.power_class_1,
+.power_class_2,
+.power_class_3,
+.power_class_4 {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.power_class_img_cover {
+    cursor: pointer;
+    top: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.power_class .content_cover {
+    background-image: url(../images/landing/power_class_bg.png);
+}
+
+
+/*
+compact_class
+*/
+
+.compact_class,
+.compact_class_1,
+.compact_class_2,
+.compact_class_3,
+.compact_class_4 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.compact_class {
+    background-image: url(../images/landing/compact_class_bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.compact_class_1,
+.compact_class_2,
+.compact_class_3,
+.compact_class_4 {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.compact_class_img_cover {
+    cursor: pointer;
+    top: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.compact_class .content_cover {
+    background-image: url(../images/landing/compact_class_bg.png);
+}
+
+
+/*
+subcompact_class
+*/
+
+.subcompact_class,
+.subcompact_class_1,
+.subcompact_class_2,
+.subcompact_class_3,
+.subcompact_class_4 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.subcompact_class {
+    background-image: url(../images/landing/subcompact_class_bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.subcompact_class_1,
+.subcompact_class_2,
+.subcompact_class_3,
+.subcompact_class_4 {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.subcompact_class_img_cover {
+    cursor: pointer;
+    top: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.subcompact_class .content_cover {
+    background-image: url(../images/landing/subcompact_class_bg.png);
+}
+
+a.close_hover_info {
+    text-decoration: none;
+    padding: calc(15*(100vh - 241*100vw/1920)/960);
+    font-size: calc(40*(100vh - 241*100vw/1920)/960);
+    position: absolute;
+    top: 0;
+    right: calc(15*(100vh - 241*100vw/1920)/960);
+    color: #393C3F;
+}

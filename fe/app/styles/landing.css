@@ -1,0 +1,211 @@
+body {
+    overflow: hidden;
+    position: fixed;
+    background-color: #9A9FA2 !important;
+}
+
+.landing .top-menu {
+    position: relative;
+}
+
+.subheader-cover {
+    width: 100vw;
+    min-width: 800px;
+    background-image: url('../images/landing/bg_header.png');
+    background-size: cover;
+    height: calc(181*100vw/1920);
+}
+
+.subheader-data {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.subheader-data>div {
+    padding-left: calc(62*100vw/1920);
+    padding-right: calc(62*100vw/1920);
+}
+
+.subheader-data>.right-border>div.header {
+    font-size: calc(47*100vw/1920);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: calc(6*100vw/1920);
+}
+
+.subheader-data>.right-border>div.label {
+    word-spacing: nowrap;
+    font-family: Conv_HiltiSmallHeavyExtended;
+    font-size: calc(34*100vw/1920);
+    letter-spacing: calc(3.3*100vw/1920);
+    position: relative;
+    top: calc(-6*100vw/1920);
+}
+
+.subheader-button {
+    position: absolute;
+    right: calc(60*100vw/1920);
+    top: calc(50*100vw/1920);
+    width: auto;
+    height: auto;
+}
+
+.subheader-button button {
+    width: calc(220*100vw/1920);
+    height: calc(54*100vw/1920);
+    font-size: calc(16*100vw/1920);
+    letter-spacing: calc(0.8*100vw/1920);
+    margin-top: calc(-100*100vw/1920);
+    cursor: pointer;
+}
+
+.subheader-button button:hover {
+    color: white;
+}
+
+.videoPopup_open {
+    white-space: nowrap;
+    padding: calc(10*100vw/1920);
+}
+
+.wrapper-outer {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - (240)*100vw/1920);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.wrapper-inner {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.isPlayVideo {
+    position: fixed;
+    overflow: hidden;
+}
+
+.preloader_cover {
+    display: none;
+    position: absolute;
+}
+
+#videoPopup video {
+    width: 80%;
+    height: 80%;
+}
+
+.subheader-cover {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.subheader-text {
+    width: calc(935*100vw/1920);
+    min-width: calc(935*100vw/1920);
+}
+
+.subheader-text div {
+    font-size: calc(19*100vw/1920);
+    font-weight: lighter;
+}
+
+.right-border {
+    border-right-width: calc(2*100vw/1920);
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.isLoading .overlay {
+    display: none;
+}
+
+.overlay {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.80);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+    z-index: -1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.overlay.opened {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    z-index: 90000;
+}
+
+#videoPopup {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.opened #videoPopup {}
+
+.close_video a {
+    color: white;
+    font-size: 3vh;
+    text-decoration: none;
+    position: absolute;
+    right: 5vw;
+    top: 0;
+}
+
+.scrollSpeedControl {
+    background-color: rgba(80, 80, 80, 20);
+    position: fixed;
+    top: 10vh;
+    right: 5vw;
+    z-index: 10000;
+    padding: 1vh;
+}

@@ -1,0 +1,29 @@
+/* preloader */
+.isLoading {
+    position: fixed;
+    overflow: hidden;
+}
+
+.preloader_cover {
+    display: none;
+    position: absolute;
+}
+
+.isLoading .preloader_cover {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100001;
+}
+
+#canvas_round {
+    width: calc(100vw/1920*250);
+    height: calc(100vw/1920*250);
+    position: absolute;
+    top: calc(50vh - 100vw/1920*125 );
+    left: calc(50vw - 100vw/1920*125 );
+}
+/* preloader */

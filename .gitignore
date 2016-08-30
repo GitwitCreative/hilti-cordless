@@ -28,5 +28,10 @@ nbproject
 node_modules
 bower_components
 src/assets/components
-dist
+/dist
 data/
+/admin/users.json
+/admin/site/
+!/dist/admin/app.js
+!/admin/dist/admin/app.js
+/admin/fe/

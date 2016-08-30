@@ -13,5 +13,20 @@
     "title": "Video page",
     "action": "video",
     "content": "pages/video.php"
+  },
+  {
+    "title": "Tile page",
+    "action": "tile",
+    "content": "pages/tile.php"
+  },
+  {
+    "title": "Product page",
+    "action": "product",
+    "content": "pages/product.php"
+  },
+  {
+    "title": "Category page",
+    "action": "category",
+    "content": "pages/category.php"
   }
 ]

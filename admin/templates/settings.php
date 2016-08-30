@@ -23,6 +23,7 @@
   <div class="mdl-grid __layout__max-width">
     <?php include('partials/settings/general.php'); ?>
     <?php include('partials/settings/navigation.php'); ?>
+    <?php include('partials/settings/footer.php'); ?>
     <?php include('partials/settings/language_selector.php'); ?>
   </div>
 </div>

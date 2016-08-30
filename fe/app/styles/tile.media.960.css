@@ -1,0 +1,82 @@
+@media screen and (max-height: 960px) {
+        .subheader-cover {
+        height: 180px;
+    }
+    
+    .tile_main {
+        width: 3840px;
+        height: 960px;
+    }
+    /**
+* width classes
+*/
+    
+    .w480 {
+        width: 480px;
+    }
+    
+    .w720 {
+        width: 720px;
+    }
+    
+    .w960 {
+        width: 960px;
+    }
+    /**
+* height classes
+*/
+    .h240 {
+        height: 240px;
+    }
+    .h480 {
+        height: 480px;
+    }
+    .h960 {
+        height: 960px;
+    }
+    /*
+* x coordinates
+*/
+    .x0 {
+        left: 0;
+    }
+    .x720 {
+        left: 720px;
+    }
+    .x960 {
+        left: 960px;
+    }
+    .x1200 {
+        left: 1200px;
+    }
+    .x1680 {
+        left: 1680px;
+    }
+    .x1920 {
+        left: 1920px;
+    }
+    .x2160 {
+        left: 2160px;
+    }
+    .x2880 {
+        left: 2880px;
+    }
+    .x3360 {
+        left: 3360px;
+    }
+    /*
+* y coordinates
+*/
+    .y0 {
+        top: 0;
+    }
+    .y240 {
+        top: 240px;
+    }
+    .y480 {
+        top: 480px;
+    }
+    .y720 {
+        top: 720px;
+    }
+}

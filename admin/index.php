@@ -1,5 +1,5 @@
 <?php
-  error_reporting(0);
+  error_reporting(1);
   require('lib/index.php');
 ?><!doctype html>
 <html lang="en">
