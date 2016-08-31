@@ -584,6 +584,9 @@ ul.secondary>li>a {
     width: 84%;
     min-width: calc(640*100vw/1920);
 }
+#car-fix {
+  margin-top: 28px;
+}
 
 .dark-gray-line-icons>div.icon {
     text-align: center;
@@ -1158,8 +1161,3 @@ ul.secondary>li>a {
 .designed-with p {
     text-align: center;
 }
-
-
-
-
-
