@@ -50,11 +50,12 @@
 }
 
 .progress-bar {
-    width: 25vw;
+    width: 75%;
     top: 15.10417vw;
     left: 11.97917vw;
     position: relative;
     z-index: 300;
+    display: none;
 }
 
 .progress-bar-scale {
@@ -267,7 +268,7 @@
     }
 }
 .rumble {
-    width: 50%;
+    width: 100%;
 }
 
 .obstruction {
