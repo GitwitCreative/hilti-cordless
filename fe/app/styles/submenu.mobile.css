@@ -48,11 +48,13 @@
   }
   .submenu ul li a {
       display: block;
+      /*font-size: .3em;*/
   }
   .submenu .label {
-      font-size: calc(155vw/768*9);
+      font-size: calc(130vw/768*9);
       text-transform: uppercase;
       font-weight: 600;
+      padding-bottom: 5px;
   }
 
   .submenu ul li.active,
@@ -69,18 +71,20 @@
       text-align: left;
   }
   .submenu ul li:first-child a .header{
-      font-size: calc(70vw/768*22);
+      font-size: calc(80vw/768*22);
       font-weight: normal;
       text-align: left;
+      padding-top: 5px;
   }
   .submenu ul li:first-child a div.header {
       /*padding-right: calc(100vw/768*40);*/
+      padding-bottom: 10px;
   }
 
   .submenu ul li:first-child a div.text {
       /*padding-left: calc(100vw/768*40);
       padding-right: calc(100vw/768*40);*/
-      font-size: calc(100vw/768*14);
+      font-size: calc(70vw/768*14);
       color: #585d61;
       font-weight: normal;
       /*line-height: calc(100vw/768*20);*/

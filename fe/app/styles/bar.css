@@ -2,6 +2,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    height: 100px;
 }
 
 .wave {
@@ -218,6 +219,7 @@
 .siluet>img {
     width: 17.96875vw;
     height: 25.52083vw;
+    display: none;
 }
 
 .shake-container{
@@ -225,7 +227,7 @@
     right:0;
     bottom: 0;
     z-index: 100;
-    /*display:none;*/
+    display:none;
 }
 .shake-vawes {
     background-image: url(../images/bar/vawes.png);

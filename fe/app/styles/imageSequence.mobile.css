@@ -4,8 +4,9 @@
       position: absolute;
       right: 0;
       top: 0;
-      height: 100vh;
+      /*height: 50vh;*/
       width: 100%;
+      display: none;
   }
   .animation_frames {
       /*display: none;*/
@@ -129,7 +130,7 @@
       transition: all 2.5s;
   }
   .slide-icons div.icon>img{
-      height: calc(100vw/768*72);
+      height: auto;
   }
 
 
@@ -190,7 +191,12 @@
   }
 
   .tab-title h1 {
-      font-size: 1.7vh;
+      font-size: .60em;
       text-transform: uppercase;
   }
+
+  div fp-tableCell {
+    height: auto;
+  }
+
 }

@@ -145,16 +145,18 @@
       background-color: #d1d2d6;
       color: #202022;
       letter-spacing: 0.53333vw;
-      height: 2.944444vw;
-      line-height: 7.944444vw;
+      height: 40px;
+      line-height: 4.944444vw;
       width: 100%;
       text-align: center;
+      padding: 5px;
       /*margin-left: 20%;*/
   }
 
   .line_under_tab strong,
   .tab_each_content .text strong {
       font-family: Conv_HiltiSmallHeavyExtended;
+      /*padding: 10px;*/
   }
 
   .tab_each_content {
@@ -167,6 +169,7 @@
       -webkit-box-align: center;
       align-items: center;
       height: 100%;
+      /*padding-top: -50%;*/
   }
 
   .tab_each_content>div {
@@ -182,10 +185,12 @@
       align-items: center;
       height: 100%;
       font-family: Conv_HiltiSmallRoman;
+      /*padding-top: -50%;*/
   }
 
   .tab_each_content>div>img {
-      margin-top: 50%;
+      /*margin-top: 50%;*/
+      padding-top: 25px;
       height: 30.75vw;
       /*margin-left: auto;*/
   }
