@@ -424,9 +424,9 @@
         z-index: 1;
         display: -webkit-box;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         -webkit-box-align: center;
         align-items: center;
@@ -759,10 +759,11 @@
     .red-black-block {
         display: -webkit-box;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: row;
+        flex-direction: column;
         height: calc(360*100vw/768);
+        width: 100%;
     }
 
     .red-block,
@@ -778,9 +779,9 @@
         align-items: center;
         background-position: center center;
         height: 100%;
-        width: 50%;
+        /*width: 0%;*/
         color: white;
-        min-width: calc(350*100vw/768);
+        /*min-width: calc(350*100vw/768);*/
     }
 
     .red-block {
@@ -795,14 +796,14 @@
 
     .red-block h1,
     .black-block h1 {
-        font-size: calc(34*100vw/768);
+        font-size: calc(44*100vw/768);
         margin: calc(5*100vw/768);
     }
 
     .red-block-text {
         text-align: center;
         font-family: Conv_HiltiSmallRoman;
-        font-size: calc(17*100vw/768);
+        font-size: calc(30*100vw/768);
         opacity: 0.7;
     }
 
@@ -940,22 +941,23 @@
     }
 
     .cordless-built.border-right {
-        padding-top: calc(95*100vw/768);
-        padding-bottom: calc(95*100vw/768);
+        /*padding-top: calc(95*100vw/768);*/
+        padding-bottom: calc(55*100vw/768);
     }
 
     .cordless-built .header {
-        line-height: calc(64*100vw/768);
+        /*line-height: calc(60*100vw/768);*/
         font-size: calc(75*100vw/768);
         text-align: right;
         padding-right: calc(40*100vw/768);
         flex-basis: calc(660*100vw/768);
+        padding-top: 50px;
     }
 
     .cordless-built .label {
-        font-size: calc(22*100vw/768);
+        font-size: calc(40*100vw/768);
         letter-spacing: calc(100vw/768*4.3);
-        text-align: right;
+        text-align: center;
         padding-right: calc(40*100vw/768);
         flex-basis: calc(660*100vw/768);
     }
@@ -965,57 +967,65 @@
         font-weight: normal;
         padding-left: calc(34*100vw/768);
         margin: 0;
+        text-align: center;
+        /*margin-top: 30px;*/
     }
 
     .cordless-built.flex2>p {
-        font-size: calc(20*100vw/768);
+        font-size: calc(30*100vw/768);
         font-weight: normal;
         padding-left: calc(34*100vw/768);
         margin: 0;
         line-height: calc(36*100vw/768);
         letter-spacing: calc(1*100vw/768);
+        margin-bottom: 60px;
     }
 
     .no-compromise.border-right {
-        padding-top: calc(110*100vw/768);
-        padding-bottom: calc(110*100vw/768);
+        /*padding-top: calc(110*100vw/768);*/
+        padding-bottom: calc(30*100vw/768);
     }
 
     .no-compromise .header {
-        line-height: calc(30*100vw/768);
-        font-size: calc(70*100vw/768);
+        margin-top: calc(60*100vw/768);
+        /*line-height: calc(30*100vw/768);*/
+        font-size: calc(60*100vw/768);
         text-align: right;
         padding-right: calc(5*100vw/768);
         flex-basis: calc(660*100vw/768);
     }
 
     .no-compromise .label {
-        font-size: calc(74*100vw/768);
+        font-size: calc(40*100vw/768);
         letter-spacing: calc(100vw/768*3.35);
-        text-align: right;
+        text-align: center;
         padding-right: calc(5*100vw/768);
         flex-basis: calc(660*100vw/768);
     }
 
     .no-compromise.flex2>h1 {
-        font-size: calc(78*100vw/768);
+        font-size: calc(38*100vw/768);
         font-weight: normal;
         padding-left: calc(15*100vw/768);
         margin: 0;
+        margin-top: 30px;
+        text-align: center;
     }
 
     .no-compromise.flex2>p {
-        font-size: calc(74*100vw/768);
+        font-size: calc(34*100vw/768);
         font-weight: normal;
+        text-align: center;
         padding-left: calc(15*100vw/768);
         margin: 0;
         line-height: calc(36*100vw/768);
         letter-spacing: calc(1*100vw/768);
+        margin-bottom: 20px;
     }
 
     .impact-driver.border-right {
-        padding-top: calc(108*100vw/768);
-        padding-bottom: calc(108*100vw/768);
+        /*padding-top: calc(108*100vw/768);*/
+        /*padding-bottom: calc(108*100vw/768);*/
     }
 
     .impact-driver .header {

@@ -168,7 +168,8 @@
 
   .slide-icons .icon-text {
       padding-left: calc(100vw/768*23);
-      font-size: calc(100vw/768 * 16);
+      font-size: calc(150vw/768 * 16);
+      width: 70%;
   }
 
   .noHide .slide-content, .noHide .slide-icons>div {
