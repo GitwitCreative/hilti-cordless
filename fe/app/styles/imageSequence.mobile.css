@@ -52,25 +52,26 @@
       transition: all 0.2s;
       opacity: 0;
       margin-left: calc(100vw/768*-200);
-      width: 60%;
+      width: 80%;
       -webkit-transform: translate3d(0,0,0);
       transform: translate3d(0,0,0);
   }
   .slide-content h1 {
-      font-size: calc(100vw/768*36);
-      line-height: calc(100vw/768*37);
+      font-size: calc(150vw/768*36);
+      line-height: calc(150vw/768*37);
       margin: 0;
+      margin-bottom: 40px;
   }
 
   .slide-content h2 {
-      font-size: calc(100vw/768*24);
+      font-size: calc(150vw/768*24);
       font-weight: normal;
   }
 
   .slide-content h2.text {
-      font-size: calc(100vw/768*17);
+      font-size: calc(180vw/768*17);
       font-weight: bold;
-      margin-top: calc(100vw/768*24);
+      margin-top: calc(250vw/768*24);
   }
 
   .active .slide-content {
