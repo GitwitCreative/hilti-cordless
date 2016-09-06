@@ -1,4 +1,3 @@
-;
 (function($) {
     $(document).ready(function() {
         if ($('#fullpage').length) {
@@ -15,7 +14,7 @@
                 var is = $('.animation_frames');
                 // is.detach();
                 $animation.append(is);
-                
+
                 var windowPos = $(window).scrollTop();
                 var animationImgHeight = $animationImg.height();
                 var animationPosition = ''; // fixes || absolute
@@ -38,11 +37,11 @@
 
 
                 var animateSequence = function() {
-                    
+
                     windowPos = $(window).scrollTop();
                     var posStart = startSlideTop - windowPos;
                     var posEnd = endSlideTop - windowPos;
-                    
+
 
                     if (posStart > 0) {
                         $animation[0].style.top = (posStart + offset) + "px";

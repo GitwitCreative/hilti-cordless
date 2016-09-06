@@ -65,6 +65,7 @@
 
   .submenu ul li a .header{
       font-size:calc(150vw/768*12);
+      /*padding-top: 5px;*/
   }
 
   .submenu ul li:first-child {

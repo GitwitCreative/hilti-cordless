@@ -197,6 +197,8 @@
 
   div fp-tableCell {
     height: auto;
+    display: inline-grid;
+    padding-top: 50px;
   }
 
 }
