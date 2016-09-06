@@ -968,7 +968,7 @@
     }
 
     .cordless-built.flex2>p {
-        font-size: calc(74*100vw/768);
+        font-size: calc(20*100vw/768);
         font-weight: normal;
         padding-left: calc(34*100vw/768);
         margin: 0;
