@@ -181,7 +181,7 @@
     }
 
     .section {
-        box-shadow: calc(100vw/1920*0) 1.0417vw 5.2083vw calc(100vw/1920*0) rgba(0, 0, 0, 0.5) inset;
+        /*box-shadow: calc(100vw/1920*0) 1.0417vw 5.2083vw calc(100vw/1920*0) rgba(0, 0, 0, 0.5) inset;*/
         background-color: #ddd;
         overflow: hidden;
     }
