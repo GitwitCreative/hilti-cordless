@@ -99,7 +99,7 @@
         padding: 0;
         /*margin-top: calc(60*100vw/768);*/
         background-color: #000;
-        /*overflow-x: hidden;*/
+        overflow: auto;
         /*width: 100vw;*/
     }
 
@@ -400,8 +400,8 @@
         justify-content: center;
         -webkit-box-align: center;
         align-items: center;
-        padding-top: -25px;
-        padding-bottom: -25px;
+        /*padding-top: -55px;
+        padding-bottom: -55px;*/
         background: #ddd;
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
@@ -430,8 +430,9 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
-        justify-content: space-around;
-        padding: 25px;
+        justify-content: center;
+        padding-left: 25px;
+        padding-right: 25px;
         background: #ddd;
         /*height: 150%;*/
         width: 220%;
@@ -486,7 +487,7 @@
     }
 
     .player-shadow {
-        box-shadow: calc(0*100vw/768) calc(10*100vw/768) calc(30*100vw/768) -calc(5*100vw/768) rgba(0, 0, 0, 1);
+        /*box-shadow: calc(0*100vw/768) calc(10*100vw/768) calc(30*100vw/768) -calc(5*100vw/768) rgba(0, 0, 0, 1);*/
     }
 
     .border-right {
@@ -551,7 +552,7 @@
     }
 
     .gray-line {
-        box-shadow: 0 3.906vw 3.906vw 0 rgba(0, 0, 0, .2) inset;
+        /*box-shadow: 0 3.906vw 3.906vw 0 rgba(0, 0, 0, .2) inset;*/
         background-color: #ddd;
     }
 
@@ -767,11 +768,11 @@
     }
 
     .inset-shadow {
-        box-shadow: 0 1.0416vw 5.2083vw 0 rgba(0, 0, 0, 0.5) inset;
+        /*box-shadow: 0 1.0416vw 5.2083vw 0 rgba(0, 0, 0, 0.5) inset;*/
         background: #ddd;
         position: relative;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .red-black-block {
@@ -930,16 +931,18 @@
     }
 
     .flex-row-center-left {
-        padding-left: 5%;
+        /*padding-left: 5%;*/
         display: -webkit-box;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: row;
-        -webkit-box-pack: flex-begin;
-        justify-content: flex-begin;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
         align-items: center;
+        padding-left: 10px;
+        width: 90%;
     }
 
     .product .submenu {

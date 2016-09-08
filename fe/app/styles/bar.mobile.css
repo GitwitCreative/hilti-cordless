@@ -1,9 +1,10 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
     .rumble {
         position: absolute;
         top: 0;
         right: 0;
         height: 100px;
+        display: none;
     }
 
     .wave {
@@ -57,7 +58,7 @@
         left: 11.97917vw;
         position: relative;
         z-index: 300;
-        /*display: none;*/
+        display: none;
     }
 
     .progress-bar-scale {
@@ -212,7 +213,7 @@
     }
 
     .siluet {
-        /*display:none;*/
+        display:none;
         position: absolute;
         bottom: 0;
         right: 26.04167vw;
@@ -221,7 +222,7 @@
     .siluet>img {
         width: 17.96875vw;
         height: 25.52083vw;
-        /*display: none;*/
+        display: none;
     }
 
     .shake-container{
@@ -229,7 +230,7 @@
         right:0;
         bottom: 0;
         z-index: 100;
-        /*display:none;*/
+        display:none;
     }
     .shake-vawes {
         background-image: url(../images/bar/vawes.png);
@@ -273,6 +274,7 @@
     }
     .rumble {
         width: 50%;
+        display: none;
     }
 
     .obstruction {
