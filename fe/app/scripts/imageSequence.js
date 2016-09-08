@@ -53,77 +53,79 @@
                     windowPos > (startSlideTop - slideHeight) && windowPos <= endSlideTop && (prevPos = position, position = Math.round((windowPos + slideHeight - startSlideTop) / sequence), position < 0 && (position = 0), position > $images.length - 1 && (position = $images.length - 1), position != prevPos && ($images[position].style.opacity = 1, $images[prevPos].style.opacity = 0));
                 }
 
-                $('#fullpage').fullpage({
-                    // autoScrolling: true,
-                    fitToSection: false,
-                    css3: true,
-                    fitToSectionDelay: 400000,
-                    scrollingSpeed: 400,
-                    // scrollOverflowOptions: false,
-                    scrollBar: true,
+                if ($(document).width() >= 768) {
+                    $('#fullpage').fullpage({
+                        // autoScrolling: true,
+                        fitToSection: false,
+                        css3: true,
+                        fitToSectionDelay: 400000,
+                        scrollingSpeed: 400,
+                        // scrollOverflowOptions: false,
+                        scrollBar: true,
 
-                    touchSensitivity: 5,
-                    normalScrollElementTouchThreshold: 3,
-                    bigSectionsDestination: null,
+                        touchSensitivity: 5,
+                        normalScrollElementTouchThreshold: 3,
+                        bigSectionsDestination: null,
 
-                    //Design
-                    controlArrows: true,
-                    verticalCentered: true,
-                    sectionsColor: [],
-                    paddingTop: 0,
-                    paddingBottom: 0,
-                    fixedElements: '.top-menu',
-                    // responsiveWidth: 0,
-                    // responsiveHeight: 0,
+                        //Design
+                        controlArrows: true,
+                        verticalCentered: true,
+                        sectionsColor: [],
+                        paddingTop: 0,
+                        paddingBottom: 0,
+                        fixedElements: '.top-menu',
+                        // responsiveWidth: 0,
+                        // responsiveHeight: 0,
 
-                    //Custom selectors
-                    sectionSelector: '.section',
-                    slideSelector: '.slide',
+                        //Custom selectors
+                        sectionSelector: '.section',
+                        slideSelector: '.slide',
 
-                    //events
-                    onLeave: function(a, b, c) {
-                        direction = c;
-                        var current = $('.section').eq(a - 1);
-                        var next = $('.section').eq(b - 1);
+                        //events
+                        onLeave: function(a, b, c) {
+                            direction = c;
+                            var current = $('.section').eq(a - 1);
+                            var next = $('.section').eq(b - 1);
 
-                        if (direction == "up" && $(current).hasClass('end-slide')) {
-                            $(current).removeClass('noHide');
-                        }
-                        if (direction == "down" && $(current).hasClass('end-slide')) {
-                            $(current).addClass('noHide');
-                        }
-                    },
-                    afterLoad: function(a, b, c) {},
-                    afterRender: function() {
-                        winWidth = $(window).innerWidth();
-                        slideHeight = startSlide.height() || 0;
-                        slideLeft = startSlide.offset().left || 0;
-                        slideWidth = startSlide.width() || 0;
-                        startSlideTop = startSlide.offset().top || 0;
-                        endSlideTop = endSlide.first().offset().top || 0;
-                        sequence = (endSlideTop - (startSlideTop - slideHeight)) / $images.length;
-                        // $animation.detach();
-                        // $("#fullpage").after($animation);
-                        animationImgHeight = $animationImg.height();
-                        offset = (slideHeight - animationImgHeight) / 2;
-                        animateSequence();
-                        $(window).on('scroll', animateSequence);
-                    },
-                    afterResize: function() {
-                        winWidth = $(window).innerWidth();
-                        slideHeight = startSlide.height() || 0;
-                        slideLeft = startSlide.offset().left || 0;
-                        slideWidth = startSlide.width() || 0;
-                        startSlideTop = startSlide.offset().top || 0;
-                        endSlideTop = endSlide.first().offset().top || 0;
-                        animationImgHeight = $animationImg.height();
-                        sequence = (endSlideTop - (startSlideTop - slideHeight)) / $images.length;
-                        offset = (slideHeight - animationImgHeight) / 2;
-                        animateSequence();
-                    },
-                    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
-                    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
-                });
+                            if (direction == "up" && $(current).hasClass('end-slide')) {
+                                $(current).removeClass('noHide');
+                            }
+                            if (direction == "down" && $(current).hasClass('end-slide')) {
+                                $(current).addClass('noHide');
+                            }
+                        },
+                        afterLoad: function(a, b, c) {},
+                        afterRender: function() {
+                            winWidth = $(window).innerWidth();
+                            slideHeight = startSlide.height() || 0;
+                            slideLeft = startSlide.offset().left || 0;
+                            slideWidth = startSlide.width() || 0;
+                            startSlideTop = startSlide.offset().top || 0;
+                            endSlideTop = endSlide.first().offset().top || 0;
+                            sequence = (endSlideTop - (startSlideTop - slideHeight)) / $images.length;
+                            // $animation.detach();
+                            // $("#fullpage").after($animation);
+                            animationImgHeight = $animationImg.height();
+                            offset = (slideHeight - animationImgHeight) / 2;
+                            animateSequence();
+                            $(window).on('scroll', animateSequence);
+                        },
+                        afterResize: function() {
+                            winWidth = $(window).innerWidth();
+                            slideHeight = startSlide.height() || 0;
+                            slideLeft = startSlide.offset().left || 0;
+                            slideWidth = startSlide.width() || 0;
+                            startSlideTop = startSlide.offset().top || 0;
+                            endSlideTop = endSlide.first().offset().top || 0;
+                            animationImgHeight = $animationImg.height();
+                            sequence = (endSlideTop - (startSlideTop - slideHeight)) / $images.length;
+                            offset = (slideHeight - animationImgHeight) / 2;
+                            animateSequence();
+                        },
+                        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
+                        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+                    });
+                }
             }
             else {
                 $('#fullpage').attr('id', '');
