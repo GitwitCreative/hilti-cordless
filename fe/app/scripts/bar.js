@@ -15,14 +15,14 @@
         if($anim.hasClass('animate-one')) {
             $anim.removeClass('animate-one');
             $anim.addClass('animate-red-alert');
-            $shake.removeClass('shake').addClass('shake-hard');
+            $shake.removeClass('shake').addClass('shake-little');
             $vawes.addClass('red-alert-vawe');
             return;
         }
         if($anim.hasClass('animate-red-alert')) {
             $anim.removeClass('animate-red-alert');
             $anim.addClass('animate-two');
-            $shake.removeClass('shake-hard').addClass('shake');
+            $shake.removeClass('shake-little').addClass('shake');
             $vawes.removeClass('red-alert-vawe');
             return;
         }

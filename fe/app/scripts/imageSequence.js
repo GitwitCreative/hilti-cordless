@@ -58,7 +58,7 @@
                     fitToSection: false,
                     css3: true,
                     fitToSectionDelay: 400000,
-                    scrollingSpeed: 500,
+                    scrollingSpeed: 400,
                     // scrollOverflowOptions: false,
                     scrollBar: true,
 

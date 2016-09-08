@@ -194,11 +194,11 @@ body {
 
 .close_video a {
     color: white;
-    font-size: 3vh;
+    font-size: 6vh;
     text-decoration: none;
     position: absolute;
-    right: 5vw;
-    top: 0;
+    right: 10vw;
+    top: -16px;
 }
 
 .scrollSpeedControl {

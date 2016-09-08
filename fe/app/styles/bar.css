@@ -51,12 +51,12 @@
 }
 
 .progress-bar {
-    width: 75%;
+    width: 25vw;
     top: 15.10417vw;
     left: 11.97917vw;
     position: relative;
     z-index: 300;
-    display: none;
+    /*display: none;*/
 }
 
 .progress-bar-scale {
@@ -219,7 +219,7 @@
 .siluet>img {
     width: 17.96875vw;
     height: 25.52083vw;
-    display: none;
+    /*display: none;*/
 }
 
 .shake-container{
@@ -227,7 +227,7 @@
     right:0;
     bottom: 0;
     z-index: 100;
-    display:none;
+    /*display:none;*/
 }
 .shake-vawes {
     background-image: url(../images/bar/vawes.png);
@@ -270,7 +270,7 @@
     }
 }
 .rumble {
-    width: 100%;
+    width: 50%;
 }
 
 .obstruction {
