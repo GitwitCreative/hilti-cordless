@@ -1,6 +1,6 @@
 .submenu {
     height: calc(100vw/1920*160);
-    box-shadow: 0 calc(100vw/1920*10) calc(100vw/1920*10) #666;
+    box-shadow: 0px 4px 40px 0px rgba(87,87,87,.5);
     position: relative;
     z-index: 200;
 }

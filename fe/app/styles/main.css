@@ -97,8 +97,9 @@
         color: #000;
         margin: 0;
         padding: 0;
+        box-shadow: calc(100vw/1920*0) 1.0417vw 5.2083vw calc(100vw/1920*0) rgba(0, 0, 0, 0.5) inset;
         /*margin-top: calc(60*100vw/1920);*/
-        background-color: #000;
+        background-color: #ddd;
         /*overflow-x: hidden;*/
         /*width: 100vw;*/
     }
@@ -934,14 +935,14 @@
     }
 
     .cordless-built.flex2>h1 {
-        font-size: calc(38*100vw/1920);
+        font-size: 37px;
         font-weight: normal;
         padding-left: calc(34*100vw/1920);
         margin: 0;
     }
 
     .cordless-built.flex2>p {
-        font-size: calc(24*100vw/1920);
+        font-size: 24px;
         font-weight: normal;
         padding-left: calc(34*100vw/1920);
         margin: 0;
@@ -971,18 +972,18 @@
     }
 
     .no-compromise.flex2>h1 {
-        font-size: calc(38*100vw/1920);
+        font-size: 37px;
         font-weight: normal;
         padding-left: calc(15*100vw/1920);
         margin: 0;
     }
 
     .no-compromise.flex2>p {
-        font-size: calc(24*100vw/1920);
+        font-size: 24px;
         font-weight: normal;
         padding-left: calc(15*100vw/1920);
         margin: 0;
-        line-height: calc(36*100vw/1920);
+        line-height: 1.5;
         letter-spacing: calc(1*100vw/1920);
     }
 
@@ -1008,14 +1009,14 @@
     }
 
     .impact-driver.flex2>h1 {
-        font-size: calc(38*100vw/1920);
+        font-size: 37px;
         font-weight: normal;
         padding-left: calc(15*100vw/1920);
         margin: 0;
     }
 
     .impact-driver.flex2>p {
-        font-size: calc(24*100vw/1920);
+        font-size: 24px;
         font-weight: normal;
         padding-left: calc(15*100vw/1920);
         margin: 0;

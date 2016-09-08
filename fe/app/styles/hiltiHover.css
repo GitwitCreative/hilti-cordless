@@ -29,6 +29,7 @@
     font-size: calc(18*(100vh - 241*100vw/1920)/960);
     margin-bottom: calc(12*(100vh - 241*100vw/1920)/960);
     padding: 0;
+    color: black;
 }
 
 .content_cover>div {
