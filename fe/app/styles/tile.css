@@ -57,13 +57,13 @@ body {
 .triangle_left {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
-    left: 50%;
+    left: 42%;
 }
 
 .triangle_right {
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
-    right: 50%;
+    right: 42%;
 }
 
 .triangle_left,
