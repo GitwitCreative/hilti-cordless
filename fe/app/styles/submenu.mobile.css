@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+  .submenu {
+      /*height: calc(100vw/768*160);*/
+      box-shadow: 0 calc(100vw/768*10) calc(100vw/768*10) #666;
+      position: relative;
+      z-index: 200;
+  }
+
+  .submenu ul {
+      /*height: calc(100vw/768*160);*/
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .submenu ul li {
+      min-width: calc(100vw/768*120);
+      height: calc(30vw/768*160);
+      border-right: calc(100vw/768*2) solid #cacfd3;
+      border-bottom: calc(100vw/768*2) solid #babbbf;
+      border-left: calc(100vw/768*2) solid #dde2e5;
+      /*border-top: calc(100vw/768*2) solid #cae0e6;*/
+      padding-top: 14px;
+      margin: 0;
+      background-color: #c8cfcf;
+      background: -webkit-linear-gradient(top, #c0c1c8 0%, #d2dada 50%);
+      background: linear-gradient(to bottom, #c0c1c8 0%, #d2dada 50%);
+      width: 25%;
+      overflow: hidden;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      -webkit-box-pack: center;
+      justify-content: center;
+      text-align: left;
+  }
+  .submenu ul li a {
+      display: block;
+      /*font-size: .3em;*/
+  }
+  .submenu .label {
+      font-size: calc(130vw/768*9);
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-bottom: 5px;
+  }
+
+  .submenu ul li.active,
+  .submenu ul li:hover {
+      background-color: #d3d9da;
+      background-image: none;
+  }
+
+  .submenu ul li a .header{
+      font-size:calc(150vw/768*12);
+      /*padding-top: 5px;*/
+  }
+
+  .submenu ul li:first-child {
+      text-align: left;
+  }
+  .submenu ul li:first-child a .header{
+      font-size: calc(80vw/768*22);
+      font-weight: normal;
+      text-align: left;
+      padding-top: 5px;
+  }
+  .submenu ul li:first-child a div.header {
+      /*padding-right: calc(100vw/768*40);*/
+      padding-bottom: 10px;
+  }
+
+  .submenu ul li:first-child a div.text {
+      /*padding-left: calc(100vw/768*40);
+      padding-right: calc(100vw/768*40);*/
+      font-size: calc(70vw/768*14);
+      color: #585d61;
+      font-weight: normal;
+      /*line-height: calc(100vw/768*20);*/
+      display: none;
+  }
+
+  .submenu img {
+      display: none;
+  }
+
+  .submenu a {
+      text-decoration: none;
+  }
+}

@@ -1,0 +1,203 @@
+@media only screen and (max-width: 768px) {
+
+  .gear-switch-animation {
+      position: absolute;
+      height: 100vh;
+      right: 0;
+      top: 0;
+  }
+
+  .gear-switch-animation img {
+      position: absolute;
+      height: 100vh;
+      right: 0;
+      top: 0;
+      display: none;
+  }
+
+  .gear-animation-frames {
+      display: none;
+  }
+
+  .make-tab {
+      padding-left: 11.3021vw;
+      padding-bottom: 25px;
+      /*margin-top: 5.6863vh;*/
+  }
+
+  .make-tab ol {
+      box-shadow: 0 1.0417vw 1.0417vw -0.52083 rgba(153, 153, 153, 1);
+      position: relative;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      list-style: inside none none;
+      width: 85%;
+      height: 80.2539vw;
+      /* Safari */
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #e9eaeb;
+  }
+
+  .make-tab ol li {
+      position: absolute;
+      height: calc(100vw/768*400);
+      /*flex-basis: 14vw;*/
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      text-align: center;
+      font-size: 0.5em;
+      width: 100%;
+  }
+
+  .make-tab ol li .tab-title {
+      width: 20vw;
+      margin: calc(100vw/768*0);
+      padding: calc(100vw/768*0);
+      border-bottom: calc(100vw/768*4) solid #cf051d;
+  }
+
+  .make-tab ol li h1 {
+      white-space: nowrap;
+      margin: 0;
+      padding: 0.5625vw;
+      color: #575f62;
+      font-weight: normal;
+      letter-spacing: 0.15em;
+      border-right: 0.10417vw solid #bbb;
+      border-left: 0.10417vw solid #ddd;
+      background: rgb(187, 187, 187);
+      background: -webkit-linear-gradient(top, rgba(187, 187, 187, 1) 0%, rgba(238, 238, 238, 1) 100%);
+      background: linear-gradient(to bottom, rgba(187, 187, 187, 1) 0%, rgba(238, 238, 238, 1) 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb', endColorstr='#eeeeee', GradientType=0);
+  }
+
+  .make-tab ol li.active h1 {
+      background-color: #cf051d;
+      background-image: none;
+      color: #fff;
+      border: none;
+  }
+
+  .make-tab ol li h1 .gear-num {
+      font-size: 1.4em;
+  }
+
+  .make-tab .tab-content {
+      width: 56vw;
+      top: 0;
+      left: 0;
+      visibility: collapse;
+      font-size: 2em;
+  }
+
+  .make-tab li:nth-of-type(1) {
+      left: 0;
+  }
+
+  .make-tab li:nth-of-type(1) .tab-content {
+      margin-left: 13%;
+  }
+
+  .make-tab li:nth-of-type(2) {
+      left: 25%;
+  }
+
+  .make-tab li:nth-of-type(2) .tab-content {
+      margin-left: -12%;
+  }
+
+  .make-tab li:nth-of-type(3) {
+      left: 50%;
+  }
+
+  .make-tab li:nth-of-type(3) .tab-content {
+      margin-left: -37%;
+  }
+
+  .make-tab li:nth-of-type(4) {
+      left: 75%;
+  }
+
+  .make-tab li:nth-of-type(4) .tab-content {
+      margin-left: -62%;
+  }
+
+  .make-tab li.active .tab-content {
+      visibility: visible;
+  }
+
+  .make-tab .gear-switch-animation {
+      height: 100vh;
+  }
+
+  .make-tab .gear-switch-animation img {
+      height: 100%;
+  }
+
+  .line_under_tab {
+      background-color: #d1d2d6;
+      color: #202022;
+      letter-spacing: 0.53333vw;
+      height: 40px;
+      line-height: 4.944444vw;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      /*margin-left: 20%;*/
+  }
+
+  .line_under_tab strong,
+  .tab_each_content .text strong {
+      font-family: Conv_HiltiSmallHeavyExtended;
+      /*padding: 10px;*/
+  }
+
+  .tab_each_content {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      align-items: center;
+      height: 100%;
+      /*padding-top: -50%;*/
+  }
+
+  .tab_each_content>div {
+      display: -webkit-box;
+      display: flex;
+      flex-basis: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      height: 100%;
+      font-family: Conv_HiltiSmallRoman;
+      /*padding-top: -50%;*/
+  }
+
+  .tab_each_content>div>img {
+      /*margin-top: 50%;*/
+      padding-top: 25px;
+      height: 30.75vw;
+      /*margin-left: auto;*/
+  }
+
+  .tab_each_content .text {
+      font-size: 3.125vw;
+      text-align: center;
+  }
+}

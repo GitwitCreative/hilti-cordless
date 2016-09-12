@@ -29,6 +29,7 @@
     font-size: calc(18*(100vh - 241*100vw/1920)/960);
     margin-bottom: calc(12*(100vh - 241*100vw/1920)/960);
     padding: 0;
+    color: black;
 }
 
 .content_cover>div {
@@ -37,8 +38,7 @@
 
 .content_cover>div.text {
     font-size: calc(15*(100vh - 241*100vw/1920)/960);
-    font-family: Conv_HiltiSmallRoman;
-    font-weight: bold;
+    font-family: Conv_HiltiSmallBold;
     color: #4E585E;
     margin-bottom: calc(16*(100vh - 241*100vw/1920)/960);
 }
