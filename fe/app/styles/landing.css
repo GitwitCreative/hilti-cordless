@@ -54,8 +54,8 @@ body {
 
 .subheader-button {
     position: absolute;
-    right: calc(60*100vw/1920);
-    top: calc(50*100vw/1920);
+    right: 0;
+    top: 40%;
     width: auto;
     height: auto;
 }
@@ -137,7 +137,7 @@ body {
 }
 
 .subheader-text div {
-    font-size: calc(19*100vw/1920);
+    font-size: 18px;
     font-weight: lighter;
 }
 
