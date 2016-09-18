@@ -1,5 +1,4 @@
-@media only screen and (min-width: 769px) {
-    /*icons*/
+/*icons*/
     @font-face {
         font-family: icomoon;
         src: url(../fonts/icons/fonts/icomoon.eot?y4pnfc);
@@ -21,7 +20,6 @@
         -moz-osx-font-smoothing: grayscale;
         font-size: calc(60*100vw/1920);
     }
-
     .icon-linkedin:before {
         content: "\e615"
     }
@@ -1165,4 +1163,3 @@
     .designed-with p {
         text-align: center;
     }
-}
