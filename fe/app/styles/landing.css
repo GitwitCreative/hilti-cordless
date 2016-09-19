@@ -3,6 +3,9 @@ body {
     position: fixed;
     background-color: #9A9FA2 !important;
 }
+.mobile-tools {
+  display: none;
+}
 
 .landing .top-menu {
     position: relative;
@@ -212,8 +215,77 @@ body {
 
 /*Mobile Here*/
 @media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+    position: relative;
+    background-color: #9A9FA2 !important;
+  }
   .wrapper-outer {
     display: none;
+  }
+  .mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .subheader-cover {
+    width: 100%;
+    height: 37vh;
+    min-width: inherit;
+    background-image: url('../images/landing/bg_header.png');
+    background-size: cover;
+  }
+  .subheader-data {
+      display: -webkit-box;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+  }
+  .right-border {
+      border: none;
+  }
+  .subheader-data>.right-border>div.header {
+    font-size: 32px;
+}
+.subheader-data>.right-border>div.label {
+    word-spacing: nowrap;
+    font-family: Conv_HiltiSmallHeavyExtended;
+    font-size: 25px;
+    letter-spacing: calc(3.3*100vw/1920);
+}
+  .subheader-text>.hiltiSmallExtended {
+    font-size: 12px;
+    text-align: left;
+  }
+  .subheader-text {
+    width: 92%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .subheader-button {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+  }
+  .subheader-button button {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  /*video overlay styles*/
+  .close_video a {
+    color: white;
+    font-size: 6vh;
+    text-decoration: none;
+    position: absolute;
+    right: 10vw;
+    top: 185px;
+}
+  /*begin main section*/
+  .mobile-tools {
+    width: 100%;
+    display: block;
   }
 
 }
