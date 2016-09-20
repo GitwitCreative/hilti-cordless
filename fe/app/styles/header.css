@@ -1,0 +1,650 @@
+/* line 1, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0; }
+  /* line 173, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/vendor/_mixins.scss */
+  .header:before, .header:after {
+    content: " ";
+    display: table; }
+  /* line 178, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/vendor/_mixins.scss */
+  .header:after {
+    clear: both; }
+  @media (min-width: 20000px) {
+    /* line 1, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header {
+      width: 20000px; } }
+  /* line 19, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .header #top {
+    z-index: 100;
+    position: relative;
+    color: #fff;
+    background: #df001b; }
+    /* line 28, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #top .block-title {
+      margin: 0;
+      height: 20px;
+      text-indent: -9999em;
+      background: transparent url(../content/img/header/logo.gif) 0 0 no-repeat;
+      background-size: contain;
+      /*@include breakpoint( 'small', 'min' ) {
+        background-size: 120px auto;
+      }
+
+      @include breakpoint( 'large', 'min' ) {
+        background-size: 160px auto;
+      }*/ }
+    /* line 45, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #top div.block-title {
+      font-family: Arial,Verdana,sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      text-rendering: optimizeLegibility; }
+    /* line 53, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #top .nav-btn__wrapper {
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0; }
+    /* line 61, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #top .nav-btn {
+      margin: 22px 20px 0 60px; }
+    @media (max-width: 567px) {
+      /* line 65, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-ready .header #top {
+        left: 0; } }
+    @media (max-width: 567px) {
+      /* line 71, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-nav .header #top {
+        left: 70%; } }
+    @media (max-width: 567px) {
+      /* line 77, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-ready .header #top {
+        left: 0 !important;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 500ms ease;
+        -moz-transition: -moz-transform 500ms ease;
+        -o-transition: -o-transform 500ms ease;
+        transition: transform 500ms ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden; } }
+    @media (max-width: 567px) {
+      /* line 97, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-nav .header #top {
+        -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -moz-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -ms-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        -o-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(70%, 0, 0) scale3d(1, 1, 1); } }
+  /* line 108, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .header #nav {
+    z-index: 200;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background: #000; }
+    @media (max-width: 567px) {
+      /* line 108, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav {
+        position: absolute;
+        top: 0;
+        padding-top: 68px; } }
+    @media (max-width: 567px) {
+      /* line 122, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav:not(:target) {
+        z-index: 1;
+        height: 0; } }
+    @media (min-width: 1259px) {
+      /* line 108, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        box-sizing: border-box; } }
+    /* line 139, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #nav .block {
+      z-index: 2;
+      position: relative;
+      padding: 0.75em 1.25em;
+      max-width: none; }
+      @media (max-width: 567px) {
+        /* line 139, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav .block {
+          position: relative;
+          padding: 0; } }
+      @media (min-width: 1259px) {
+        /* line 139, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav .block {
+          height: 100%;
+          display: table;
+          padding: 0.75em 0;
+          width: 100%; } }
+    @media (max-width: 567px) {
+      /* line 158, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-ready .header #nav {
+        height: 100vh;
+        width: 70%;
+        background: #000;
+        -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em #323232;
+        -moz-box-shadow: inset -1.5em 0 1.5em -0.75em #323232;
+        box-shadow: inset -1.5em 0 1.5em -0.75em #323232;
+        left: -100%; } }
+    @media (max-width: 567px) {
+      /* line 169, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-ready .header #nav .block {
+        background: transparent; } }
+    @media (max-width: 567px) {
+      /* line 174, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-ready .header #nav .close-btn {
+        display: block;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+        opacity: 0.7; } }
+    @media (max-width: 567px) {
+      /* line 181, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-ready .header #nav .close-btn:focus, .js-ready .header #nav .close-btn:hover {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        color: #fff; } }
+    @media (max-width: 567px) {
+      /* line 190, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .js-nav .header #nav {
+        left: 0%; } }
+    @media (max-width: 567px) {
+      /* line 196, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-ready .header #nav {
+        left: -70%;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 500ms ease;
+        -moz-transition: -moz-transform 500ms ease;
+        -o-transition: -o-transform 500ms ease;
+        transition: transform 500ms ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden; } }
+    @media (max-width: 567px) {
+      /* line 220, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-ready .header #nav .block {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+        opacity: 0;
+        -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+        -webkit-transition-delay: ease, 0s;
+        -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
+        -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
+        transition: opacity 300ms 100ms ease, transform 500ms ease; } }
+    @media (max-width: 567px) {
+      /* line 247, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-nav .header #nav {
+        left: -70%;
+        -webkit-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -moz-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -ms-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        -o-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1);
+        transform: translate3d(100%, 0, 0) scale3d(1, 1, 1); } }
+    @media (max-width: 567px) {
+      /* line 260, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .csstransforms3d.csstransitions.js-nav .header #nav .block {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); } }
+    /* line 273, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #nav .close-btn {
+      display: none; }
+      @media (max-width: 567px) {
+        /* line 273, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav .close-btn {
+          position: absolute;
+          top: -1.75em;
+          left: 0.875em; } }
+    @media (max-width: 567px) {
+      /* line 296, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav:target .close-btn {
+        display: block; } }
+    /* line 303, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #nav .block-title {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px; }
+      @media (min-width: 567px) {
+        /* line 303, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav .block-title {
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px; } }
+    /* line 325, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #nav ul.primary {
+      *zoom: 1;
+      display: block;
+      text-align: center;
+      white-space: nowrap; }
+      @media (max-width: 567px) {
+        /* line 325, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary {
+          text-align: left;
+          white-space: inherit; } }
+      @media (min-width: 1259px) {
+        /* line 325, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary {
+          display: table-row; } }
+      /* line 340, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav ul.primary:before, .header #nav ul.primary:after {
+        content: "";
+        display: table; }
+      /* line 345, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav ul.primary:after {
+        clear: both; }
+      /* line 349, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .header #nav ul.primary > li {
+        display: inline-block;
+        position: relative; }
+        @media (max-width: 567px) {
+          /* line 349, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li {
+            display: block;
+            position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.1); } }
+        @media (min-width: 1259px) {
+          /* line 349, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%; }
+            /* line 363, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li:first-child {
+              width: 18%; } }
+        @media (max-width: 567px) {
+          /* line 368, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li:last-child {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
+        /* line 375, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary > li a {
+          display: block;
+          color: #fff;
+          font-size: 12px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          outline: none;
+          padding: 15px 25px; }
+          /* line 385, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li a:focus, .header #nav ul.primary > li a:hover {
+            color: #df001b; }
+        @media (min-width: 567px) {
+          /* line 390, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li > a {
+            position: relative;
+            top: -1px;
+            padding: 15px 15px;
+            margin: -15px 0; }
+            /* line 402, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li > a:hover {
+              color: #fff;
+              background-color: #808080; } }
+        @media (min-width: 1259px) {
+          /* line 390, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li > a {
+            position: relative;
+            top: 0px;
+            padding: 27px 0;
+            margin: -27px 0; }
+            /* line 417, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li > a:hover {
+              color: #fff;
+              background-color: #3f3f3f; } }
+        /* line 426, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary > li .is-active a {
+          color: #fff; }
+        @media (max-width: 567px) {
+          /* line 430, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li .is-active:after {
+            z-index: 50;
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -0.03125em;
+            margin-top: -0.625em;
+            border-top: 0.625em transparent solid;
+            border-bottom: 0.625em transparent solid;
+            border-right: 0.625em white solid; } }
+        /* line 448, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary > li ul.secondary {
+          display: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background-color: #3f3f3f; }
+          @media (min-width: 567px) {
+            /* line 448, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li ul.secondary {
+              position: absolute;
+              z-index: 3000;
+              top: 28px;
+              right: 0; } }
+          @media (min-width: 1259px) {
+            /* line 448, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li ul.secondary {
+              position: absolute;
+              z-index: 3000;
+              top: 56px;
+              right: 0; } }
+          /* line 470, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+          .header #nav ul.primary > li ul.secondary li {
+            display: block;
+            list-style: none;
+            margin: 0;
+            border-top: 1px solid #323232; }
+            @media (min-width: 567px) {
+              /* line 470, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+              .header #nav ul.primary > li ul.secondary li {
+                padding: 10px 25px;
+                border-top: none; } }
+            /* line 481, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+            .header #nav ul.primary > li ul.secondary li a {
+              padding-left: 60px;
+              text-align: left;
+              font-family: Arial, Verdana, sans-serif; }
+              /* line 486, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+              .header #nav ul.primary > li ul.secondary li a:before {
+                font-family: 'icomoon'; }
+              @media (min-width: 567px) {
+                /* line 481, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+                .header #nav ul.primary > li ul.secondary li a {
+                  padding-left: 50px; } }
+              /* line 495, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+              .header #nav ul.primary > li ul.secondary li a:before {
+                color: #808080;
+                font-size: 60px;
+                left: 10px;
+                top: 10px; }
+                @media (min-width: 567px) {
+                  /* line 495, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+                  .header #nav ul.primary > li ul.secondary li a:before {
+                    font-size: 75px;
+                    left: -20px;
+                    top: 0; } }
+              /* line 508, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+              .header #nav ul.primary > li ul.secondary li a:hover {
+                color: #fff; }
+                /* line 511, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+                .header #nav ul.primary > li ul.secondary li a:hover:before {
+                  color: #fff; }
+        /* line 521, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary > li:hover > a, .header #nav ul.primary > li.hover > a {
+          color: #fff;
+          background-color: #3f3f3f; }
+        /* line 526, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .header #nav ul.primary > li:hover > ul, .header #nav ul.primary > li.hover > ul {
+          display: block; }
+
+@media (max-width: 567px) {
+  /* line 541, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-ready .navdirection--right #inner-wrap {
+    left: 0; } }
+
+@media (max-width: 567px) {
+  /* line 547, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-nav .navdirection--right #inner-wrap {
+    left: -70%; } }
+
+@media (max-width: 567px) {
+  /* line 553, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-ready .navdirection--right #inner-wrap {
+    left: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; } }
+
+@media (max-width: 567px) {
+  /* line 573, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-nav .navdirection--right #inner-wrap {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1); } }
+
+@media (max-width: 567px) {
+  /* line 588, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-ready .navdirection--right .header #top {
+    left: 0; } }
+
+@media (max-width: 567px) {
+  /* line 594, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-nav .navdirection--right .header #top {
+    left: -70%; } }
+
+@media (max-width: 567px) {
+  /* line 600, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-ready .navdirection--right .header #top {
+    left: 0 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; } }
+
+@media (max-width: 567px) {
+  /* line 620, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-nav .navdirection--right .header #top {
+    -webkit-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1); } }
+
+/* line 635, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+.navdirection--right #nav .close-btn {
+  left: auto;
+  right: .875em; }
+
+@media (max-width: 567px) {
+  /* line 645, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .navdirection--right #nav ul.primary > li a {
+    padding-left: 40px; }
+  /* line 652, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .navdirection--right #nav ul.secondary li {
+    padding-left: 20px; } }
+
+@media (max-width: 567px) {
+  /* line 660, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-ready .navdirection--right #nav {
+    -webkit-box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    -moz-box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    left: 100%; } }
+
+@media (max-width: 567px) {
+  /* line 668, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .js-nav .navdirection--right #nav {
+    left: 30%; } }
+
+@media (max-width: 567px) {
+  /* line 676, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-ready .navdirection--right #nav {
+    left: 30% !important;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+@media (max-width: 567px) {
+  /* line 691, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-nav .navdirection--right #nav {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1); } }
+
+/* line 708, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+.csstransforms3d.csstransitions .content {
+  -webkit-transition: -webkit-transform 500ms ease;
+  -webkit-transition: transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease; }
+
+@media (max-width: 567px) {
+  /* line 716, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .csstransforms3d.csstransitions.js-nav .content {
+    -webkit-transform: translate3d(-70%, 0, 0);
+    -moz-transform: translate3d(-70%, 0, 0);
+    -ms-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0); } }
+
+@media (max-width: 567px) {
+  /* line 725, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .language_selector {
+    -webkit-box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    -moz-box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    box-shadow: inset 1.5em 0 1.5em -0.75em #323232;
+    left: 100%;
+    background-color: #3f3f3f; }
+    /* line 732, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .header #nav .language_selector .block-title {
+      position: static;
+      display: block;
+      color: #ccc;
+      font-size: 12px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      outline: none;
+      margin-left: 1px;
+      padding: 15px 25px 15px 39px;
+      height: auto;
+      width: 100%;
+      border-bottom: 1px solid #323232; }
+    /* line 751, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .language_selector__language {
+      padding-left: 20px;
+      border-bottom: 1px solid #323232; }
+      /* line 755, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .language_selector__language a {
+        display: block;
+        color: #ccc;
+        font-size: 12px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        outline: none;
+        padding: 15px 25px 15px 60px;
+        font-face: Arial,Verdana,sans-serif; }
+        /* line 765, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .language_selector__language a:focus, .language_selector__language a:hover {
+          color: #fff; }
+        /* line 769, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .language_selector__language a .abbreviation {
+          display: none; }
+      /* line 775, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .language_selector__language.is-active a {
+        color: #fff; } }
+
+@media (min-width: 567px) {
+  /* line 725, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+  .language_selector {
+    position: absolute;
+    top: -68px;
+    right: 0;
+    display: table;
+    height: 68px; } }
+  @media (min-width: 567px) and (min-width: 1259px) {
+    /* line 725, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .language_selector {
+      position: relative;
+      float: right;
+      margin-top: -45px;
+      top: auto;
+      right: 100%;
+      display: block;
+      height: auto; } }
+
+@media (min-width: 567px) {
+    /* line 802, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .language_selector__language-list {
+      display: table-cell;
+      height: 68px;
+      padding: 0 10px;
+      vertical-align: middle; } }
+    @media (min-width: 567px) and (min-width: 1259px) {
+      /* line 802, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .language_selector__language-list {
+        display: block;
+        float: left;
+        height: auto; } }
+
+@media (min-width: 567px) {
+    /* line 815, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+    .language_selector__language {
+      float: left;
+      padding: 0 5px; }
+      /* line 819, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .language_selector__language a {
+        display: inline-block;
+        min-width: 22px;
+        height: 16px;
+        padding: 2px 1px 1px 2px;
+        box-sizing: border-box;
+        background: #df001b;
+        font-size: 12px;
+        color: #fff;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 1px; }
+        /* line 834, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+        .language_selector__language a .name {
+          display: none; }
+      /* line 840, C:/Users/Dakota Bryant/Desktop/Development/hilti-cordless/src/assets/scss/elements/_header.scss */
+      .language_selector__language.is-active a {
+        background: #FFF;
+        color: #df001b; } }

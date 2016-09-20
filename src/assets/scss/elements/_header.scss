@@ -783,10 +783,10 @@
     position: absolute;
     top: -68px;
     right: 0;
-    
+
     display: table;
     height: 68px;
-    
+
 
     @include breakpoint( 'large', 'min' ) {
       position: relative;

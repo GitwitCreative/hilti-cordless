@@ -669,6 +669,7 @@
         font-weight: bold;
         margin-top: calc(22*100vw/1920);
         margin-bottom: calc(10*100vw/1920);
+        width: 75%;
     }
 
     .ultimateTextImg .text * {
@@ -686,6 +687,7 @@
         margin-top: 0;
         font-size: calc(17*100vw/1920);
         font-weight: lighter;
+        width: 75%;
     }
 
     .ultimateTextImg .text button {
@@ -1164,5 +1166,6 @@
     .designed-with h1,
     .designed-with p {
         text-align: center;
+        width: 40%;
     }
   }

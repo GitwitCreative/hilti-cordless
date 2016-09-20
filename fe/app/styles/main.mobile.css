@@ -131,7 +131,7 @@
         border: none;
         padding: 1%;
         cursor: pointer;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
     button:after {
@@ -648,7 +648,7 @@
     .ultimateTextImg.right {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .ultimateTextImg:first-child {
@@ -686,7 +686,7 @@
         height: auto;
         padding-top: 25px;
         padding-bottom: 25px;
-        padding-left: 25px;
+        /*padding-left: 25px;*/
     }
 
     .ultimateTextImg .text p {
@@ -949,9 +949,6 @@
         padding-top: calc(60*100vw/768);
     }
 
-    .product #fullpage .submenu {
-        padding-top: 0;
-    }
 
     .section:nth-of-type(1) {
         padding-top: calc(60*100vw/768);
@@ -1246,6 +1243,9 @@
         font-size: .75em;
         font-weight: lighter;
         text-align: center;
+    }
+    .redundant {
+      display: none;
     }
 
 
