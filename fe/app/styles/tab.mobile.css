@@ -20,7 +20,7 @@
   }
 
   .make-tab {
-      padding-left: 11.3021vw;
+      /*padding-left: 11.3021vw;*/
       padding-bottom: 25px;
       /*margin-top: 5.6863vh;*/
   }
@@ -36,7 +36,7 @@
       -webkit-box-pack: start;
       justify-content: flex-start;
       list-style: inside none none;
-      width: 85%;
+      width: 100%;
       height: 80.2539vw;
       /* Safari */
       flex-wrap: nowrap;
@@ -58,7 +58,7 @@
   }
 
   .make-tab ol li .tab-title {
-      width: 20vw;
+      width: 26%;
       margin: calc(100vw/768*0);
       padding: calc(100vw/768*0);
       border-bottom: calc(100vw/768*4) solid #cf051d;
@@ -67,7 +67,7 @@
   .make-tab ol li h1 {
       white-space: nowrap;
       margin: 0;
-      padding: 0.5625vw;
+      padding: 13px;
       color: #575f62;
       font-weight: normal;
       letter-spacing: 0.15em;
@@ -91,11 +91,27 @@
   }
 
   .make-tab .tab-content {
-      width: 56vw;
+      /*width: 56vw;*/
       top: 0;
       left: 0;
       visibility: collapse;
       font-size: 2em;
+  }
+  .tab-1 {
+    position: relative;
+    left: 3%;
+  }
+  .tab-2 {
+    position: relative;
+    left: -9%;
+  }
+  .tab-3 {
+    position: relative;
+    left: -8%;
+  }
+  .tab-4 {
+    position: relative;
+    left: -7.25%;
   }
 
   .make-tab li:nth-of-type(1) {
@@ -103,7 +119,7 @@
   }
 
   .make-tab li:nth-of-type(1) .tab-content {
-      margin-left: 13%;
+      /*margin-left: 13%;*/
   }
 
   .make-tab li:nth-of-type(2) {
@@ -147,11 +163,26 @@
       color: #202022;
       letter-spacing: 0.53333vw;
       height: 40px;
-      line-height: 4.944444vw;
+      line-height: 2.5;
       width: 100%;
       text-align: center;
       padding: 5px;
       /*margin-left: 20%;*/
+  }
+  .gear-1 {
+
+  }
+  .gear-2 {
+    position: relative;
+    left: -16%;
+  }
+  .gear-3 {
+    position: relative;
+    left: -24%;
+  }
+  .gear-4 {
+    position: relative;
+    left: -27%;
   }
 
   .line_under_tab strong,
@@ -171,6 +202,7 @@
       align-items: center;
       height: 100%;
       /*padding-top: -50%;*/
+      width: 92vw;
   }
 
   .tab_each_content>div {
