@@ -1168,4 +1168,8 @@
         text-align: center;
         width: 40%;
     }
+    .sid-rumble {
+      height: 80%;
+      margin-right: 100px;
+    }
   }
