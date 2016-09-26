@@ -107,7 +107,7 @@
     .section {
         margin: 0 auto;
         max-width: calc(1920*100vw/1920);
-        min-width: calc(1890*100vw/1920);
+        /*min-width: calc(1890*100vw/1920);*/
     }
 
     h1,
@@ -1169,7 +1169,7 @@
         width: 40%;
     }
     .sid-rumble {
-      height: 80%;
+      height: 60%;
       margin-right: 100px;
     }
   }
