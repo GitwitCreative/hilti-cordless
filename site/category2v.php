@@ -82,7 +82,7 @@ $section_tooltips = [];
 <div class="preloader_cover">
     <div id="canvas_round"></div>
 </div>
-<div id="fullpage">
+<div id="">
     <?php include('partials2v/navigation.php'); ?>
     <?php
     $page_secion_name = get_page_propery('general', 'type');
