@@ -1306,7 +1306,7 @@ body {
 }
 
 .subheader-text div {
-    font-size: 18px;
+    font-size: calc(18*100vw/1920);
     font-weight: lighter;
 }
 
@@ -1442,14 +1442,14 @@ body {
     font-size: 13px;
   }
   /*video overlay styles*/
-  .close_video a {
-    color: white;
-    font-size: 6vh;
-    text-decoration: none;
-    position: absolute;
-    right: 10vw;
-    top: 185px;
-}
+/*  .close_video a {*/
+/*    color: white;*/
+/*    font-size: 6vh;*/
+/*    text-decoration: none;*/
+/*    position: absolute;*/
+/*    right: 10vw;*/
+    /*top: 185px;*/
+/*}*/
   /*begin main section*/
   .mobile-tools {
     width: 100%;

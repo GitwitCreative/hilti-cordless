@@ -56,11 +56,14 @@
     <link rel="stylesheet" href="/fe/app/styles/fonts.css">
     <link rel="stylesheet" href="/fe/app/styles/preloader.css">
     <link rel="stylesheet" href="/fe/app/styles/submenu.css">
+    <link rel="stylesheet" href="/fe/app/styles/submenu.mobile.css">
     <link rel="stylesheet" href="/fe/app/styles/imageSequence.css">
+    <link rel="stylesheet" href="/fe/app/styles/imageSequence.mobile.css">
     <link rel="stylesheet" href="/fe/app/styles/tab.css">
+    <link rel="stylesheet" href="/fe/app/styles/tab.mobile.css">
     <link rel="stylesheet" href="/fe/app/styles/bar.css">
     <link rel="stylesheet" href="/fe/app/styles/main.css">
-
+    <link rel="stylesheet" href="/fe/app/styles/main.mobile.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -110,7 +113,6 @@
 <script src="/fe/app/scripts/tab.js"></script>
 <script src="/fe/app/scripts/bar.js"></script>
 <script src="/fe/app/scripts/main.js"></script>
-<script src="/fe/app/scripts/imageSequence.js"></script>
 <!-- endbuild -->
 </body>
 

@@ -22,7 +22,7 @@
                         <div class="red header hiltiSmall uppercase"><?php echo $slide->title; ?></div>
                         <div class="black label hiltiSmallHeavyExtended uppercase"><?php echo $slide->sub_title; ?></div>
                     </div>
-                    <div class="flex2 as-powerfull">
+                    <div class="flex2  center as-powerfull">
                         <p><?php echo $slide->description; ?></p>
                     </div>
                 </div>

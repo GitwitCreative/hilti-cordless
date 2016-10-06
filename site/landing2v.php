@@ -54,8 +54,10 @@
     <link rel="stylesheet" href="/fe/app/styles/submenu.css">
     <link rel="stylesheet" href="/fe/app/styles/landing.css">
     <link rel="stylesheet" href="/fe/app/styles/main.css">
+    <link rel="stylesheet" href="/fe/app/styles/main.mobile.css">
 
     <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" ref="/fe/bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/fe/bower_components/modernizr/modernizr.js"></script>
@@ -86,6 +88,7 @@
 <script src="/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
 <script src="/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
 <script src="/fe/bower_components/iscroll/build/iscroll-probe.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 

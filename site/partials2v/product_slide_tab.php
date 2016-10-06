@@ -42,8 +42,8 @@ if (get_page_propery('slide_tab', 'switch') == 1):
                                     </h1>
                                 </div>
                                 <div class="tab-content">
-                                    <div class="line_under_tab "><?php echo $tab->description; ?></div>
-                                    <div class="tab_each_content">
+                                    <div class="line_under_tab gear-<? echo $i; ?>"><?php echo $tab->description; ?></div>
+                                    <div class="tab_each_content tab-<? echo $i; ?>">
                                         <?php
                                         if (count((array)$tab->block) > 0)
                                             foreach ($tab->block as $block):
