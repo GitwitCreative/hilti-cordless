@@ -6,6 +6,7 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt); // load all tasks
     require('time-grunt')(grunt);
+    var userDir = require('userdir');
 
     var jsLibs = [
         'src/assets/components/jquery/dist/jquery.js',
@@ -69,6 +70,13 @@ module.exports = function (grunt) {
         dest: 'dist/admin'
     };
 
+
+    var sshPrivateKey = '';
+    try {
+        grunt.file.read(userDir + '/.ssh/id_rsa');
+    } catch (e) {
+        console.log('Cannot read the private key.');
+    }
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -196,7 +204,8 @@ module.exports = function (grunt) {
                 sourceMap: false,
                 trace: true,
                 includePaths: [
-                    '<%= config.srcComponentsPath %>/foundation/scss'
+                    //'<%= config.srcComponentsPath %>/foundation/scss'
+                    'bower_components/foundation/scss'
                 ]
             },
             dev: {
@@ -367,7 +376,7 @@ module.exports = function (grunt) {
                     host: '',
                     username: '',
                     port: '22',
-                    privateKey: grunt.file.read(process.env.HOME + '/.ssh/id_rsa'),
+                    privateKey: sshPrivateKey,
                     debug: true,
                     releases_to_keep: '3',
                     before_deploy: '',

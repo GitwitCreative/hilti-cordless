@@ -31,8 +31,8 @@
     padding: 0;
     margin: 0;
     background-color: #c8cfcf;
-    background: -webkit-linear-gradient(top, #c0c1c8 0%, #d2dada 50%);
-    background: linear-gradient(to bottom, #c0c1c8 0%, #d2dada 50%);
+    background: -webkit-linear-gradient(top, #c9cfd3 0%, #dee2e3 50%);
+    background: linear-gradient(to bottom, #c9cfd3 0%, #dee2e3 50%);
     width: 25%;
     overflow: hidden;
     display: -webkit-box;

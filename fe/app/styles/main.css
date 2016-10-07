@@ -1,5 +1,6 @@
 @media only screen and (min-width: 769px) {
-    /*icons*/
+
+/*icons*/
     @font-face {
         font-family: icomoon;
         src: url(../fonts/icons/fonts/icomoon.eot?y4pnfc);
@@ -21,7 +22,6 @@
         -moz-osx-font-smoothing: grayscale;
         font-size: calc(60*100vw/1920);
     }
-
     .icon-linkedin:before {
         content: "\e615"
     }
@@ -107,7 +107,7 @@
     .section {
         margin: 0 auto;
         max-width: calc(1920*100vw/1920);
-        min-width: calc(1890*100vw/1920);
+        /*min-width: calc(1890*100vw/1920);*/
     }
 
     h1,
@@ -669,6 +669,7 @@
         font-weight: bold;
         margin-top: calc(22*100vw/1920);
         margin-bottom: calc(10*100vw/1920);
+        width: 75%;
     }
 
     .ultimateTextImg .text * {
@@ -686,6 +687,7 @@
         margin-top: 0;
         font-size: calc(17*100vw/1920);
         font-weight: lighter;
+        width: 75%;
     }
 
     .ultimateTextImg .text button {
@@ -1164,5 +1166,10 @@
     .designed-with h1,
     .designed-with p {
         text-align: center;
+        width: 40%;
     }
-}
+    .sid-rumble {
+      height: 60%;
+      margin-right: 100px;
+    }
+  }

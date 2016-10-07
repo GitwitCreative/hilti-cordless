@@ -248,3 +248,23 @@ $categories = (array) $lending->categories;
         </div>
     </div>
 </div>
+
+<div class="mobile-wrapper">
+    <img class="mobile-tools" src="/fe/app/images/landing/ultimate_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-1']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/power_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-3']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/compact_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-9']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/sub_compact_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-18']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/measuring_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-23']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/bx_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-24']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/angle_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-17']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/vacuum_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-22']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/st_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-10']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/circular_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-11']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/sfl_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-16']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/te_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-2']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/battery_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-14']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/drywall_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-15']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/reciprocating_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-13']->link_link;?>';" />
+    <img class="mobile-tools" src="/fe/app/images/landing/rotary_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-12']->link_link;?>';" />
+
+</div>
