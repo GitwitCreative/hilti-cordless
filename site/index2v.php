@@ -81,7 +81,9 @@
     <div id="canvas_round"></div>
 </div>
 
-<div id="fullpage">
+
+<div id="<? echo $_GET['page'] == 'product' ? 'fullpage' : '';?>">
+
     <?php include('partials2v/navigation.php'); ?>
 
     <?php
