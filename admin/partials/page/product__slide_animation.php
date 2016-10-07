@@ -43,7 +43,6 @@
                         'id'     => 'description',
                         'name'   => 'Description',
                         'value'  => $section->description,
-                        'editor' => true,
                         'type'   => 'textarea'
                     ], [
                         'id' => 'image',

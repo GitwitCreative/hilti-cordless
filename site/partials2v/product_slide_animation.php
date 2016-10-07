@@ -25,7 +25,7 @@ if (get_page_propery('slide_animation', 'switch') == 1):
                 <div class="slide-content">
                     <h1 class="uppercase"><?php echo $slide->title;?></h1>
                     <h2 class="dark-gray hiltiSmallExtended"><?php echo $slide->sub_title;?></h2>
-                    <h2 class="text hiltiSmall bold"><?php echo $slide->description;?></h2>
+                    <h2 class="text hiltiSmallBold"><?php echo $slide->description;?></h2>
                 </div>
                 <img src="/fe/app/images/animation/sid-rumble.gif" class="sid-rumble redundant" alt="" />
 <!--                <div class="siluet"><img src="/fe/app/images/bar/siluet.png"></div>-->
