@@ -177,7 +177,8 @@
         opacity: 1;
     }
 
-    .product .top-menu {
+    .product .top-menu,
+    .contact-page .top-menu {
         /*margin: 0 auto;*/
         /*max-width: calc(768*100vw/768);
         min-width: calc(768*100vw/768);*/

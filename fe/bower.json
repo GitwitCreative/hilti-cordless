@@ -8,6 +8,7 @@
     "csshake": "*",
     "fullpage.js": "^2.8.2",
     "image-map-resizer": "https://github.com/davidjbradshaw/image-map-resizer.git#^1.0.3",
-    "iscroll": "^5.2.0"
+    "iscroll": "^5.2.0",
+    "Swiper": "swiper#^3.3.1"
   }
 }
