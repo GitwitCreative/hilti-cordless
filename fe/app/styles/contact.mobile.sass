@@ -1,0 +1,448 @@
+@mixin optional-at-root($sel)
+  @at-root #{if(not &, $sel, selector-append(&, $sel))}
+    @content
+
+@mixin placeholder
+  @include optional-at-root('::-webkit-input-placeholder')
+    @content
+
+  @include optional-at-root(':-moz-placeholder')
+    @content
+
+  @include optional-at-root('::-moz-placeholder')
+    @content
+
+  @include optional-at-root(':-ms-input-placeholder')
+    @content
+
+@media only screen and (max-width: 768px)
+  $slider-box-width: 100vw
+  $slider-space-between: 10px
+  $slider-slides-per-view: 3
+  $slider-width-compensator: ($slider-space-between * ( $slider-slides-per-view - 1 ))
+  $slider-slide-width: 70vw
+
+
+  .top-menu.with-hamburger
+    position: absolute
+    opacity: 1
+    input[type="checkbox"][id="hamburger"] + label + ul
+      display: none
+      background: #000
+      max-height: 100vh
+      //overflow: scroll
+      >li
+        display: block
+        background: #000
+        #mainNavShareLink
+          display: none
+        ul.secondary
+          display: block
+          position: static
+          opacity: 1
+          width: 100%
+          left: auto
+          padding: 0
+          margin: 0
+          >li
+            display: block
+            width: 100%
+            left: auto
+            padding: 0
+            margin: 0
+            text-align: center
+            a
+              text-align: center
+              width: auto
+              justify-content: center
+    input[type="checkbox"][id="hamburger"]
+      display: none
+    input[type="checkbox"][id="hamburger"] + label
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      //transform: translateY(-50%)
+      z-index: 100
+      display: inline-block
+      width: calc(40 * (100vw / 400))
+      cursor: pointer
+      font-size: calc(20 * (100vw / 400))
+      text-align: center
+      background: #000
+      i
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+    input[type="checkbox"][id="hamburger"]:checked + label
+      //background: url(check_radio_sheet.png) -19px top no-repeat
+      i
+        transform: translateX(-50%) translateY(-50%) rotateZ(90deg)
+
+    input[type="checkbox"][id="hamburger"]:checked + label + ul
+      display: inline-block
+
+
+  .contact-page
+    .contact
+      background: #dddddd
+      padding-top: calc(20 * (100vw / 768))
+      min-height: calc(100vh - (60 * 100vw / 768) - (20 * (100vw / 768)))
+      overflow: hidden
+      position: relative
+      //max-width: 100vw
+
+      .slider-controller,
+      .swiper-container-vertical,
+      .logo,
+      .button-block
+        display: none
+
+      .slider-box
+        padding-top: calc(20 * (100vw / 400))
+        padding-bottom: 70px
+
+        .title
+          //font-family: Conv_HiltiSmallHeavyExtended, sans-serif
+          border-left: 5px solid #d10918
+          padding-left: 10px
+          line-height: 0
+          & *
+            line-height: normal
+
+          &.last
+            margin-top: calc(15 * (100vw / 400))
+            //margin-bottom: calc(20 * (100vw / 400))
+            border: none
+            white-space: nowrap
+            padding: 0
+            &:before
+              content: ''
+              display: inline-block
+              width: 25vw
+              height: 25vw
+              background: url("../images/contact/executive-logo.png") left bottom no-repeat
+              background-size: contain
+            & *
+              vertical-align: top
+            .small-text
+              line-height: calc(20 * (100vw / 400))
+              color: black
+              font-size: calc(14 * (100vw / 400))
+              display: inline-block
+              white-space: normal
+              width: 75vw
+
+          .main-text
+            color: black
+            font-size: calc(24 * (100vw / 400))
+            font-weight: 800
+            text-transform: uppercase
+          .h2-text
+            color: #5a6268
+            font-size: calc(20 * (100vw / 400))
+
+        .slider
+          height: calc(150 * (100vw / 400))
+          min-height: 100px
+          position: relative
+
+          // slider buttons
+          .button-next,
+          .button-prev
+            position: absolute
+            top: 50%
+            width: calc(26 * (100vw / 400))
+            height: calc(32 * (100vw / 400))
+            z-index: 1000
+            cursor: pointer
+            &:hover
+              opacity: 0.8
+            &.swiper-button-disabled
+              opacity: 0.5
+              cursor: auto
+          .button-next
+            transform: translate(150%, -50%)
+            background: url("../images/contact/slider-button-next.png") center no-repeat
+            background-size: contain
+            right: calc(((#{$slider-box-width} - #{$slider-width-compensator}) - #{$slider-slide-width}) / 2)
+          .button-prev
+            transform: translate(-150%, -50%)
+            background: url("../images/contact/slider-button-prev.png") center no-repeat
+            background-size: contain
+            left: calc(((#{$slider-box-width} - #{$slider-width-compensator}) - #{$slider-slide-width}) / 2)
+
+          .play-button
+            background: url("../images/contact/slider-play-button.png") center no-repeat
+            background-size: cover
+            width: calc(50 * (100vw / 400))
+            height: calc(30 * (100vw / 400))
+            cursor: pointer
+            display: inline-block
+          .video-title
+            width: 100%
+            color: white
+            font-size: calc(12 * (100vw / 400))
+            font-weight: 800
+            //line-height: 36px
+            text-transform: uppercase
+            padding-top: 5px
+          .center-div
+            display: inline-block
+            max-width: calc(100% - 1px)
+            vertical-align: middle
+            text-align: center
+
+          .swiper-container
+            width: 100%
+            height: 100%
+            position: relative
+            padding: 0 0 20px 0
+
+            &:before,
+            &:after
+              content: ''
+              display: inline-block
+              position: absolute
+              z-index: 2
+              top: 0
+              left: -1px
+              //right: 0
+              bottom: 20px
+              width: calc(((#{$slider-box-width} - #{$slider-width-compensator}) - #{$slider-slide-width}) / 2 + 2px)
+              background: rgba(221, 221, 221, 0.4)
+            //  // GOOD FOR RED!
+            //  //background: rgba(238,238,238,1)
+            //  //background: -moz-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0.88) 25%, rgba(238,238,238,0.74) 49%, rgba(238,238,238,0.48) 76%, rgba(238,238,238,0.18) 100%)
+            //  //background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,238,238,1)), color-stop(25%, rgba(238,238,238,0.88)), color-stop(49%, rgba(238,238,238,0.74)), color-stop(76%, rgba(238,238,238,0.48)), color-stop(100%, rgba(238,238,238,0.18)))
+            //  //background: -webkit-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0.88) 25%, rgba(238,238,238,0.74) 49%, rgba(238,238,238,0.48) 76%, rgba(238,238,238,0.18) 100%)
+            //  //background: -o-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0.88) 25%, rgba(238,238,238,0.74) 49%, rgba(238,238,238,0.48) 76%, rgba(238,238,238,0.18) 100%)
+            //  //background: -ms-linear-gradient(left, rgba(238,238,238,1) 0%, rgba(238,238,238,0.88) 25%, rgba(238,238,238,0.74) 49%, rgba(238,238,238,0.48) 76%, rgba(238,238,238,0.18) 100%)
+            //  //background: linear-gradient(to right, rgba(238,238,238,1) 0%, rgba(238,238,238,0.88) 25%, rgba(238,238,238,0.74) 49%, rgba(238,238,238,0.48) 76%, rgba(238,238,238,0.18) 100%)
+            //  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=1 )
+            //
+            //  // normal gradient
+            //  //background: rgba(221,221,221,1)
+            //  //background: -moz-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(221,221,221,0.84) 25%, rgba(221,221,221,0.69) 49%, rgba(221,221,221,0.38) 76%, rgba(221,221,221,0) 100%)
+            //  //background: -webkit-gradient(left top, right top, color-stop(0%, rgba(221,221,221,1)), color-stop(25%, rgba(221,221,221,0.84)), color-stop(49%, rgba(221,221,221,0.69)), color-stop(76%, rgba(221,221,221,0.38)), color-stop(100%, rgba(221,221,221,0)))
+            //  //background: -webkit-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(221,221,221,0.84) 25%, rgba(221,221,221,0.69) 49%, rgba(221,221,221,0.38) 76%, rgba(221,221,221,0) 100%)
+            //  //background: -o-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(221,221,221,0.84) 25%, rgba(221,221,221,0.69) 49%, rgba(221,221,221,0.38) 76%, rgba(221,221,221,0) 100%)
+            //  //background: -ms-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(221,221,221,0.84) 25%, rgba(221,221,221,0.69) 49%, rgba(221,221,221,0.38) 76%, rgba(221,221,221,0) 100%)
+            //  //background: linear-gradient(to right, rgba(221,221,221,1) 0%, rgba(221,221,221,0.84) 25%, rgba(221,221,221,0.69) 49%, rgba(221,221,221,0.38) 76%, rgba(221,221,221,0) 100%)
+            //  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=1 )
+
+            &:after
+              right: -1px
+              left: auto
+              transform: rotateY(180deg)
+
+            .swiper-wrapper
+              .swiper-slide
+                text-align: center
+                font-size: calc(18 * (100vw / 400))
+                background: #000000 url("../images/contact/slider-video-bg.png") center no-repeat
+                background-size: cover
+                -webkit-box-shadow: 0 5px 29px -5px rgba(0,0,0,0.75)
+                -moz-box-shadow: 0 5px 29px -5px rgba(0,0,0,0.75)
+                box-shadow: 0 5px 29px -5px rgba(0,0,0,0.75)
+                width: 70vw !important
+
+            .touch-block
+              position: absolute
+              z-index: 3
+              top: 0
+              right: 0
+              left: 0
+              bottom: 0
+
+      .contact-footer
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 50px
+        background: red
+        white-space: nowrap
+
+        .title
+          display: inline-block
+          width: 80vw
+          height: 100%
+          text-align: center
+          color: white
+          font-size: 18px
+          font-weight: 800
+          line-height: 36px
+          text-transform: uppercase
+          vertical-align: top
+          nobr
+            vertical-align: middle
+
+        .gray-button
+          display: inline-block
+          width: 20vw
+          height: 100%
+          text-align: center
+          position: relative
+          background: #5a6268
+          &:before
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 10px
+            left: 10px
+            right: 10px
+            bottom: 10px
+            background: url("../images/contact/contact-icon.png") center no-repeat
+            background-size: contain
+    .video-overlay
+      position: fixed
+      top: 0
+      left: 0
+      width: 100vw
+      height: 100vh
+      background: rgba(40, 40, 40, 0.8)
+      z-index: 10000
+      .close
+        position: absolute
+        right: 10vw
+        top: calc(10 * 100vw / 400)
+        font-size: calc(25 * 100vw / 400)
+        color: white
+        cursor: pointer
+        z-index: 10000
+        &:hover
+          opacity: 0.8
+      .video
+        white-space: nowrap
+        line-height: 0
+        & *
+          line-height: normal
+        .button-block
+          width: 10vw
+          height: 100vh
+          display: inline-block
+          position: relative
+          .button-left,
+          .button-right
+            display: inline-block
+            position: absolute
+            top: 50%
+            left: 50%
+            width: calc(26 * (100vw / 400))
+            height: calc(32 * (100vw / 400))
+            background: url("../images/contact/slider-button-prev.png") center no-repeat
+            background-size: contain
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            &:hover
+              opacity: 0.8
+            &.button-disabled
+              opacity: 0.5
+              cursor: auto
+          .button-right
+            transform: translate(-50%, -50%)
+            background-image: url("../images/contact/slider-button-next.png")
+
+        .video-container
+          display: inline-block
+          vertical-align: top
+          width: 80vw
+          height: calc(100vh - ((10 * 100vw / 400) + (25 * 100vw / 400) + 20px) * 2)
+          margin-top: calc((100vh - (100vh - ((10 * 100vw / 400) + (25 * 100vw / 400) + 20px) * 2)) / 2)
+          position: relative
+          background: rgba(0, 0, 0, 1)
+          -webkit-box-shadow: 0 5px 29px -5px rgba(0, 0, 0, 0.75)
+          -moz-box-shadow: 0 5px 29px -5px rgba(0, 0, 0, 0.75)
+          box-shadow: 0 5px 29px -5px rgba(0, 0, 0, 0.75)
+          line-height: 0
+          video
+            width: 100%
+            height: 100%
+
+    .contact-overlay
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      min-height: 100vh
+      background: rgba(40, 40, 40, 0.8)
+      z-index: 10000
+      .close
+        position: absolute
+        right: 3vw
+        top: calc(0 * 100vw / 400)
+        font-size: calc(55 * 100vw / 400)
+        color: white
+        cursor: pointer
+        z-index: 10000
+        &:hover
+          opacity: 0.8
+      .contact-form
+        display: inline-block
+        vertical-align: top
+        width: 94vw
+        min-height: calc(100vh - ((0 * 100vw / 400) + (55 * 100vw / 400) + 20px) * 2)
+        margin-top: calc((100vh - (100vh - ((0 * 100vw / 400) + (55 * 100vw / 400) + 20px) * 2)) / 2)
+        margin-left: 3vw
+        position: relative
+        background: #dee1e3
+        -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 0 200px rgba(0, 0, 0, 0.25)
+        -moz-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 0 200px rgba(0, 0, 0, 0.25)
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 0 200px rgba(0, 0, 0, 0.25)
+        padding: calc(30 * (100vw / 400))
+        box-sizing: border-box
+        .title
+          border-left: 10px solid #d10918
+          padding-left: 20px
+          line-height: 24px
+
+          .main-text
+            color: black
+            font-size: calc(24 * (100vw / 400))
+            font-weight: 800
+            text-transform: uppercase
+          .h2-text
+            color: #5a6268
+            font-size: calc(18 * (100vw / 400))
+        .forms
+          .input-box
+            //white-space: nowrap
+            .input
+              margin-top: calc(25 * (100vw / 400))
+              display: inline-block
+              width: 100%
+              .input-title
+                color: #94999e
+                font-size: calc(18 * (100vw / 400))
+                padding-bottom: calc(15 * (100vw / 400))
+              input,
+              textarea
+                background: none
+                border: none
+                border-bottom: 2px solid #adb1b4
+                outline: 0
+                width: 100%
+                color: black
+                font-size: calc(14 * (100vw / 400))
+                font-weight: 700
+                padding: calc(5 * (100vw / 400)) 0
+
+                @include placeholder
+                  color: black
+              textarea
+                width: 100%
+                resize: none
+            .button
+              margin-top: 25px
+              padding-bottom: calc(50 * (100vw / 400))
+              button
+                position: absolute
+                bottom: calc(30 * (100vw / 400))
+                width: calc(100% - (30 * (100vw / 400)) * 2)
+                text-align: center
+                //padding-top: calc(100 * (100vw / 400))
+                font-size: calc(18 * (100vw / 400))
+                line-height: calc(50 * (100vw / 400))
+                text-transform: uppercase
