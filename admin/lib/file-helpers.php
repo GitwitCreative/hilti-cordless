@@ -54,10 +54,10 @@ function save_to_json($filename, $identifier, $content)
     $current_content = get_json_content_to_array($filename);
 
     if ($identifier) {
-        $cc = $current_content[$identifier] ? : [];
-        $n = array_replace_recursive($cc, $content);
+//        $cc = $current_content[$identifier] ? : [];
+//        $n = array_replace_recursive($cc, $content);
 
-        $current_content[$identifier] = $n;
+        $current_content[$identifier] = $content;
     } else {
         $current_content = $content;
     }

@@ -37,7 +37,8 @@ $section_tooltips = [];
         } elseif($_SERVER['SERVER_NAME'] == 'hilti.sndbx.r8tin.net') {
             echo '../';
         } else {
-            echo 'https://cdn.microsites-by-hilti.com/';
+//            echo 'https://cdn.microsites-by-hilti.com/';
+            echo '../';
         }
     } else {
         echo '../dist/';
