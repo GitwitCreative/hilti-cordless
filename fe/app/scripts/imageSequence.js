@@ -44,10 +44,10 @@
 
 
                     if (posStart > 0) {
-                        $animation[0].style.top = (posStart + offset) + "px";
+                        $animation[0].style.top = (posStart + offset) + 'px';
                     }
                     if (posEnd < 0) {
-                        $animation[0].style.top = (posEnd + offset) + "px";
+                        $animation[0].style.top = (posEnd + offset) + 'px';
                     }
 
                     windowPos > (startSlideTop - slideHeight) && windowPos <= endSlideTop && (prevPos = position, position = Math.round((windowPos + slideHeight - startSlideTop) / sequence), position < 0 && (position = 0), position > $images.length - 1 && (position = $images.length - 1), position != prevPos && ($images[position].style.opacity = 1, $images[prevPos].style.opacity = 0));
@@ -87,10 +87,10 @@
                             var current = $('.section').eq(a - 1);
                             var next = $('.section').eq(b - 1);
 
-                            if (direction == "up" && $(current).hasClass('end-slide')) {
+                            if (direction == 'up' && $(current).hasClass('end-slide')) {
                                 $(current).removeClass('noHide');
                             }
-                            if (direction == "down" && $(current).hasClass('end-slide')) {
+                            if (direction == 'down' && $(current).hasClass('end-slide')) {
                                 $(current).addClass('noHide');
                             }
                         },
