@@ -14,23 +14,23 @@ $categories = (array) $lending->categories;
             <div class="tile_first_row h480">
                 <div class="tile_element w960 h480 x0 y0">
                     <!-- ultimate_class -->
-                    <div class="ultimate_class" href="<?php echo $categories['child-1']->link_link;?>">
+                    <div class="ultimate_class" href="<?php echo url($categories['child-1']->link_link);?>">
                         <video class="w960 h480" loop="loop" tabindex="0" preload="auto">
-                            <source src="/fe/app/video/landing/MP4/UltimateClass_HoverState_Video.mp4"
+                            <source src="/assets/fe/app/video/landing/MP4/UltimateClass_HoverState_Video.mp4"
                                     type='video/mp4;'/>
                         </video>
                     </div>
                     <!-- / ultimate_class -->
                 </div>
                 <div class="tile_element w720 h240 x960 y0">
-                    <a href="<?php echo $categories['child-2']->link_link;?>">
-                        <img src="/fe/app/images/landing/TE_30-A.png" class="w720 h240">
+                    <a href="<?php echo url($categories['child-2']->link_link);?>">
+                        <img src="/assets/fe/app/images/landing/TE_30-A.png" class="w720 h240">
                     </a>
                 </div>
                 <div class="tile_element w720 h240 x960 y240">
                     <!-- power_class marckup -->
                     <div class="power_class w720 h240">
-                        <img class="mapped w720 h240" src="/fe/app/images/landing/power_class_bg_all.png" alt=""
+                        <img class="mapped w720 h240" src="/assets/fe/app/images/landing/power_class_bg_all.png" alt=""
                              usemap="#map_power"/>
                         <map name="map_power" id="map_power" class="areas">
                             <area rel="1" alt="" title="" href="javascript:void(0)" shape="poly"
@@ -45,45 +45,45 @@ $categories = (array) $lending->categories;
                         <div class="hover_data_div power_class_1 w720 h240">
                             <div class="power_class_img_cover w720 h240">
                                 <img class="power_class_content_img w720 h240"
-                                     src="/fe/app/images/landing/power_class_1.png"/>
+                                     src="/assets/fe/app/images/landing/power_class_1.png"/>
                             </div>
                             <div class="content_cover w720 h240">
                                 <h1>SFH 22-A</h1>
                                 <div class="text">Power class hammer drill driver for universal applications.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-3']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-3']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div power_class_2 w720 h240">
                             <div class="power_class_img_cover w720 h240">
                                 <img class="power_class_content_img w720 h240"
-                                     src="/fe/app/images/landing/power_class_2.png"/>
+                                     src="/assets/fe/app/images/landing/power_class_2.png"/>
                             </div>
                             <div class="content_cover w720 h240">
                                 <h1>SIW 22T-A</h1>
                                 <div class="text">Impact wrench delivering high torque with 3/4" connection.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-4']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-4']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div power_class_3 w720 h240">
                             <div class="power_class_img_cover w720 h240">
                                 <img class="power_class_content_img w720 h240"
-                                     src="/fe/app/images/landing/power_class_3.png"/>
+                                     src="/assets/fe/app/images/landing/power_class_3.png"/>
                             </div>
                             <div class="content_cover w720 h240">
                                 <h1>SF 22-A</h1>
                                 <div class="text">Power class drill driver for universal applications.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-5']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-5']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div power_class_4 w720 h240">
                             <div class="power_class_img_cover w720 h240">
                                 <img class="power_class_content_img w720 h240"
-                                     src="/fe/app/images/landing/power_class_4.png"/>
+                                     src="/assets/fe/app/images/landing/power_class_4.png"/>
                             </div>
                             <div class="content_cover w720 h240">
                                 <h1>SIW 22T-A</h1>
                                 <div class="text">Impact wrench delivering high torque with 1/2" connection.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-6']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-6']->link_link);?>">learn more</button>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ $categories = (array) $lending->categories;
                 <div class="tile_element w480 h480 x1680 y0">
                     <!-- compact_class marckup -->
                     <div class="compact_class w480 h480">
-                        <img class="mapped w480 h480" src="/fe/app/images/landing/compact_class_bg_all.png" alt=""
+                        <img class="mapped w480 h480" src="/assets/fe/app/images/landing/compact_class_bg_all.png" alt=""
                              usemap="#map_compact"/>
                         <map name="map_compact" id="map_compact" class="areas">
                             <area rel="1" shape="poly"
@@ -106,71 +106,71 @@ $categories = (array) $lending->categories;
                         <div class="hover_data_div compact_class_1 w480 h480">
                             <div class="compact_class_img_cover w480 h480">
                                 <img class="compact_class_content_img w480 h480"
-                                     src="/fe/app/images/landing/compact_class_1.png"/>
+                                     src="/assets/fe/app/images/landing/compact_class_1.png"/>
                             </div>
                             <div class="content_cover w480 h480">
                                 <h1>SIW 22-A</h1>
                                 <div class="text">Compact Impact Wrench.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-9']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-9']->link_linkurl);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div compact_class_2 w480 h480">
                             <div class="compact_class_img_cover w480 h480">
                                 <img class="compact_class_content_img w480 h480"
-                                     src="/fe/app/images/landing/compact_class_2.png"/>
+                                     src="/assets/fe/app/images/landing/compact_class_2.png"/>
                             </div>
                             <div class="content_cover w480 h480">
                                 <h1>SFC 22-A</h1>
                                 <div class="text">Compact Drill Driver.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-8']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-8']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div compact_class_3 w480 h480">
                             <div class="compact_class_img_cover w480 h480">
                                 <img class="compact_class_content_img w480 h480"
-                                     src="/fe/app/images/landing/compact_class_3.png"/>
+                                     src="/assets/fe/app/images/landing/compact_class_3.png"/>
                             </div>
                             <div class="content_cover w480 h480">
                                 <h1>SID 22-A</h1>
                                 <div class="text">Compact Impact Driver.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-7']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-7']->link_link);?>">learn more</button>
                             </div>
                         </div>
                     </div>
                     <!-- / compact_class marckup -->
                 </div>
                 <div class="tile_element w720 h240 x2160 y0">
-                    <a href="<?php echo $categories['child-10']->link_link;?>">
-                        <img src="/fe/app/images/landing/ST_1800-A.png" class="w720 h240">
+                    <a href="<?php echo url($categories['child-10']->link_link);?>">
+                        <img src="/assets/fe/app/images/landing/ST_1800-A.png" class="w720 h240">
                     </a>
                 </div>
                 <div class="tile_element w720 h240 x2160 y240">
-                    <a href="<?php echo $categories['child-11']->link_link;?>"><img src="/fe/app/images/landing/CIRCULAR.png" class="w720 h240"></a>
+                    <a href="<?php echo url($categories['child-11']->link_link);?>"><img src="/assets/fe/app/images/landing/CIRCULAR.png" class="w720 h240"></a>
                 </div>
                 <div class="tile_element w960 h480 x2880 y0">
-                    <a href="<?php echo $categories['child-12']->link_link;?>"><img src="/fe/app/images/landing/ROTARY.png" class="w960 h480"></a>
+                    <a href="<?php echo url($categories['child-12']->link_link);?>"><img src="/assets/fe/app/images/landing/ROTARY.png" class="w960 h480"></a>
                 </div>
             </div>
             <div class="tile_second_row h480">
                 <div class="tile_element w720 h240 x0 y480">
-                    <a href="<?php echo $categories['child-13']->link_link;?>"><img src="/fe/app/images/landing/RECIPROCATING.png" class="w720 h240"></a>
+                    <a href="<?php echo url($categories['child-13']->link_link);?>"><img src="/assets/fe/app/images/landing/RECIPROCATING.png" class="w720 h240"></a>
                 </div>
                 <div class="tile_element w720 h240 x0 y720">
-                    <a href="<?php echo $categories['child-14']->link_link;?>"><img src="/fe/app/images/landing/DISPENSER.png" class="w720 h240"></a>
+                    <a href="<?php echo url($categories['child-14']->link_link);?>"><img src="/assets/fe/app/images/landing/DISPENSER.png" class="w720 h240"></a>
                 </div>
                 <div class="tile_element w480 h480 x720 y480">
-                    <a href="<?php echo $categories['child-15']->link_link;?>"><img src="/fe/app/images/landing/DRYWALL.png" class="w480 h480"></a>
+                    <a href="<?php echo url($categories['child-15']->link_link);?>"><img src="/assets/fe/app/images/landing/DRYWALL.png" class="w480 h480"></a>
                 </div>
                 <div class="tile_element w720 h240 x1200 y480">
-                    <a href="<?php echo $categories['child-16']->link_link;?>"><img src="/fe/app/images/landing/SFL_22-A.png" class="w720 h240"></a>
+                    <a href="<?php echo url($categories['child-16']->link_link);?>"><img src="/assets/fe/app/images/landing/SFL_22-A.png" class="w720 h240"></a>
                 </div>
                 <div class="tile_element w720 h240 x1200 y720">
-                    <a href="<?php echo $categories['child-17']->link_link;?>"><img src="/fe/app/images/landing/ANGLE.png" class="w720 h240"></a>
+                    <a href="<?php echo url($categories['child-17']->link_link);?>"><img src="/assets/fe/app/images/landing/ANGLE.png" class="w720 h240"></a>
                 </div>
                 <div class="tile_element w960 h480 x1920 y480">
                     <!-- subcompact_class marckup -->
                     <div class="subcompact_class w960 h480">
-                        <img class="mapped w960 h480" src="/fe/app/images/landing/subcompact_class_bg_all.png" alt=""
+                        <img class="mapped w960 h480" src="/assets/fe/app/images/landing/subcompact_class_bg_all.png" alt=""
                              usemap="#map_subcompact"/>
                         <map name="map_subcompact" id="map_subcompact" class="areas">
                             <area rel="1" shape="poly"
@@ -185,58 +185,58 @@ $categories = (array) $lending->categories;
                         <div class="hover_data_div subcompact_class_1 w960 h480">
                             <div class="subcompact_class_img_cover w960 h480">
                                 <img class="subcompact_class_content_img w960 h480"
-                                     src="/fe/app/images/landing/subcompact_class_1.png"/>
+                                     src="/assets/fe/app/images/landing/subcompact_class_1.png"/>
                             </div>
                             <div class="content_cover w960 h480">
                                 <h1>SFD 2-A</h1>
                                 <div class="text">Sub-compact Drill Driver with 1/4" HEX connection.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-18']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-18']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div subcompact_class_2 w960 h480">
                             <div class="subcompact_class_img_cover w960 h480">
                                 <img class="subcompact_class_content_img w960 h480"
-                                     src="/fe/app/images/landing/subcompact_class_2.png"/>
+                                     src="/assets/fe/app/images/landing/subcompact_class_2.png"/>
                             </div>
                             <div class="content_cover w960 h480">
                                 <h1>SF 2-A</h1>
                                 <div class="text">Sub-Compact Drill Driver.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-19']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-19']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div subcompact_class_3 w960 h480">
                             <div class="subcompact_class_img_cover w960 h480">
                                 <img class="subcompact_class_content_img w960 h480"
-                                     src="/fe/app/images/landing/subcompact_class_3.png"/>
+                                     src="/assets/fe/app/images/landing/subcompact_class_3.png"/>
                             </div>
                             <div class="content_cover w960 h480">
                                 <h1>SID 2-A</h1>
                                 <div class="text">Sub-Compact Impact Driver.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-20']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-20']->link_link);?>">learn more</button>
                             </div>
                         </div>
                         <div class="hover_data_div subcompact_class_4 w960 h480">
                             <div class="subcompact_class_img_cover w960 h480">
                                 <img class="subcompact_class_content_img w960 h480"
-                                     src="/fe/app/images/landing/subcompact_class_4.png"/>
+                                     src="/assets/fe/app/images/landing/subcompact_class_4.png"/>
                             </div>
                             <div class="content_cover w960 h480">
                                 <h1>SF 2H-A</h1>
                                 <div class="text">Sub-Compact Hammer Drill Driver.</div>
-                                <button class="uppercase" data-href="<?php echo $categories['child-21']->link_link;?>">learn more</button>
+                                <button class="uppercase" data-href="<?php echo url($categories['child-21']->link_link);?>">learn more</button>
                             </div>
                         </div>
                     </div>
                     <!-- / subcompact_class marckup -->
                 </div>
                 <div class="tile_element w480 h480 x2880 y480">
-                    <a href="<?php echo $categories['child-22']->link_link;?>"><img src="/fe/app/images/landing/VACUUM.png" class="w480 h480"></a>
+                    <a href="<?php echo url($categories['child-22']->link_link);?>"><img src="/assets/fe/app/images/landing/VACUUM.png" class="w480 h480"></a>
                 </div>
                 <div class="tile_element w480 h240 x3360 y480">
-                    <a href="<?php echo $categories['child-23']->link_link;?>"><img src="/fe/app/images/landing/MEASURING.png" class="w480 h240"></a>
+                    <a href="<?php echo url($categories['child-23']->link_link);?>"><img src="/assets/fe/app/images/landing/MEASURING.png" class="w480 h240"></a>
                 </div>
                 <div class="tile_element w480 h240 x3360 y720">
-                    <a href="<?php echo $categories['child-24']->link_link;?>"><img src="/fe/app/images/landing/BX_3.png" class="w480 h240"></a>
+                    <a href="<?php echo url($categories['child-24']->link_link);?>"><img src="/assets/fe/app/images/landing/BX_3.png" class="w480 h240"></a>
                 </div>
             </div>
 
@@ -250,21 +250,21 @@ $categories = (array) $lending->categories;
 </div>
 
 <div class="mobile-wrapper">
-    <img class="mobile-tools" src="/fe/app/images/landing/ultimate_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-1']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/power_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-3']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/compact_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-9']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/sub_compact_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-18']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/measuring_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-23']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/bx_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-24']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/angle_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-17']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/vacuum_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-22']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/st_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-10']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/circular_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-11']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/sfl_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-16']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/te_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-2']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/battery_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-14']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/drywall_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-15']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/reciprocating_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-13']->link_link;?>';" />
-    <img class="mobile-tools" src="/fe/app/images/landing/rotary_mobile.png" alt="" onclick="document.location='<?php echo $categories['child-12']->link_link;?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/ultimate_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-1']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/power_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-3']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/compact_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-9']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/sub_compact_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-18']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/measuring_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-23']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/bx_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-24']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/angle_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-17']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/vacuum_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-22']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/st_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-10']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/circular_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-11']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/sfl_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-16']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/te_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-2']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/battery_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-14']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/drywall_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-15']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/reciprocating_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-13']->link_link);?>';" />
+    <img class="mobile-tools" src="/assets/fe/app/images/landing/rotary_mobile.png" alt="" onclick="document.location='<?php echo url($categories['child-12']->link_link);?>';" />
 
 </div>

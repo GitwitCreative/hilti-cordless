@@ -27,8 +27,7 @@
             echo '../';
         }
         else {
-//            echo 'https://cdn.microsites-by-hilti.com/';
-            echo '../';
+            echo 'https://cdn.microsites-by-hilti.com/';
         }
     } else {
         echo '../dist/';
@@ -43,32 +42,32 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/fe/bower_components/csshake/dist/csshake.css" />
-    <link rel="stylesheet" href="/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="/assets/fe/bower_components/csshake/dist/csshake.css" />
+    <link rel="stylesheet" href="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallBold/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallRoman/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/font-awesome.min.css">
-    <link rel="stylesheet" href="/fe/app/styles/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/preloader.css">
-    <link rel="stylesheet" href="/fe/app/styles/submenu.css">
-    <link rel="stylesheet" href="/fe/app/styles/submenu.mobile.css">
-    <link rel="stylesheet" href="/fe/app/styles/imageSequence.css">
-    <link rel="stylesheet" href="/fe/app/styles/imageSequence.mobile.css">
-    <link rel="stylesheet" href="/fe/app/styles/tab.css">
-    <link rel="stylesheet" href="/fe/app/styles/tab.mobile.css">
-    <link rel="stylesheet" href="/fe/app/styles/bar.css">
-    <link rel="stylesheet" href="/fe/app/styles/main.css">
-    <link rel="stylesheet" href="/fe/app/styles/main.mobile.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallBold/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallRoman/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/preloader.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/submenu.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/submenu.mobile.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/imageSequence.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/imageSequence.mobile.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/tab.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/tab.mobile.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/bar.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/main.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/main.mobile.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/fe/bower_components/modernizr/modernizr.js"></script>
+    <script src="/assets/fe/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
     <?php include('partials/tracking.php'); ?>
@@ -98,24 +97,24 @@
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="/fe/bower_components/jquery/dist/jquery.js"></script>
-<script src="/fe/bower_components/radialIndicator/radialIndicator.js"></script>
-<script src="/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
-<script src="/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
+<script src="/assets/fe/bower_components/jquery/dist/jquery.js"></script>
+<script src="/assets/fe/bower_components/radialIndicator/radialIndicator.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+<script src="/assets/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="/fe/app/scripts/preloader.js"></script>
+<script src="/assets/fe/app/scripts/preloader.js"></script>
 <?php if ($page_secion_name == 'product') :?>
-<script src="/fe/app/scripts/imageSequence.js"></script>
+<script src="/assets/fe/app/scripts/imageSequence.js"></script>
 <?php endif;?>
-<script src="/fe/app/scripts/switch.js"></script>
-<script src="/fe/app/scripts/tab.js"></script>
-<script src="/fe/app/scripts/bar.js"></script>
-<script src="/fe/app/scripts/main.js"></script>
+<script src="/assets/fe/app/scripts/switch.js"></script>
+<script src="/assets/fe/app/scripts/tab.js"></script>
+<script src="/assets/fe/app/scripts/bar.js"></script>
+<script src="/assets/fe/app/scripts/main.js"></script>
 <!-- endbuild -->
 </body>
 

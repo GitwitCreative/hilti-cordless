@@ -5,8 +5,7 @@ require_once('../admin/lib/page-functions.php');
 // absolute URI to prepend the navigation links
 $absUriPreVar = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (!empty($_GET['deploy']) && $_GET['deploy'] == '1') {
-    //$absUriPreVar = get_site_propery('general', 'domain');
-    $absUriPreVar = '';
+    $absUriPreVar = get_site_propery('general', 'domain');
 }
 
 $section_names = [];
@@ -37,8 +36,7 @@ $section_tooltips = [];
         } elseif($_SERVER['SERVER_NAME'] == 'hilti.sndbx.r8tin.net') {
             echo '../';
         } else {
-//            echo 'https://cdn.microsites-by-hilti.com/';
-            echo '../';
+            echo 'https://cdn.microsites-by-hilti.com/';
         }
     } else {
         echo '../dist/';
@@ -51,26 +49,26 @@ $section_tooltips = [];
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/fe/bower_components/csshake/dist/csshake.css"/>
-    <link rel="stylesheet" href="/fe/bower_components/fullpage.js/dist/jquery.fullpage.css"/>
+    <link rel="stylesheet" href="/assets/fe/bower_components/csshake/dist/csshake.css"/>
+    <link rel="stylesheet" href="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.css"/>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallBold/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallRoman/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/font-awesome.min.css">
-    <link rel="stylesheet" href="/fe/app/styles/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/preloader.css">
-    <link rel="stylesheet" href="/fe/app/styles/submenu.css">
-    <link rel="stylesheet" href="/fe/app/styles/main.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallBold/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallRoman/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/preloader.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/submenu.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/main.css">
 
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/fe/bower_components/modernizr/modernizr.js"></script>
+    <script src="/assets/fe/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <?php include('partials/tracking.php'); ?>
 </head>
@@ -93,19 +91,19 @@ $section_tooltips = [];
 </div>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="/fe/bower_components/jquery/dist/jquery.js"></script>
-<script src="/fe/bower_components/radialIndicator/radialIndicator.js"></script>
-<script src="/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
-<script src="/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
+<script src="/assets/fe/bower_components/jquery/dist/jquery.js"></script>
+<script src="/assets/fe/bower_components/radialIndicator/radialIndicator.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+<script src="/assets/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="/fe/app/scripts/preloader.js"></script>
-<script src="/fe/app/scripts/imageSequence.js"></script>
-<script src="/fe/app/scripts/main.js "></script>
+<script src="/assets/fe/app/scripts/preloader.js"></script>
+<script src="/assets/fe/app/scripts/imageSequence.js"></script>
+<script src="/assets/fe/app/scripts/main.js "></script>
 <!-- endbuild -->
 </body>
 

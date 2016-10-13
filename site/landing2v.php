@@ -24,8 +24,8 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/fe/bower_components/csshake/dist/csshake.css" />
-    <link rel="stylesheet" href="/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="/assets/fe/bower_components/csshake/dist/csshake.css" />
+    <link rel="stylesheet" href="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <base href="<?php
@@ -36,32 +36,31 @@
             echo '../';
         }
         else {
-//            echo 'https://cdn.microsites-by-hilti.com/';
-            echo '../';
+            echo 'https://cdn.microsites-by-hilti.com/';
         }
     } else {
         echo '../dist/';
     }
     ?>">
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallBold/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
-    <link rel="stylesheet" href="/fe/app/fonts/HiltiSmallRoman/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/fonts.css">
-    <link rel="stylesheet" href="/fe/app/styles/hiltiHover.css" type="text/css" />
-    <link rel="stylesheet" href="/fe/app/styles/tile.css" type="text/css" />
-    <link rel="stylesheet" href="/fe/app/styles/preloader.css">
-    <link rel="stylesheet" href="/fe/app/styles/submenu.css">
-    <link rel="stylesheet" href="/fe/app/styles/landing.css">
-    <link rel="stylesheet" href="/fe/app/styles/main.css">
-    <link rel="stylesheet" href="/fe/app/styles/main.mobile.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallBold/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallHeavyExtended/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallRoman/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/hiltiHover.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/fe/app/styles/tile.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/fe/app/styles/preloader.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/submenu.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/landing.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/main.css">
+    <link rel="stylesheet" href="/assets/fe/app/styles/main.mobile.css">
 
     <!-- endbuild -->
-    <link rel="stylesheet" type="text/css" ref="/fe/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" ref="/assets/fe/bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/fe/bower_components/modernizr/modernizr.js"></script>
+    <script src="/assets/fe/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <?php include('partials/tracking.php'); ?>
 </head>
@@ -82,21 +81,21 @@
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="/fe/bower_components/jquery/dist/jquery.js"></script>
-<script src="/fe/bower_components/radialIndicator/radialIndicator.js"></script>
-<script src="/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<script src="/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
-<script src="/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
-<script src="/fe/bower_components/iscroll/build/iscroll-probe.js"></script>
+<script src="/assets/fe/bower_components/jquery/dist/jquery.js"></script>
+<script src="/assets/fe/bower_components/radialIndicator/radialIndicator.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+<script src="/assets/fe/bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+<script src="/assets/fe/bower_components/image-map-resizer/js/imageMapResizer.min.js"></script>
+<script src="/assets/fe/bower_components/iscroll/build/iscroll-probe.js"></script>
 
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="/fe/app/scripts/preloader.js"></script>
-<script src="/fe/app/scripts/landing.js"></script>
-<script src="/fe/app/scripts/main.js "></script>
+<script src="/assets/fe/app/scripts/preloader.js"></script>
+<script src="/assets/fe/app/scripts/landing.js"></script>
+<script src="/assets/fe/app/scripts/main.js "></script>
 <!-- endbuild -->
 </body>
 

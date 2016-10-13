@@ -27,8 +27,7 @@
               echo '../';
           }
           else {
-//            echo 'https://cdn.microsites-by-hilti.com/';
-              echo '../';
+            echo 'https://cdn.microsites-by-hilti.com/';
           }
         } else {
             echo '../dist/';
