@@ -123,7 +123,7 @@
 var $body = $('body');
 $(document).ready(function() {
     if ($body.hasClass('landing')) {
-        $("area[href=\"#\"],a[href=\"#\"]").on('click', function(e){
+        $('area[href="#"],a[href="#"]').on('click', function(e){
             e.preventDefault();
         });
         var tiles = $('.tile_element');
@@ -181,12 +181,12 @@ $(document).ready(function() {
                 var obj = $(this);
                 var coords = obj.offset();
                 if (coords.left + obj.width() > bounds.left && coords.left < bounds.right) {
-                    if (obj.not("bubble")) {
-                        obj.addClass("bubble");
+                    if (obj.not('bubble')) {
+                        obj.addClass('bubble');
                     }
                 }
                 else {
-                    obj.removeClass("bubble");
+                    obj.removeClass('bubble');
                 }
             });
             

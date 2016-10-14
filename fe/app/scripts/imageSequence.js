@@ -42,12 +42,12 @@
                 var posEnd = endSlideTop - windowPos;
 
 
-                if (posStart > 0) {
-                    $animation[0].style.top = (posStart + offset) + "px";
-                }
-                if (posEnd < 0) {
-                    $animation[0].style.top = (posEnd + offset) + "px";
-                }
+                    if (posStart > 0) {
+                        $animation[0].style.top = (posStart + offset) + 'px';
+                    }
+                    if (posEnd < 0) {
+                        $animation[0].style.top = (posEnd + offset) + 'px';
+                    }
 
                 windowPos > (startSlideTop - slideHeight) && windowPos <= endSlideTop && (prevPos = position, position = Math.round((windowPos + slideHeight - startSlideTop) / sequence), position < 0 && (position = 0), position > $images.length - 1 && (position = $images.length - 1), position != prevPos && ($images[position].style.opacity = 1, $images[prevPos].style.opacity = 0));
             }
