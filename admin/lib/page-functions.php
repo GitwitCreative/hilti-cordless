@@ -55,3 +55,10 @@ function get_page_propery($section, $property)
     }
 
 }
+
+function url($navLink) {
+    if(!preg_match('/http/',$navLink)) {
+        $navLink = get_site_propery('general', 'domain').trim($navLink, '/');
+    }
+    return $navLink;
+}

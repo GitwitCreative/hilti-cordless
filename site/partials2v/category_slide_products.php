@@ -13,7 +13,7 @@ foreach ($products as $product) :
                 <h2 class="red uppercase"><?php echo $product['category_description']['sub_title']; ?></h2>
                 <p>"<?php echo $product['category_description']['description']; ?>"</p>
                 <button class="uppercase"
-                        onclick="document.location='<?php echo $product['general']['export']; ?>';">
+                        onclick="document.location='<?php echo url($product['general']['export']); ?>';">
                     3d demo
                 </button>
             </div>

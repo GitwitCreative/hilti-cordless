@@ -1,6 +1,5 @@
 @media only screen and (min-width: 769px) {
-
-/*icons*/
+    
     @font-face {
         font-family: icomoon;
         src: url(../fonts/icons/fonts/icomoon.eot?y4pnfc);
@@ -507,11 +506,11 @@
         height: 50%;
     }
 
-    .hcalc(400*100vw/1920) {
+    .h400px {
         height: calc(400*100vw/1920);
     }
 
-    .hcalc(300*100vw/1920) {
+    .h300px {
         height: calc(300*100vw/1920);
     }
 
@@ -1163,13 +1162,18 @@
         font-weight: lighter;
     }
 
-    .designed-with h1,
-    .designed-with p {
+    .designed-with h1{
         text-align: center;
         width: 40%;
+    }
+    .designed-with p {
+        text-align: center;
+        width: auto;
     }
     .sid-rumble {
       height: 60%;
       margin-right: 100px;
     }
-  }
+
+
+}

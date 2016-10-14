@@ -6,8 +6,7 @@ require_once('../admin/lib/page-functions.php');
 // absolute URI to prepend the navigation links
 $absUriPreVar = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if(!empty($_GET['deploy']) && $_GET['deploy'] == '1') {
-    //$absUriPreVar = get_site_propery('general', 'domain');
-    $absUriPreVar = '';
+    $absUriPreVar = get_site_propery('general', 'domain');
 }
 
 $section_names = array();

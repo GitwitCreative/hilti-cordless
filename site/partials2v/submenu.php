@@ -6,7 +6,7 @@ if (!is_null($category_id)) :
     <div class="submenu">
         <ul>
             <li>
-                <a href="<?php echo $category['general']['export']; ?>">
+                <a href="<?php echo url($category['general']['export']); ?>">
                     <div class="header black hiltiSmallHeavyExtended"><?php echo $category['main']['title']; ?></div>
                     <div class="text gray hiltiSmall"><?php echo $category['main']['description']; ?></div>
                 </a>
@@ -18,7 +18,7 @@ if (!is_null($category_id)) :
                 ?>
 
                 <li class="<?php echo $product['general']['id'] == $product_id ? 'active' : ''; ?>">
-                    <a href="<?php echo $product['general']['export']; ?>"><img
+                    <a href="<?php echo url($product['general']['export']); ?>"><img
                             src="<?php echo $product['general']['main_image']; ?>"/>
                         <div
                             class="header red hiltiSmallHeavyExtended spaced"><?php echo $product['general']['title']; ?></div>

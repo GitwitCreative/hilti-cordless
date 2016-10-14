@@ -3,7 +3,7 @@
         <div class="slide-content">
             <h1 class="uppercase"><?php echo $content_cover->title; ?></h1>
             <h2 class="dark-gray hiltiSmallExtended"><?php echo $content_cover->sub_title; ?></h2>
-            <h2 class="text hiltiSmall bold"><?php echo $content_cover->description; ?></h2>
+            <h2 class="text hiltiSmallBold"><?php echo $content_cover->description; ?></h2>
             <h4 class="text hiltiSmall italic gray small"><?php echo $content_cover->footnote; ?></h4>
         </div>
         <?php if (isset($content_cover->list)) : ?>
