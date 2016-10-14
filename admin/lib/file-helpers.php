@@ -92,6 +92,31 @@ function save_product_to_json($filename, $identifier, $section, $content)
     return save_to_file($filename, $content);
 }
 
+function save_category_to_json($filename, $identifier, $section, $content)
+{
+    $current_content = get_json_content_to_array($filename);
+
+    if ($identifier) {
+        $cc = $current_content[$identifier] ? : [];
+
+        if ($section == 'slide_content'){
+            $keys = array_keys($content);
+            $cc[$section][$keys[0]] = $content[$keys[0]];
+        } else {
+            $cc[$section] = $content;
+        }
+//        $n = array_replace_recursive($cc, $content);
+
+        $current_content[$identifier] = $cc;
+    } else {
+        $current_content = $content;
+    }
+
+    $content = json_encode($current_content);
+
+    return save_to_file($filename, $content);
+}
+
 function save_to_file($filename, $content)
 {
     $filehandle = fopen($filename, 'w');

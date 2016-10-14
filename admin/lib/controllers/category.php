@@ -10,7 +10,7 @@ function save_category($section)
 
     $filename   = $content_directory . $_REQUEST['site'] . '/categories.json';
     $identifier = $_REQUEST['category'];
-    $saved      = save_to_json($filename, $identifier, [$section => $data]);
+    $saved      = save_category_to_json($filename, $identifier, $section, $data);
 
     if ($saved) {
         $page__message[$section] = 'Data saved.';
