@@ -1218,13 +1218,13 @@ body {
 .subheader-data>.right-border>div.header {
     font-size: calc(47*100vw/1920);
     padding: 0;
-    margin: 0;
+    margin: 0 10px;
     position: relative;
     top: calc(6*100vw/1920);
 }
 
 .subheader-data>.right-border>div.label {
-    word-spacing: nowrap;
+    white-space: nowrap;
     font-family: Conv_HiltiSmallHeavyExtended;
     font-size: calc(34*100vw/1920);
     letter-spacing: calc(3.3*100vw/1920);
@@ -1428,7 +1428,7 @@ body {
         font-size: 32px;
     }
     .subheader-data>.right-border>div.label {
-        word-spacing: nowrap;
+        white-space: nowrap;
         font-family: Conv_HiltiSmallHeavyExtended;
         font-size: 25px;
         letter-spacing: calc(3.3*100vw/1920);
@@ -1446,17 +1446,20 @@ body {
         font-size: 18px;
         font-weight: lighter;
     }
-    .subheader-button {
+    .subheader-data>div:nth-last-of-type(1) {
         position: relative;
-        width: 92%;
+        width: 93%;
         margin: 0 auto;
         margin-bottom: 25px;
     }
-    .subheader-button button {
+    .subheader-data button {
         width: 100%;
         height: 35px;
         margin-top: 5px;
+        margin-left: 0;
+        margin-right: 0;
         font-size: 13px;
+        text-align: center;
     }
     /*video overlay styles*/
     /*  .close_video a {*/

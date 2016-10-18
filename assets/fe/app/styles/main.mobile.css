@@ -126,7 +126,7 @@
         color: #fff;
         background-image: url(../images/top-menu/logo.gif);
         background-repeat: no-repeat;
-        background-position: calc(40*100vw/768) center;
+        background-position: calc(10*100vw/768) center;
         background-size: calc(160*100vw/768);
         height: calc(80*100vw/768);
         position: relative;
@@ -155,7 +155,7 @@
         color: #fff;
         background-image: url(../images/top-menu/logo.gif);
         background-repeat: no-repeat;
-        background-position: calc(30*100vw/768) center;
+        background-position: calc(10*100vw/768) center;
         background-size: calc(160*100vw/768);
         height: calc(80*100vw/768);
         position: fixed;
@@ -292,8 +292,9 @@
     }
     .video-container video {
         /*z-index: -999;*/
-        height: 100%;
-        width: auto !important;
+        /*add line for title of tool*/
+        /*height: 100%;*/
+        /*width: auto !important;*/
     }
     .video-container .video-content {
         position: absolute;
@@ -354,6 +355,7 @@
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#aaaaaa', GradientType=0);
+        padding: 55px 0;
     }
     .video-player-one:before {
         content: ' ';
@@ -864,13 +866,13 @@
     .cordless-built.flex2>h1 {
         font-size: calc(38*100vw/768);
         font-weight: normal;
-        padding-top: 60px;
+        padding-top: calc(60*100vw/768);
         padding-left: calc(34*100vw/768);
         margin: 0;
         text-align: center;
     }
     .cordless-built.flex2>p {
-        padding-top: 10px;
+        padding-top: calc(10*100vw/768);
         font-size: calc(20*100vw/768);
         font-weight: normal;
         padding-left: calc(34*100vw/768);
@@ -903,7 +905,7 @@
         font-weight: normal;
         padding-left: calc(15*100vw/768);
         margin: 0;
-        padding-top: 40px;
+        padding-top: calc(40*100vw/768);
         text-align: center;
     }
     .no-compromise.flex2>p {
