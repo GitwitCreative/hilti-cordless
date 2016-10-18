@@ -26,6 +26,7 @@
             var startSlide1 = $('.section.start-slide')[0];
             var endSlide = $('.section.end-slide').first();
 
+
             /* initialized in afterRender */
             var startSlideTop;
             var endSlideTop;
@@ -42,16 +43,18 @@
                 var posEnd = endSlideTop - windowPos;
 
 
-                    if (posStart > 0) {
-                        $animation[0].style.top = (posStart + offset) + 'px';
-                    }
-                    if (posEnd < 0) {
-                        $animation[0].style.top = (posEnd + offset) + 'px';
-                    }
+                if (posStart > 0) {
+                    $animation[0].style.top = (posStart + offset) + 'px';
+                }
+                if (posEnd < 0) {
+                    $animation[0].style.top = (posEnd + offset) + 'px';
+                }
 
                 windowPos > (startSlideTop - slideHeight) && windowPos <= endSlideTop && (prevPos = position, position = Math.round((windowPos + slideHeight - startSlideTop) / sequence), position < 0 && (position = 0), position > $images.length - 1 && (position = $images.length - 1), position != prevPos && ($images[position].style.opacity = 1, $images[prevPos].style.opacity = 0));
             }
         }
+        // add class to hide previsious of end-slide element on mobile
+        $('.section.end-slide').prev().addClass("redundant");
 
         var fullPageInit = function() {
 
