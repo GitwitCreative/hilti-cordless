@@ -1150,11 +1150,14 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
-        height: calc(372*100vw/1920);
+        height: auto;
+        min-height: calc(372*100vw/1920);
         -webkit-box-pack: center;
         justify-content: center;
         -webkit-box-align: center;
         align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .designed-with h1 {
@@ -1167,6 +1170,7 @@
         width: 40%;
     }
     .designed-with p {
+        font-family: Conv_HiltiSmallBold;
         text-align: center;
         width: auto;
     }
