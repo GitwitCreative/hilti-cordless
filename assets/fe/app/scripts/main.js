@@ -71,11 +71,32 @@
 
 ;
 (function($) {
-	if ($('body').not('landing')) {
-		var $topMenu = $('.top-menu').first();
+	var $body = $('body');
+	var $hamburger = $('<div class="hamburger"><div></div><div></div><div></div></div>');
+	var $close = $('<li class="close">&times;</li>');
+	var $topMenu = $('.top-menu').first();
+	var $ulTopMenu = $('.top-menu>ul').first();
+	var videoContainers = $(".video-player-one video, .video-player-two video");
+	videoContainers.each(function(index){
+		var $v=$(this).find("source").first();
+		var w=$(this).width();
+		var h=$(this).height();
+		var ww = $(window).width();
+		var hvw = h/w*w/ww*100+'vw';
+		$(this).replaceWith('<iframe class="'+$(this).attr("class")+'" src="'+$v.attr("src")+'" style="height: '+hvw+';"></iframe>');
+	})
+	$hamburger.off('click').on('click', function(e) {
+		$body.toggleClass("translated");
+	});
+	$close.off('click').on('click', function(e) {
+		$body.removeClass("translated");
+	});
+	$ulTopMenu.prepend($close);
+	$body.addClass('slidemenu');
+	if ($body.not('landing')) {
 		var topMenuHeight = $($topMenu).height();
 		var scrollMenu = function() {
-			this.oldScroll=this.oldScroll || 0;
+			this.oldScroll = this.oldScroll || 0;
 			var newScroll = $(this).scrollTop();
 			// $($topMenu).css('top',newScroll);
 			if (newScroll > this.oldScroll) {
@@ -88,7 +109,9 @@
 			}
 			this.oldScroll = newScroll;
 		}
+		
 
 		$(window).scroll(scrollMenu);
 	}
+	$topMenu.append($hamburger);
 })(jQuery);

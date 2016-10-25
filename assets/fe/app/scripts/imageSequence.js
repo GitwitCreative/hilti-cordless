@@ -1,5 +1,14 @@
 (function($) {
     $(document).ready(function() {
+        var auto = true;
+        $('.section').each(function(){
+            if($(this).hasClass("start-slide")) {
+                auto = false;
+            }
+            if(auto) {
+                $(this).addClass("fp-normal-scroll");
+            };
+        });
         if ($('#fullpage').length) {
             var direction = 'down';
             var sections = $('.section');
@@ -64,12 +73,12 @@
                 fitToSection: false,
                 css3: true,
                 fitToSectionDelay: 400000,
-                scrollingSpeed: 400,
+                scrollingSpeed: 600,
                 // scrollOverflowOptions: false,
                 scrollBar: true,
-
+                hybrid:true,
                 touchSensitivity: 5,
-                normalScrollElementTouchThreshold: 3,
+                normalScrollElementTouchThreshold: 5,
                 bigSectionsDestination: null,
 
                 //Design
