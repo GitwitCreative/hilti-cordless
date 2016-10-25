@@ -49,6 +49,10 @@
             </div>
 
             <?php
+            elseif ($SITE['page']->general->type == 'tile') :
+            ?>
+                <input type="hidden" name="general[type]" value="tile" />
+            <?php
             endif;
             $section = $SITE['page']->general;
 
