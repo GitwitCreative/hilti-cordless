@@ -600,7 +600,7 @@
     }
     .cordless-built.border-right {
         padding-top: calc(95*100vw/768);
-        padding-bottom: calc(55*100vw/768);
+        padding-bottom: calc(80*100vw/768);
     }
     .cordless-built .header {
         /*line-height: calc(60*100vw/768);*/
@@ -714,11 +714,11 @@
         padding-top: 10px;
         /*margin-bottom: 20px;*/
     }
-    .as-powerfull.border-right {
+    .as-powerful.border-right {
         padding-top: calc(60*100vw/768);
         padding-bottom: calc(60*100vw/768);
     }
-    .as-powerfull .header {
+    .as-powerful .header {
         position: relative;
         top: calc(6*100vw/768);
         line-height: calc(118*100vw/768);
@@ -729,7 +729,7 @@
         transform: scale(0.983, 1);
         flex-basis: calc(660*100vw/768);
     }
-    .as-powerfull .label {
+    .as-powerful .label {
         position: relative;
         top: calc(100vw/768*-6);
         font-size: calc(18*100vw/768);
@@ -740,13 +740,13 @@
         -webkit-transform: scale(0.96, 1);
         transform: scale(0.96, 1);
     }
-    .as-powerfull.flex2>h1 {
+    .as-powerful.flex2>h1 {
         font-size: calc(78*100vw/768);
         font-weight: normal;
         text-align: center;
         margin: 0;
     }
-    .as-powerfull.flex2>p {
+    .as-powerful.flex2>p {
         font-size: calc(20*100vw/768);
         font-weight: normal;
         margin: 0;
@@ -754,7 +754,7 @@
         letter-spacing: calc(1*100vw/768);
         align-content: center;
     }
-    .as-powerfull.center {
+    .as-powerful.center {
         text-align: center;
     }
     .tested-leadership {

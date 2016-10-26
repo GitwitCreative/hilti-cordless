@@ -951,7 +951,7 @@ body {
 .subheader-data>.right-border>div.header {
     font-size: calc(47*100vw/1920);
     padding: 0;
-    margin: 0 10px;
+    /*margin: 0 10px;*/
     position: relative;
     top: calc(6*100vw/1920);
 }

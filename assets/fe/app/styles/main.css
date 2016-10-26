@@ -1101,11 +1101,11 @@
         line-height: calc(36*100vw/1920);
         letter-spacing: calc(1*100vw/1920);
     }
-    .as-powerfull.border-right {
+    .as-powerful.border-right {
         padding-top: calc(60*100vw/1920);
         padding-bottom: calc(60*100vw/1920);
     }
-    .as-powerfull .header {
+    .as-powerful .header {
         position: relative;
         top: calc(6*100vw/1920);
         line-height: calc(118*100vw/1920);
@@ -1116,7 +1116,7 @@
         transform: scale(0.983, 1);
         flex-basis: calc(660*100vw/1920);
     }
-    .as-powerfull .label {
+    .as-powerful .label {
         position: relative;
         top: calc(100vw/1920*-6);
         font-size: 1.822917vw;
@@ -1127,13 +1127,13 @@
         -webkit-transform: scale(0.96, 1);
         transform: scale(0.96, 1);
     }
-    .as-powerfull.flex2>h1 {
+    .as-powerful.flex2>h1 {
         font-size: calc(38*100vw/1920);
         font-weight: normal;
         padding-left: calc(24*100vw/1920);
         margin: 0;
     }
-    .as-powerfull.flex2>p {
+    .as-powerful.flex2>p {
         font-size: calc(24*100vw/1920);
         font-weight: normal;
         padding-left: calc(30*100vw/1920);
