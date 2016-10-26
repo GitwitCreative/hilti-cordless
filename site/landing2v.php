@@ -21,13 +21,6 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/assets/fe/bower_components/csshake/dist/csshake.css" />
-    <link rel="stylesheet" href="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
     <base href="<?php
     if ($_REQUEST['deploy'] == '1') {
         if($_SERVER['SERVER_NAME'] == 'localhost') {
@@ -42,6 +35,14 @@
         echo '../dist/';
     }
     ?>">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/assets/fe/bower_components/csshake/dist/csshake.css" />
+    <link rel="stylesheet" href="/assets/fe/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallBold/fonts.css">
     <link rel="stylesheet" href="/assets/fe/app/fonts/HiltiSmallExtended/fonts.css">
