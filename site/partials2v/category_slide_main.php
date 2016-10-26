@@ -18,11 +18,11 @@
 
             <div class="video-content h100p w100p">
                 <div class="video-text">
-                    <div class="flex1 border-right as-powerfull">
+                    <div class="flex1 border-right as-powerful">
                         <div class="red header hiltiSmall uppercase"><?php echo $slide->title; ?></div>
                         <div class="black label hiltiSmallHeavyExtended uppercase"><?php echo $slide->sub_title; ?></div>
                     </div>
-                    <div class="flex2  center as-powerfull">
+                    <div class="flex2  center as-powerful">
                         <p><?php echo $slide->description; ?></p>
                     </div>
                 </div>
