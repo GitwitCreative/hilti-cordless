@@ -8,7 +8,7 @@ if (!is_null($category_id)) :
             <li>
                 <a href="<?php echo url($category['general']['export']); ?>">
                     <div class="header black hiltiSmallHeavyExtended"><?php echo $category['main']['title']; ?></div>
-                    <div class="text gray hiltiSmall"><?php echo $category['main']['description']; ?></div>
+                    <div class="text gray hiltiSmallBold"><?php echo $category['main']['description']; ?></div>
                 </a>
             </li>
             <?php
