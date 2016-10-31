@@ -4,8 +4,14 @@ $lending = get_page_propery('tile', 'categories');
 
 <div class="overlay">
     <div id="videoPopup">
-        <div class="close_video"><a href="javascript:void(0);" class="close_video">&times;</a></div>
-        <video loop="loop" tabindex="0" controls="controls" preload="auto" autoplay="autoplay">
+        <div class="close_video" id="close_video"><a href="#" class="close_video">&times;</a></div>
+        <video tabindex="0" controls="controls" preload="auto" autoplay="autoplay" id="uc-popup">
+            <script type='text/javascript'>
+                document.getElementById('uc-popup').addEventListener('ended', myHandler, false);
+                function myHandler(e) {
+                    document.getElementById('close_video').click();
+                }
+            </script>
             <source src="<?php echo $lending->video;?>" type='video/mp4;' />
         </video>
     </div>
