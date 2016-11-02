@@ -108,6 +108,7 @@
     line-height: 40px;
     vertical-align: middle;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .top-menu li:hover>a {
@@ -134,6 +135,8 @@
     text-align: center;
     flex-basis: 20%;
     position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .top-menu .active a {
